@@ -44,7 +44,7 @@ Forsøg tilbage: 11
 
 
 ## Kode Struktur
-
+```bash
 📦 Mastermind
 ├─ 📂 Opgave 3 Mastermind/       # Konsol-app (C#/.NET)
 │   ├─ Program.cs
@@ -64,3 +64,4 @@ Forsøg tilbage: 11
    └─ 📂 Mastermind.Tests/       # xUnit tests
       ├─ EvaluatorTests.cs
       └─ InputParserTests.cs
+```
