@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Opgave 3 Mastermind")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80b14755b8e4135e74946154dec5f863e9216f6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Opgave 3 Mastermind")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Opgave 3 Mastermind")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

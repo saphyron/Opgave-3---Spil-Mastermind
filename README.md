@@ -41,3 +41,26 @@ Forsøg tilbage: 11
 
 ## Ressourcer
 - [wikihow: How to Play Mastermind](https://www.wikihow.com/Play-Mastermind)
+
+
+## Kode Struktur
+
+📦 Mastermind
+├─ 📂 Opgave 3 Mastermind/       # Konsol-app (C#/.NET)
+│   ├─ Program.cs
+│   ├─ 📂 Domain/
+│   │  ├─ Farver.cs              # Enum for farver
+│   │  ├─ FarverHelper.cs        # Parsing/visning af farvenavne
+│   │  ├─ Respons.cs             # Resultat: Black/White
+│   │  └─ Options.cs             # CodeLength, MaxAttempts, etc.
+│   ├─ 📂 Services/
+│   │  ├─ SecretGenerator.cs     # Genererer hemmelig kode
+│   │  ├─ Evaluering.cs          # ⚫/⚪ algoritmen
+│   │  └─ Input.cs               # Læser/validerer gæt
+│   └─ 📂 UI/
+│      ├─ KonsolMenu.cs          # Tekstudskrift, fejl, prompts
+│      └─ Spilstyring.cs         # Spilstyring (forsøg, win/lose)
+└─ 📂 tests/
+   └─ 📂 Mastermind.Tests/       # xUnit tests
+      ├─ EvaluatorTests.cs
+      └─ InputParserTests.cs
