@@ -60,7 +60,7 @@ Forsøg tilbage: 11
 │   └─ 📂 UI/
 │      ├─ KonsolMenu.cs          # Tekstudskrift, fejl, prompts
 │      └─ Spilstyring.cs         # Spilstyring (forsøg, win/lose)
-└─ 📂 tests/
+└─ 📂 tests/                     # Not implemented yet
    └─ 📂 Mastermind.Tests/       # xUnit tests
       ├─ EvaluatorTests.cs
       └─ InputParserTests.cs
