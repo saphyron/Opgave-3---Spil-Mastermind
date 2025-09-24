@@ -1,8 +1,5 @@
 using Opgave_3_Mastermind.Domain;
-using System;
 using Opgave_3_Mastermind.Services;
-using System.ComponentModel.Design;
-using Microsoft.Extensions.ObjectPool;
 
 namespace Opgave_3_Mastermind.UI
 {
@@ -13,7 +10,20 @@ namespace Opgave_3_Mastermind.UI
         private readonly SecretGenerator _secretGenerator;
         private readonly Input _input;
         private readonly Evaluering _evaluering;
-
+        /// <summary>
+        /// Initialiserer en ny instans af Spilstyring-klassen.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <param name="generator"></param>
+        /// <param name="input"></param>
+        /// <param name="evaluering"></param>
+        /// <param name="menu"></param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <remarks>
+        /// Denne klasse håndterer spillets logik og interaktion mellem de forskellige komponenter.
+        /// Den bruger Options til at konfigurere spillet, SecretGenerator til at generere hemmelige koder,
+        /// Input til at håndtere brugerinput, Evaluering til at evaluere gæt, og KonsolMenu til at vise menuer og beskeder.
+        /// </remarks>
         public Spilstyring(
             Options options,
             SecretGenerator generator,
@@ -27,9 +37,13 @@ namespace Opgave_3_Mastermind.UI
             _evaluering = evaluering ?? throw new ArgumentNullException(nameof(evaluering));
             _menu = menu ?? throw new ArgumentNullException(nameof(menu));
         }
-
-        //             
-
+        /// <summary>
+        /// Starter spillet og håndterer spillets hovedloop.
+        /// </summary>
+        /// <remarks>
+        /// Denne metode viser menuen, håndterer en enkelt runde af spillet, og spørger brugeren om de vil spille igen.
+        /// Hvis brugeren vælger ikke at spille igen, afsluttes spillet med en farvelbesked.
+        /// </remarks>
         public void Start()
         {
             while (true)
@@ -42,10 +56,17 @@ namespace Opgave_3_Mastermind.UI
                     _menu.Farvel();
                     break;
                 }
-                _menu.rundeSeperator();
+                _menu.RundeSeparator();
             }
         }
-
+        /// <summary>
+        /// Håndterer en enkelt runde af Mastermind-spillet.
+        /// </summary>
+        /// <remarks>
+        /// Denne metode genererer en hemmelig kode, håndterer brugerens gæt, evaluerer gæt, og viser feedback.
+        /// Hvis brugeren gætter koden korrekt inden for det maksimale antal forsøg, vinder de spillet.
+        /// Hvis de ikke gør, vises den korrekte kode ved spillets afslutning.
+        /// </remarks>
         public void SingularRunde()
         {
             var secret = _secretGenerator.GenerateSecret();
@@ -77,6 +98,13 @@ namespace Opgave_3_Mastermind.UI
             }
             _menu.VisTabermeddelelse(secret);
         }
+        /// <summary>
+        /// Spørger brugeren, om de vil spille igen, og returnerer deres svar som en boolesk værdi.
+        /// </summary>
+        /// <returns>True hvis brugeren vil spille igen, ellers false.</returns>
+        /// <remarks>
+        /// Denne metode viser en prompt til brugeren og venter på deres svar.
+        /// </remarks>
         private bool PrøvIgenJaNej()
         {
             while (true)

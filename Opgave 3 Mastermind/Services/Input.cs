@@ -1,6 +1,13 @@
 using Opgave_3_Mastermind.Domain;
 namespace Opgave_3_Mastermind.Services
 {
+    /// <summary>
+    /// Håndterer brugerinput og validering af gæt.
+    /// </summary>
+    /// <remarks>
+    /// Denne klasse bruger Options til at tilpasse valideringen baseret på spillets indstillinger,
+    /// såsom længde på koden og sprog.
+    /// </remarks>
     public class Input
     {
         private readonly Options _options;
@@ -8,7 +15,16 @@ namespace Opgave_3_Mastermind.Services
         {
             _options = options;
         }
-
+        /// <summary>
+        /// Prøver at parse brugerens input til et gæt bestående af farver.
+        /// </summary>
+        /// <param name="linje"></param>
+        /// <param name="gæt"></param>
+        /// <param name="fejl"></param>
+        /// <returns>True hvis parsing lykkedes, ellers false.</returns>
+        /// <remarks>
+        /// Denne metode forsøger at parse en linje af tekst til et gæt bestående af farver.
+        /// </remarks>
         public bool prøvParseGæt(string? linje, out Farve[] gæt, out string? fejl)
         {
             gæt = Array.Empty<Farve>();

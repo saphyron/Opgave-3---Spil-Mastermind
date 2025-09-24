@@ -3,13 +3,13 @@ using Opgave_3_Mastermind.Services;
 using Opgave_3_Mastermind.UI;
 
 var options = new Options(); // Default options
-/* You can customize options here if needed
-options.maxForsøg = 10;
-options.længde = 5;
-options.showEmojis = false;
+/* Du kan også ændre options her, hvis du vil teste forskellige indstillinger
+options.maxForsøg = 9;
+options.længde = 3;
+options.showEmojis = true;
 options.sprog = Sprog.En;
 
-var options = new Options(længde: 5, maxForsøg: 10, showEmojis: false, sprog: Sprog.En);
+var options = new Options(længde: 3, maxForsøg: 9, showEmojis: true, sprog: Sprog.En);
 */
 var secretGenerator = new SecretGenerator(options);
 var input = new Input(options);

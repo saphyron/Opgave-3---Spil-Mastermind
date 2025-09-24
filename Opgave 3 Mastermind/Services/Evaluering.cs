@@ -1,6 +1,16 @@
 using Opgave_3_Mastermind.Domain;
 namespace Opgave_3_Mastermind.Services
 {
+    /// <summary>
+    /// Evaluerer et gæt mod den hemmelige kode og returnerer feedback i form af sorte og hvide pegge.
+    /// </summary>
+    /// <param name="gæt">Et array af Farve, der repræsenterer spillerens gæt.</param>
+    /// <param name="secret">Et array af Farve, der repræsenterer den hemmelige kode.</param>
+    /// <returns>En Feedback-instans, der indeholder antallet af sorte og hvide pegge.</returns>
+    /// <remarks>
+    /// Denne metode evaluerer et gæt ved at sammenligne det med den hemmelige kode
+    /// og returnerer feedback i form af sorte og hvide pegge.
+    /// </remarks>
     public class Evaluering
     {
         public Feedback Evaluer(Farve[] gæt, Farve[] secret)
