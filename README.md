@@ -42,7 +42,7 @@ Hvis du vil **undgå at åbne browseren** (pga. Web-SDKens launchSettings), kan 
   ```
 - Gyldige farver (DA/EN): `rød/red`, `grøn/green`, `blå/blue`, `gul/yellow`, `lilla/purple`, `orange/orange`, `hvid/white`, `sort/black`.
 - Efter hvert gæt vises fx: `Sort: 2 | Hvid: 1  (⚫⚫⚪)`.
-- Når runden er slut, bliver du spurgt: *Spil igen? (ja/nej)* / *Play again? (y/n)*.
+- Når runden er slut, vises statistik og du bliver du spurgt: *Spil igen? (ja/nej)* / *Play again? (y/n)*.
 
 ---
 
