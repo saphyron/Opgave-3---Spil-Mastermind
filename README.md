@@ -135,11 +135,21 @@ Skriv fx enhedstests for `Evaluering` (sort/hvid-kombinationer inkl. dubletter) 
 
 ---
 
-## Licens
-Tilføj licens efter behov (fx MIT).
+## Forfatter (Author)
+John Grandt Markvard Høeg
 
-God fornøjelse — og held og lykke med kombinationen! 🎯
+## Versions Historik
+* 0.3
+    * Tilføjet statistik
+    * Opdateret README.md
+    * Opdateret tidligere funktioner for at kunne håndtere statistik
+* 0.2
+    * Fuld Konsol Funktionalitet
+* 0.1
+    * Init
 
+## License
+Projektet er Licensed under MIT.
 
 ## Ressourcer
 - [wikihow: How to Play Mastermind](https://www.wikihow.com/Play-Mastermind)

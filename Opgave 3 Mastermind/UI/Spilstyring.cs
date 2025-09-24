@@ -1,5 +1,6 @@
 using Opgave_3_Mastermind.Domain;
 using Opgave_3_Mastermind.Services;
+using Opgave_3_Mastermind.Utils;
 
 namespace Opgave_3_Mastermind.UI
 {
@@ -10,6 +11,7 @@ namespace Opgave_3_Mastermind.UI
         private readonly SecretGenerator _secretGenerator;
         private readonly Input _input;
         private readonly Evaluering _evaluering;
+        private Statistik _statistik;
         /// <summary>
         /// Initialiserer en ny instans af Spilstyring-klassen.
         /// </summary>
@@ -18,6 +20,7 @@ namespace Opgave_3_Mastermind.UI
         /// <param name="input"></param>
         /// <param name="evaluering"></param>
         /// <param name="menu"></param>
+        /// <param name="statistik"></param>
         /// <exception cref="ArgumentNullException"></exception>
         /// <remarks>
         /// Denne klasse håndterer spillets logik og interaktion mellem de forskellige komponenter.
@@ -29,13 +32,15 @@ namespace Opgave_3_Mastermind.UI
             SecretGenerator generator,
             Input input,
             Evaluering evaluering,
-            KonsolMenu menu)
+            KonsolMenu menu,
+            Statistik? statistik)
         {
             _options = options ?? throw new ArgumentNullException(nameof(options));
             _secretGenerator = generator ?? throw new ArgumentNullException(nameof(generator));
             _input = input ?? throw new ArgumentNullException(nameof(input));
             _evaluering = evaluering ?? throw new ArgumentNullException(nameof(evaluering));
             _menu = menu ?? throw new ArgumentNullException(nameof(menu));
+            _statistik = statistik ?? throw new ArgumentNullException(nameof(statistik));
         }
         /// <summary>
         /// Starter spillet og håndterer spillets hovedloop.
@@ -93,10 +98,14 @@ namespace Opgave_3_Mastermind.UI
                 {
                     vundet = true;
                     _menu.VisVindermeddelelse(forsøg);
+                    _statistik.RegisterSejr(forsøg);
+                    _statistik.Render(_options);
                     return;
                 }
             }
             _menu.VisTabermeddelelse(secret);
+            _statistik.RegisterTab();
+            _statistik.Render(_options);
         }
         /// <summary>
         /// Spørger brugeren, om de vil spille igen, og returnerer deres svar som en boolesk værdi.
