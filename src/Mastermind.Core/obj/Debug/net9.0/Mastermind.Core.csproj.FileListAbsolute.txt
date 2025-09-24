@@ -10,3 +10,15 @@ C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\src\Mastermind.Core\obj\Debug\net9.0\refint\Mastermind.Core.dll
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.pdb
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\src\Mastermind.Core\obj\Debug\net9.0\ref\Mastermind.Core.dll
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\bin\Debug\net9.0\Mastermind.Core.deps.json
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\bin\Debug\net9.0\Mastermind.Core.dll
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\bin\Debug\net9.0\Mastermind.Core.pdb
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.AssemblyInfoInputs.cache
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.AssemblyInfo.cs
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.csproj.CoreCompileInputs.cache
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.sourcelink.json
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.dll
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\refint\Mastermind.Core.dll
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\Mastermind.Core.pdb
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Core\obj\Debug\net9.0\ref\Mastermind.Core.dll
