@@ -1,12 +1,18 @@
 ﻿<Window x:Class="Mastermind.Wpf.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Mastermind" Width="800" Height="450" WindowStartupLocation="CenterScreen">
-  <Grid>
-    <TextBlock Text="Hello WPF 👋"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"
-               FontSize="26"
-               FontWeight="Bold"/>
-  </Grid>
+        Title="Mastermind" Width="900" Height="600" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Menu">
+                <MenuItem Header="_Nyt Spil"   Command="{Binding NytSpilCmd}" />
+                <Separator/>
+                <MenuItem Header="_Options"    Command="{Binding OptionsCmd}" />
+                <MenuItem Header="_Statistik"  Command="{Binding StatistikCmd}" />
+                <Separator/>
+                <MenuItem Header="E_xit"       Command="{Binding ExitCmd}" />
+            </MenuItem>
+        </Menu>
+        <ContentControl Content="{Binding CurrentView}" />
+    </DockPanel>
 </Window>

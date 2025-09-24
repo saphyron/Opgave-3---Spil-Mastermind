@@ -31,7 +31,13 @@ C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\bin\Debug\net9.0-windows\Mastermind.Core.pdb
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Mastermind.Wpf.csproj.AssemblyReference.cache
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\GameView.baml
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\OptionsView.baml
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\StatistikView.baml
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\GameView.g.cs
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\OptionsView.g.cs
+C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\StatistikView.g.cs
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\App.g.cs
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Mastermind.Wpf_MarkupCompile.cache
 C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Mastermind.Wpf.g.resources

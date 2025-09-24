@@ -5,33 +5,51 @@ namespace Mastermind.Core.Persistence
 {
     public sealed class JsonStatistikStore : IStatistikStore
     {
-        private readonly string _dir;
-        private readonly string _path;
         private static readonly JsonSerializerOptions _json = new() { WriteIndented = true };
 
-        public JsonStatistikStore(string? baseDir = null)
+        public JsonStatistikStore()
         {
-            // Gem i ./database/Statistik.json ved runtime
-            _dir  = Path.Combine(baseDir ?? AppContext.BaseDirectory, "database");
-            _path = Path.Combine(_dir, "Statistik.json");
-            Directory.CreateDirectory(_dir);
-            if (!File.Exists(_path)) File.WriteAllText(_path, "[]");
+            JsonFilePaths.EnsureDir();
+            if (!File.Exists(JsonFilePaths.StatistikPath))
+                File.WriteAllText(JsonFilePaths.StatistikPath, "[]");
         }
 
         public IReadOnlyList<GameResult> LoadAll()
         {
-            var json = File.ReadAllText(_path);
-            return JsonSerializer.Deserialize<List<GameResult>>(json) ?? new List<GameResult>();
+            JsonFilePaths.EnsureDir();
+            var path = JsonFilePaths.StatistikPath;
+
+            if (!File.Exists(path))
+            {
+                File.WriteAllText(path, "[]");
+                return new List<GameResult>();
+            }
+
+            var json = File.ReadAllText(path);
+            if (string.IsNullOrWhiteSpace(json))
+                return new List<GameResult>();
+
+            try
+            {
+                return JsonSerializer.Deserialize<List<GameResult>>(json) ?? new List<GameResult>();
+            }
+            catch (JsonException)
+            {
+                // Tag backup og nulstil, så UI ikke crasher
+                try { File.Copy(path, path + ".bak", overwrite: true); } catch { /* ignore */ }
+                File.WriteAllText(path, "[]");
+                return new List<GameResult>();
+            }
         }
 
         public void Append(GameResult result)
         {
-            var list = LoadAll().ToList();
+            var list = LoadAll().ToList(); // LoadAll er nu failsafe
             list.Add(result);
             var json = JsonSerializer.Serialize(list, _json);
-            File.WriteAllText(_path, json);
+            File.WriteAllText(JsonFilePaths.StatistikPath, json);
         }
 
-        public void Reset() => File.WriteAllText(_path, "[]");
+        public void Reset() => File.WriteAllText(JsonFilePaths.StatistikPath, "[]");
     }
 }

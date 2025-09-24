@@ -1,0 +1,16 @@
+<UserControl x:Class="Mastermind.Wpf.Views.StatistikView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DockPanel Margin="20">
+    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+      <Button Content="Nulstil statistik" Width="160" Margin="0,0,10,0" Command="{Binding ResetCmd}"/>
+      <Button Content="Opdater" Width="120" Command="{Binding RefreshCmd}"/>
+    </StackPanel>
+
+    <TextBox Text="{Binding Table, Mode=OneWay}"
+         FontFamily="Consolas" FontSize="13"
+         AcceptsReturn="True" IsReadOnly="True"
+         VerticalScrollBarVisibility="Auto" />
+
+  </DockPanel>
+</UserControl>
