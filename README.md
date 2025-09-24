@@ -4,17 +4,6 @@ Tekstbaseret udgave af det klassiske brætspil **Mastermind**. Spillet vælger e
 
 ---
 
-## Status (seneste)
-- ✅ Konsolbaseret spil med **DA/EN** sprog (styres i `Options.sprog`).
-- ✅ **Spil igen** efter vundet/tabt runde (`Spilstyring` spørger *ja/nej*).
-- ✅ Input-parser accepterer både **danske og engelske farvenavne**.
-- ✅ Evaluator håndterer **dubletter korrekt** (ingen dobbelttælling).
-- ✅ Feedback kan vises med **emojis** (⚫/⚪) via `Options.showEmojis`.
-- ✅ Ugyldigt input tæller **ikke** som et forsøg.
-- ⚙️ Default: 4 pladser, 12 forsøg (kan ændres i `Options`).
-
----
-
 ## Krav
 - .NET SDK **9.0** (projektet målretter `net9.0`).
 - Windows PowerShell 5.1 eller nyere til at køre kommandoerne.
