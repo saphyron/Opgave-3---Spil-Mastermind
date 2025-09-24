@@ -5,11 +5,10 @@ namespace Mastermind.Core.Persistence;
 public static class JsonFilePaths
 {
     /// <summary>
-    /// Finder en fælles datamappe:
-    /// 1) MASTERMIND_DATA_DIR (env var) hvis sat
-    /// 2) Hvis der findes en 'Database' mappe i en forælder af BaseDirectory (dev), brug den
-    /// 3) Ellers %LOCALAPPDATA%\Mastermind\Database
+    /// Directory for options/statistik JSON-filer.
     /// </summary>
+    /// 
+    /// Skal omskrives virker ikke korrekt endnu.
     public static string DatabaseDir
     {
         get
