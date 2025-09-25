@@ -5,12 +5,12 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Menu">
-                <MenuItem Header="_Nyt Spil"   Command="{Binding NytSpilCmd}" />
+                <MenuItem Header="{DynamicResource Menu_NewGame}"   Command="{Binding NytSpilCmd}" />
                 <Separator/>
-                <MenuItem Header="_Options"    Command="{Binding OptionsCmd}" />
-                <MenuItem Header="_Statistik"  Command="{Binding StatistikCmd}" />
+                <MenuItem Header="{DynamicResource Menu_Options}"    Command="{Binding OptionsCmd}" />
+                <MenuItem Header="{DynamicResource Menu_Statistics}"  Command="{Binding StatistikCmd}" />
                 <Separator/>
-                <MenuItem Header="E_xit"       Command="{Binding ExitCmd}" />
+                <MenuItem Header="{DynamicResource Menu_Exit}"       Command="{Binding ExitCmd}" />
             </MenuItem>
         </Menu>
         <ContentControl Content="{Binding CurrentView}" />

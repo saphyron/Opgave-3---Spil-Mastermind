@@ -61,9 +61,12 @@ C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spi
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\bin\Debug\net9.0-windows\Mastermind.Core.pdb
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Mastermind.Wpf.csproj.AssemblyReference.cache
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Resources\Strings.da.baml
+C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Resources\Strings.en.baml
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\GameView.baml
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\OptionsView.baml
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\StatistikView.baml
+C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\App.baml
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\GameView.g.cs
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\obj\Debug\net9.0-windows\Views\OptionsView.g.cs

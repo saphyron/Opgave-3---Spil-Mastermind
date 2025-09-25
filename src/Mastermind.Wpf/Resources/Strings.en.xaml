@@ -1,0 +1,38 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+  <!-- Main window / Menu -->
+  <sys:String x:Key="App_Title">Mastermind</sys:String>
+  <sys:String x:Key="Menu_NewGame">New Game</sys:String>
+  <sys:String x:Key="Menu_Options">Options</sys:String>
+  <sys:String x:Key="Menu_Statistics">Statistics</sys:String>
+  <sys:String x:Key="Menu_Exit">Exit</sys:String>
+
+  <!-- GameView -->
+  <sys:String x:Key="Game_Title">Mastermind</sys:String>
+  <sys:String x:Key="Game_Prompt">Pick 4 colors and press Guess:</sys:String>
+  <sys:String x:Key="Game_Button_Guess">Guess</sys:String>
+  <sys:String x:Key="Game_Button_NewRound">New round</sys:String>
+  <sys:String x:Key="Game_Footer_NewRound">New round started.</sys:String>
+  <sys:String x:Key="Game_Footer_Continue">Keep guessing...</sys:String>
+  <sys:String x:Key="Game_Footer_Won">You won in {0} tries.</sys:String>
+  <sys:String x:Key="Game_Footer_Lost">You lost after {0} tries.</sys:String>
+  <sys:String x:Key="Game_Footer_SecretLabel">Secret code: {0}</sys:String>
+  <sys:String x:Key="Game_Footer_PressNewRound">Press 'New round' to start again.</sys:String>
+
+  <!-- OptionsView -->
+  <sys:String x:Key="Options_Title">Options</sys:String>
+  <sys:String x:Key="Options_CodeLength">Code length:</sys:String>
+  <sys:String x:Key="Options_MaxAttempts">Max attempts:</sys:String>
+  <sys:String x:Key="Options_ShowEmojis">Show Emojis:</sys:String>
+  <sys:String x:Key="Options_Language">Language:</sys:String>
+  <sys:String x:Key="Options_Save">Save</sys:String>
+  <sys:String x:Key="Options_Reload">Reload</sys:String>
+  <sys:String x:Key="Options_Lang_Danish">Danish</sys:String>
+  <sys:String x:Key="Options_Lang_English">English</sys:String>
+
+  <!-- StatisticsView -->
+  <sys:String x:Key="Stats_Reset">Reset statistics</sys:String>
+  <sys:String x:Key="Stats_Refresh">Refresh</sys:String>
+</ResourceDictionary>

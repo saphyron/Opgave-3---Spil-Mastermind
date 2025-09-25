@@ -13,5 +13,25 @@
     "TimestampUtc": "2025-09-25T07:30:32.3167568Z",
     "Vundet": true,
     "Fors\u00F8g": 9
+  },
+  {
+    "TimestampUtc": "2025-09-25T07:41:50.4186644Z",
+    "Vundet": true,
+    "Fors\u00F8g": 8
+  },
+  {
+    "TimestampUtc": "2025-09-25T07:42:06.2167865Z",
+    "Vundet": false,
+    "Fors\u00F8g": 12
+  },
+  {
+    "TimestampUtc": "2025-09-25T07:54:18.4923527Z",
+    "Vundet": false,
+    "Fors\u00F8g": 12
+  },
+  {
+    "TimestampUtc": "2025-09-25T07:54:35.1584697Z",
+    "Vundet": false,
+    "Fors\u00F8g": 12
   }
 ]

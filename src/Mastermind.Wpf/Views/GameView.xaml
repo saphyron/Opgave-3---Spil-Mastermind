@@ -1,31 +1,46 @@
 <UserControl x:Class="Mastermind.Wpf.Views.GameView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <Grid Margin="20">
+  <Grid Margin="32">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="*"/>
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
 
-    <TextBlock Text="Mastermind" FontSize="22" FontWeight="Bold"/>
+    <TextBlock Text="{DynamicResource Game_Title}" FontSize="24" FontWeight="Bold"/>
 
-    <StackPanel Grid.Row="1" Orientation="Vertical" Margin="0,20,0,0" Width="420">
-      <TextBlock Text="Vælg 4 farver og tryk Gæt:" Margin="0,0,0,8"/>
-      <UniformGrid Columns="4" Margin="0,0,0,8">
-        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess0}"/>
-        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess1}"/>
-        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess2}"/>
-        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess3}"/>
+    <Grid Grid.Row="1" Margin="0,24,0,0" MaxWidth="720">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+
+      <TextBlock Grid.Row="0" Text="{DynamicResource Game_Prompt}" Margin="0,0,0,12" FontSize="14"/>
+
+      <UniformGrid Grid.Row="1" Columns="4" Margin="0,0,0,12">
+        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess0}" FontSize="14" MinWidth="140"/>
+        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess1}" FontSize="14" MinWidth="140"/>
+        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess2}" FontSize="14" MinWidth="140"/>
+        <ComboBox ItemsSource="{Binding Palette}" SelectedItem="{Binding Guess3}" FontSize="14" MinWidth="140"/>
       </UniformGrid>
-      <StackPanel Orientation="Horizontal">
-  <Button Content="Gæt" Width="120" Command="{Binding GaetCmd}" Margin="0,0,8,0"/>
-  <Button Content="Ny runde" Width="120" Command="{Binding NyRundeCmd}"/>
-</StackPanel>
 
-      <ListBox ItemsSource="{Binding History}" Margin="0,12,0,0"/>
-    </StackPanel>
+      <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,12">
+        <Button Content="{DynamicResource Game_Button_Guess}" Width="140" Command="{Binding GaetCmd}" Margin="0,0,12,0"/>
+<Button Content="{DynamicResource Game_Button_NewRound}" Width="140" Command="{Binding NyRundeCmd}"/>
+      </StackPanel>
 
-    <TextBlock Grid.Row="2" Text="{Binding Footer}" FontStyle="Italic" />
+      <ListBox Grid.Row="3" ItemsSource="{Binding History}" FontSize="14" />
+    </Grid>
+
+    <!-- Footer/status – viser stats/secret efter runden -->
+    <TextBlock Grid.Row="2"
+               Text="{Binding Footer}"
+               FontStyle="Italic"
+               FontSize="13"
+               TextWrapping="Wrap"
+               Margin="0,8,0,0"/>
   </Grid>
 </UserControl>

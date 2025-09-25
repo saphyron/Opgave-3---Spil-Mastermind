@@ -1,35 +1,50 @@
 <UserControl x:Class="Mastermind.Wpf.Views.OptionsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <StackPanel Margin="20" Width="360">
-    <TextBlock Text="Options" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:core="clr-namespace:Mastermind.Core.Domain;assembly=Mastermind.Core">
+  <Grid Margin="32">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
 
-    <StackPanel Orientation="Horizontal" Margin="0,6">
-      <TextBlock Text="Kode-længde:" Width="160"/>
-      <TextBox Text="{Binding Længde}" Width="80"/>
-    </StackPanel>
+    <TextBlock Text="{DynamicResource Options_Title}" FontSize="24" FontWeight="Bold"/>
 
-    <StackPanel Orientation="Horizontal" Margin="0,6">
-      <TextBlock Text="Maks. forsøg:" Width="160"/>
-      <TextBox Text="{Binding MaxForsøg}" Width="80"/>
-    </StackPanel>
+    <Grid Grid.Row="1" HorizontalAlignment="Left" MaxWidth="680" Margin="0,16,0,0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="220"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="48"/>
+        <RowDefinition Height="48"/>
+        <RowDefinition Height="48"/>
+        <RowDefinition Height="48"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
 
-    <StackPanel Orientation="Horizontal" Margin="0,6">
-      <TextBlock Text="Vis Emojis:" Width="160"/>
-      <CheckBox IsChecked="{Binding ShowEmojis}"/>
-    </StackPanel>
+      <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource Options_CodeLength}" FontSize="16"/>
+      <TextBox   Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" FontSize="16" Width="140" Text="{Binding Længde}"/>
 
-    <StackPanel Orientation="Horizontal" Margin="0,6">
-      <TextBlock Text="Sprog:" Width="160"/>
-      <ComboBox SelectedItem="{Binding SprogValg}">
-        <ComboBoxItem Content="Dansk" Tag="Da"/>
-        <ComboBoxItem Content="English" Tag="En"/>
+      <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource Options_MaxAttempts}" FontSize="16"/>
+      <TextBox   Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="16" Width="140" Text="{Binding MaxForsøg}"/>
+
+      <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource Options_ShowEmojis}" FontSize="16"/>
+      <CheckBox  Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding ShowEmojis}"/>
+
+      <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Text="{DynamicResource Options_Language}" FontSize="16"/>
+      <ComboBox  Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" FontSize="16" Width="180" SelectedValue="{Binding SprogValg, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+          SelectedValuePath="Tag">
+        <ComboBoxItem Content="{DynamicResource Options_Lang_Danish}"  Tag="{x:Static core:Sprog.Da}"/>
+        <ComboBoxItem Content="{DynamicResource Options_Lang_English}" Tag="{x:Static core:Sprog.En}"/>
       </ComboBox>
-    </StackPanel>
+      
 
-    <StackPanel Orientation="Horizontal" Margin="0,16,0,0">
-      <Button Content="Gem" Width="120" Margin="0,0,10,0" Command="{Binding SaveCmd}"/>
-      <Button Content="Genindlæs" Width="120" Command="{Binding ReloadCmd}"/>
-    </StackPanel>
-  </StackPanel>
+
+      <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0,16,0,0">
+        <Button Content="{DynamicResource Options_Save}" Width="140" Height="36" Margin="0,0,12,0" Command="{Binding SaveCmd}"/>
+        <Button Content="{DynamicResource Options_Reload}" Width="140" Height="36" Command="{Binding ReloadCmd}"/>
+      </StackPanel>
+    </Grid>
+  </Grid>
 </UserControl>

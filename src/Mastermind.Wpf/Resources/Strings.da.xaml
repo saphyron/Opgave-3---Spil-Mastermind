@@ -1,0 +1,38 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+  <!-- Main window / Menu -->
+  <sys:String x:Key="App_Title">Mastermind</sys:String>
+  <sys:String x:Key="Menu_NewGame">Nyt Spil</sys:String>
+  <sys:String x:Key="Menu_Options">Options</sys:String>
+  <sys:String x:Key="Menu_Statistics">Statistik</sys:String>
+  <sys:String x:Key="Menu_Exit">Afslut</sys:String>
+
+  <!-- GameView -->
+  <sys:String x:Key="Game_Title">Mastermind</sys:String>
+  <sys:String x:Key="Game_Prompt">Vælg 4 farver og tryk Gæt:</sys:String>
+  <sys:String x:Key="Game_Button_Guess">Gæt</sys:String>
+  <sys:String x:Key="Game_Button_NewRound">Ny runde</sys:String>
+  <sys:String x:Key="Game_Footer_NewRound">Ny runde startet.</sys:String>
+  <sys:String x:Key="Game_Footer_Continue">Fortsæt med at gætte...</sys:String>
+  <sys:String x:Key="Game_Footer_Won">Du vandt på {0} forsøg.</sys:String>
+  <sys:String x:Key="Game_Footer_Lost">Du tabte efter {0} forsøg.</sys:String>
+  <sys:String x:Key="Game_Footer_SecretLabel">Hemmelig kode: {0}</sys:String>
+  <sys:String x:Key="Game_Footer_PressNewRound">Tryk 'Ny runde' for at starte igen.</sys:String>
+
+  <!-- OptionsView -->
+  <sys:String x:Key="Options_Title">Options</sys:String>
+  <sys:String x:Key="Options_CodeLength">Kode-længde:</sys:String>
+  <sys:String x:Key="Options_MaxAttempts">Maks. forsøg:</sys:String>
+  <sys:String x:Key="Options_ShowEmojis">Vis Emojis:</sys:String>
+  <sys:String x:Key="Options_Language">Sprog:</sys:String>
+  <sys:String x:Key="Options_Save">Gem</sys:String>
+  <sys:String x:Key="Options_Reload">Genindlæs</sys:String>
+  <sys:String x:Key="Options_Lang_Danish">Dansk</sys:String>
+  <sys:String x:Key="Options_Lang_English">English</sys:String>
+
+  <!-- StatisticsView -->
+  <sys:String x:Key="Stats_Reset">Nulstil statistik</sys:String>
+  <sys:String x:Key="Stats_Refresh">Opdater</sys:String>
+</ResourceDictionary>

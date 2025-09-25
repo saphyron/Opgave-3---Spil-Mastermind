@@ -42,9 +42,13 @@ namespace Mastermind.Wpf.Views
         }
 
         private void Save()
-        {
-            var o = new Options(Længde, MaxForsøg, ShowEmojis, SprogValg);
-            _repo.Save(o);
-        }
+{
+    var o = new Options(Længde, MaxForsøg, ShowEmojis, SprogValg);
+    _repo.Save(o);
+
+    // Skift sprog i runtime (opdaterer alle DynamicResource-bindings)
+    Localization.SetLanguage(SprogValg);
+}
+
     }
 }

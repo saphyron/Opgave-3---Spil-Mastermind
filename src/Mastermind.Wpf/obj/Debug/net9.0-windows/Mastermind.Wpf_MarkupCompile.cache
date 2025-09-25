@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP
 C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\App.xaml
-4-1831326718
+61827144843
 
-8-932249933
+9457283907
 201-318270884
-MainWindow.xaml;Views\GameView.xaml;Views\OptionsView.xaml;Views\StatistikView.xaml;
+MainWindow.xaml;Resources\Strings.da.xaml;Resources\Strings.en.xaml;Views\GameView.xaml;Views\OptionsView.xaml;Views\StatistikView.xaml;
 
 False
 
