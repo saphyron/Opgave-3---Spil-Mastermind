@@ -6,22 +6,6 @@ Løsningen er opdelt i en **Core**-pakke med spil-logik, en **Wpf**-klient (MVVM
 
 ---
 
-## Sådan spilles
-
-- Skriv **præcis 4 farver** adskilt af mellemrum, fx:
-  ```
-  rød blå grøn gul
-  ```
-  eller på engelsk:
-  ```
-  red blue green yellow
-  ```
-- Gyldige farver (DA/EN): `rød/red`, `grøn/green`, `blå/blue`, `gul/yellow`, `lilla/purple`, `orange/orange`, `hvid/white`, `sort/black`.
-- Efter hvert gæt vises fx: `Sort: 2 | Hvid: 1  (⚫⚫⚪)`.
-- Når runden er slut, vises statistik og du bliver du spurgt: *Spil igen? (ja/nej)* / *Play again? (y/n)*.
-
----
-
 ## 📦 Løsningsstruktur
 
 ```
