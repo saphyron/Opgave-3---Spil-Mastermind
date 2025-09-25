@@ -38,7 +38,7 @@ namespace Mastermind.Wpf.Views
         /// </remarks>
         public StatistikView(IStatistikStore stats, OptionsRepository optRepo)
         {
-            InitializeComponent();   // ← virker når x:Class + partial + base-klasse matcher
+            InitializeComponent();
             DataContext = this;
 
             _stats = stats;

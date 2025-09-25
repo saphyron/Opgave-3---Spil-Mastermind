@@ -20,7 +20,7 @@ namespace Mastermind.Wpf
         /// </remarks>
         public MainWindow()
         {
-            InitializeComponent();   // ← denne dukker op, når XAML og .cs matcher
+            InitializeComponent();
             DataContext = new MainViewModel();
         }
     }
