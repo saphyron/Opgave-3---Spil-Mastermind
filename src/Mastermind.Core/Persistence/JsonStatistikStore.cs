@@ -19,15 +19,9 @@ namespace Mastermind.Core.Persistence
             JsonFilePaths.EnsureDir();
             var path = JsonFilePaths.StatistikPath;
 
-            if (!File.Exists(path))
-            {
-                File.WriteAllText(path, "[]");
-                return new List<GameResult>();
-            }
-
+            if (!File.Exists(path)) return new List<GameResult>();
             var json = File.ReadAllText(path);
-            if (string.IsNullOrWhiteSpace(json))
-                return new List<GameResult>();
+            if (string.IsNullOrWhiteSpace(json)) return new List<GameResult>();
 
             try
             {
@@ -35,8 +29,8 @@ namespace Mastermind.Core.Persistence
             }
             catch (JsonException)
             {
-                // Tag backup og nulstil, så UI ikke crasher
-                try { File.Copy(path, path + ".bak", overwrite: true); } catch { /* ignore */ }
+                // Korrupt? Gem backup og nulstil
+                try { File.Copy(path, path + ".bak", overwrite: true); } catch { }
                 File.WriteAllText(path, "[]");
                 return new List<GameResult>();
             }
@@ -44,7 +38,7 @@ namespace Mastermind.Core.Persistence
 
         public void Append(GameResult result)
         {
-            var list = LoadAll().ToList(); // LoadAll er nu failsafe
+            var list = LoadAll().ToList();
             list.Add(result);
             var json = JsonSerializer.Serialize(list, _json);
             File.WriteAllText(JsonFilePaths.StatistikPath, json);

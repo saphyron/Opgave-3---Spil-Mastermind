@@ -1,0 +1,29 @@
+[2025-09-25 09.26.59] DispatcherUnhandledException: System.Windows.Markup.XamlParseException: 'The invocation of the constructor on type 'Mastermind.Wpf.MainWindow' that matches the specified binding constraints threw an exception.' Line number '3' and line position '9'.
+ ---> System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Mastermind.Core.Persistence.OptionsRepository.LoadOrDefault() in C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Core\Persistence\OptionsRepository.cs:line 17
+   at Mastermind.Wpf.Views.GameView..ctor(OptionsRepository optRepo, IStatistikStore stats) in C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\Views\GameView.xaml.cs:line 45
+   at Mastermind.Wpf.MainViewModel..ctor() in C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\MainViewModel.cs:line 37
+   at Mastermind.Wpf.MainWindow..ctor() in C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\src\Mastermind.Wpf\MainWindow.xaml.cs:line 10
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)
+   --- End of inner exception stack trace ---
+   at System.Windows.Markup.XamlReader.RewrapException(Exception e, IXamlLineInfo lineInfo, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   at System.Windows.Application.DoStartup()
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+[09.26.59] DataDir = C:\Users\Saphy\Desktop\Specialisterne Academy\Opgave 3 Mastermind\Opgave-3---Spil-Mastermind\Database

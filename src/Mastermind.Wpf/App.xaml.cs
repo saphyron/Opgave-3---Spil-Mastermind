@@ -37,6 +37,7 @@ namespace Mastermind.Wpf
                 var logPath = Path.Combine(JsonFilePaths.DatabaseDir, "log.txt");
                 File.AppendAllText(logPath,
                     $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {kind}: {ex}\r\n");
+
             }
             catch { /* ignore */ }
         }

@@ -1,37 +1,47 @@
+using System;
 using System.IO;
+using System.Linq;
 
 namespace Mastermind.Core.Persistence;
 
 public static class JsonFilePaths
 {
-    /// <summary>
-    /// Directory for options/statistik JSON-filer.
-    /// </summary>
-    /// 
-    /// Skal omskrives virker ikke korrekt endnu.
     public static string DatabaseDir
     {
         get
         {
-            // 1) Env override
+            // 1) Eksplicit override (meget stabilt)
             var env = Environment.GetEnvironmentVariable("MASTERMIND_DATA_DIR");
             if (!string.IsNullOrWhiteSpace(env))
                 return Ensure(env);
 
-            // 2) Dev-fallback: gå opad og find en Database-mappe
-            var dir = AppContext.BaseDirectory;
-            for (int i = 0; i < 6; i++)
+            // 2) Gå op fra BaseDirectory og find løsningens rod (mappe med *.sln),
+            //    og brug dens \Database.
+            var cur = new DirectoryInfo(AppContext.BaseDirectory);
+            for (int depth = 0; cur != null && depth < 15; depth++, cur = cur.Parent)
             {
-                var candidate = Path.Combine(dir, "Database");
-                if (Directory.Exists(candidate))
-                    return Ensure(candidate);
+                var curPath = cur.FullName;
+                var curName = cur.Name.ToLowerInvariant();
 
-                var parent = Directory.GetParent(dir);
-                if (parent is null) break;
-                dir = parent.FullName;
+                // skip build-mapper
+                bool isBuild = curName == "bin" || curName == "obj";
+
+                // helst: rod med .sln
+                bool hasSln = Directory.EnumerateFiles(curPath, "*.sln", SearchOption.TopDirectoryOnly).Any();
+                if (hasSln)
+                {
+                    var fromSln = Path.Combine(curPath, "Database");
+                    if (Directory.Exists(fromSln))
+                        return Ensure(fromSln);
+                }
+
+                // ellers: brug nærmeste \Database som IKKE ligger i bin/obj
+                var dbHere = Path.Combine(curPath, "Database");
+                if (Directory.Exists(dbHere) && !isBuild)
+                    return Ensure(dbHere);
             }
 
-            // 3) Stabil default: %LOCALAPPDATA%\Mastermind\Database
+            // 3) Fallback: pr. bruger
             var local = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                 "Mastermind", "Database");
