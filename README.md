@@ -1,32 +1,8 @@
-# Mastermind (C# konsol)
 
-Tekstbaseret udgave af det klassiske brætspil **Mastermind**. Spillet vælger en hemmelig farvekombination; du har et begrænset antal forsøg til at gætte den. Efter hvert gæt får du feedback i form af **sorte** (rigtig farve + rigtig placering) og **hvide** (rigtig farve, forkert placering) pinde.
+# Mastermind (C# • WPF & Konsol)
 
----
-
-## Krav
-- .NET SDK **9.0** (projektet målretter `net9.0`).
-- Windows PowerShell 5.1 eller nyere til at køre kommandoerne.
-
-> **Bemærk:** Projektet bruger pt. `Microsoft.NET.Sdk.Web` (oprettet fra Web-skabelon), så `dotnet run` kan forsøge at åbne en browser. Se note under *Kørsel* hvis du kun vil køre i konsollen.
-
----
-
-## Kørsel
-
-```powershell
-# Fra projektmappen (der indeholder csproj-filen)
-dotnet build
-dotnet run
-```
-
-Hvis du vil **undgå at åbne browseren** (pga. Web-SDKens launchSettings), kan du enten:
-- midlertidigt køre uden launch profile:
-  ```powershell
-  dotnet run --no-launch-profile
-  ```
-- eller ændre `Properties/launchSettings.json` → `"launchBrowser": false` for aktive profiler.
-- eller (anbefalet hvis ren konsol): skift `<Project Sdk="Microsoft.NET.Sdk.Web">` til `<Project Sdk="Microsoft.NET.Sdk">` i csproj.
+En moderne udgave af **Mastermind** skrevet i C# med både **konsol-app** og **WPF GUI**. 
+Løsningen er opdelt i en **Core**-pakke med spil-logik, en **Wpf**-klient (MVVM) og en **Console**-klient.
 
 ---
 
@@ -46,88 +22,173 @@ Hvis du vil **undgå at åbne browseren** (pga. Web-SDKens launchSettings), kan 
 
 ---
 
-## Konfiguration (`Options`)
+## 📦 Løsningsstruktur
 
-```csharp
-var options = new Options(
-    længde: 4,         // antal pladser i koden
-    maxForsøg: 12,     // maks. forsøg
-    showEmojis: true,  // ⚫⚪ feedback
-    sprog: Sprog.Da    // Sprog.Da eller Sprog.En
-);
+```
+📦 Opgave-3---Spil-Mastermind
+├─ 📄 Mastermind.sln
+├─ 📄 README.md
+├─ 📄 LICENSE
+├─ 📄 appsettings.json
+├─ 📄 appsettings.Development.json
+├─ 📂 Properties
+│  └─ 📄 launchSettings.json
+├─ 📂 Database
+│  ├─ 📄 Options.json
+│  ├─ 📄 Statistik.json
+│  └─ 📄 log.txt
+└─ 📂 src
+   ├─ 📂 Mastermind.Core
+   │  ├─ 📂 Domain
+   │  │  ├─ 📄 Farver.cs
+   │  │  ├─ 📄 FarverHelper.cs
+   │  │  ├─ 📄 Feedback.cs
+   │  │  ├─ 📄 GameResultater.cs
+   │  │  ├─ 📄 Options.cs
+   │  │  ├─ 📄 Respons.cs
+   │  │  └─ 📄 Sprog.cs
+   │  ├─ 📂 Services
+   │  │  ├─ 📄 Evaluering.cs
+   │  │  ├─ 📄 Input.cs
+   │  │  └─ 📄 SecretGenerator.cs
+   │  ├─ 📂 Persistence
+   │  │  ├─ 📄 IStatistikStore.cs
+   │  │  ├─ 📄 JsonFilePaths.cs
+   │  │  ├─ 📄 JsonStatistikStore.cs
+   │  │  └─ 📄 OptionsRepository.cs
+   │  ├─ 📂 Utils
+   │  │  └─ 📄 StatistikTilføjer.cs
+   │  └─ 📄 (projektfil)  — *hvis relevant*
+   │
+   ├─ 📂 Mastermind.Wpf
+   │  ├─ 📄 App.xaml
+   │  ├─ 📄 App.xaml.cs
+   │  ├─ 📄 MainWindow.xaml
+   │  ├─ 📄 MainWindow.xaml.cs
+   │  ├─ 📄 MainViewModel.cs
+   │  ├─ 📂 Infrastructure
+   │  │  └─ 📄 RelayCommand.cs
+   │  ├─ 📂 Resources
+   │  │  ├─ 📄 Strings.da.xaml
+   │  │  └─ 📄 Strings.en.xaml
+   │  ├─ 📂 Views
+   │  │  ├─ 📄 GameView.xaml
+   │  │  ├─ 📄 GameView.xaml.cs
+   │  │  ├─ 📄 OptionsView.xaml
+   │  │  ├─ 📄 OptionsView.xaml.cs
+   │  │  ├─ 📄 StatistikView.xaml
+   │  │  └─ 📄 StatistikView.xaml.cs
+   │  └─ 📄 Mastermind.Wpf.csproj
+   │
+   └─ 📂 Mastermind.Console
+      ├─ 📄 Program.cs
+      ├─ 📂 UI
+      │  ├─ 📄 KonsolMenu.cs
+      │  └─ 📄 Spilstyring.cs
+      ├─ 📂 Utils
+      │  └─ 📄 Statistik.cs
+      └─ 📄 Mastermind.Console.csproj
+
 ```
 
-`Program.cs` viser et simpelt eksempel, hvor `Options` kan justeres direkte.
-
 ---
 
-## Kode struktur
+## 🚀 Kørsel
 
-```text
-📦 Mastermind
-├─ 📂 Opgave 3 Mastermind/
-│  ├─ 📂 Domain/
-│  │  ├─ Farver.cs
-│  │  ├─ FarverHelper.cs
-│  │  ├─ Feedback.cs
-│  │  ├─ Options.cs
-│  │  ├─ Respons.cs
-│  │  └─ Sprog.cs
-│  ├─ 📂 Properties/
-│  │  └─ launchSettings.json
-│  ├─ 📂 Services/
-│  │  ├─ Evaluering.cs
-│  │  ├─ Input.cs
-│  │  └─ SecretGenerator.cs
-│  ├─ 📂 UI/
-│  │  ├─ KonsolMenu.cs
-│  │  └─ Spilstyring.cs
-│  ├─ 📂 Utils/
-│  ├─ appsettings.Development.json
-│  ├─ appsettings.json
-│  ├─ Opgave 3 Mastermind.csproj
-│  └─ Program.cs
-```
+Du kan køre hvert projekt direkte med `--project`:
 
----
-
-## Arkitektur (kort)
-
-- **Domain**: kerne-typer (fx `Farve`, `Feedback`, `Options`, `Sprog`) og `FarverHelper` til parsing/visning.
-- **Services**:
-  - `SecretGenerator` — genererer hemmelig kode ud fra `Options`.
-  - `Input` — validerer/oversætter brugerinput til `Farve[]` (DA/EN).
-  - `Evaluering` — beregner sorte/hvide pinde uden dobbelttælling.
-- **UI**:
-  - `KonsolMenu` — al I/O og tekster (lokaliseret).
-  - `Spilstyring` — spilflow: forsøg, win/lose, *spil igen*.
-- **Program.cs** — binder det hele sammen.
-
----
-
-## Test (valgfrit)
-Test er ikke inkluderet endnu, og er planlagt til senere når tiden tillader det.
-
-Simpel test kan skabes med følgende:
+**Konsol-app**
 ```powershell
-dotnet new xunit -n Mastermind.Tests
-dotnet add Mastermind.Tests/Mastermind.Tests.csproj reference "Opgave 3 Mastermind/Opgave 3 Mastermind.csproj"
+dotnet run --project "src/Mastermind.Console"
 ```
 
-Skriv fx enhedstests for `Evaluering` (sort/hvid-kombinationer inkl. dubletter) og `Input` (gyldige/ugyldige inputs).
+**WPF-app**
+```powershell
+dotnet run --project "src/Mastermind.Wpf"
+```
+
+> Alternativt kan løsningen åbnes i Visual Studio og de enkelte startprojekter vælges derfra.
 
 ---
 
-## Kendte noter
-- Projektet blev oprettet med Web-SDK, men kører som **konsol-app**. Det er fint, men hvis du vil undgå web-artefakter (appsettings/launchSettings), så skift til den almindelige `Microsoft.NET.Sdk` i csproj.
-- `Utils/` er reserveret til evt. helper-klasser (pt. tom).
+## 🧠 Hovedidé & gameplay
+
+- Spillet genererer en hemmelig rækkefølge af farver (længde og forsøg er konfigurerbart via `Options`).  
+- Spilleren gætter kombinationer indenfor et maks. antal forsøg.
+- Feedback gives med **sorte** (rigtig farve på rigtig plads) og **hvide** (rigtig farve, forkert plads) markeringer.
+- Resultater gemmes og kan aflæses i **Statistik** (WPF) og via konsol.
 
 ---
 
-## Forfatter (Author)
-John Grandt Markvard Høeg
+## 🧩 Arkitektur & kode
+
+### Core (Mastermind.Core)
+- **Domain**  
+  `Farver`, `Options`, `Feedback`, `Respons`, `GameResultater` – de centrale domænemodeller.
+- **Services**  
+  `SecretGenerator` (genererer hemmelig kombination), `Input` (validerer/parsing), `Evaluering` (beregner sort/hvid feedback).
+- **Persistence**  
+  `OptionsRepository` gemmer/loader `Options` til/fra `Database/Options.json`.  
+  `JsonStatistikStore` implementerer `IStatistikStore` og gemmer resultater i `Database/Statistik.json`.  
+  `JsonFilePaths` sørger for mappe/sti-opsætning og `EnsureDir()`.
+- **Utils**  
+  `StatistikTilføjer` – hjælpefunktioner ifm. statistik.
+
+### WPF (Mastermind.Wpf)
+- **MVVM**  
+  `MainViewModel` (INotifyPropertyChanged) holder `CurrentView` og eksponerer kommandoer:
+  `NytSpilCmd`, `OptionsCmd`, `StatistikCmd`, `ExitCmd`.
+- **Navigation**  
+  Skifter mellem `Views/GameView`, `Views/OptionsView`, `Views/StatistikView` og afslutter via `ExitCmd`.
+- **RelayCommand**  
+  Let ICommand-implementering til bindinger.
+- **Lokalisering**  
+  `Resources/Strings.da.xaml` og `Strings.en.xaml` muliggør dansk/engelsk tekst i UI.
+
+### Konsol (Mastermind.Console)
+- `Program.cs` opretter `Options` (fx `længde: 3, maxForsøg: 9, showEmojis: true, sprog: Sprog.En`) samt `SecretGenerator`, `Input`, `Evaluering`, `KonsolMenu`, `Statistik`, `JsonStatistikStore` og starter `Spilstyring`.
+
+---
+
+## 💾 Persistens
+
+- **Indstillinger**: `Database/Options.json` (læses/skrives via `OptionsRepository`).  
+- **Statistik**: `Database/Statistik.json` (append/reset via `JsonStatistikStore`).  
+- Hvis filer/mappen ikke findes, oprettes de ved brug (`EnsureDir`).
+
+---
+
+## 🛠 Krav & værktøjer
+
+- **.NET SDK 9.0** (projekterne målretter `net9.0`/`net9.0-windows`).
+- Windows 10/11 for WPF-klienten.
+- PowerShell 5.1+ (eller en vilkårlig shell til `dotnet` CLI).
+
+---
+
+## 🌐 Sprog (UI)
+
+WPF-UI understøtter dansk og engelsk via `Resources/Strings.da.xaml` og `Resources/Strings.en.xaml`.
+Standard-sproget kan ændres i runtime afhængigt af bindinger/ressourcer (se XAML).
+
+---
+
+## 🧰 Fejlfinding / kendte issues
+
+- **`InitializeComponent` findes ikke**:  
+  - Fejl i IDE, kode virker som om de er tilstede og kører. Har ingen ide om hvorfor fejlen er der.
+- **Auto-genererede filer**: Nogle builds genererer `*.g.cs` i stedet for `*.g.i.cs` – det er OK.
+- **Filsystem-skriverettigheder**: Sørg for, at processen kan skrive til `Database/`.
+- **Valideringsproblem i Konsol udgave**: Skal fixes når tid, Konsol har problemer med æøå, og Sprog.
+
+---
 
 ## Versions Historik
+* 0.5
+    * GUI Tilføjet
+    * Persistent Statistik tilføjet
+    * Persistent Options tilføjet
+    * Opdateret README.md
 * 0.3
     * Tilføjet statistik
     * Opdateret README.md
@@ -137,8 +198,11 @@ John Grandt Markvard Høeg
 * 0.1
     * Init
 
-## License
-Projektet er Licensed under MIT.
+---
+
+## 📄 Licens
+
+Se [`LICENSE`](./LICENSE).
 
 ## Ressourcer
 - [wikihow: How to Play Mastermind](https://www.wikihow.com/Play-Mastermind)
