@@ -3,7 +3,14 @@ using System.IO;
 using System.Linq;
 
 namespace Mastermind.Core.Persistence;
-
+/// <summary>
+/// Stier til JSON-filer (Options, Statistik)
+/// </summary>
+/// <remarks>
+/// Mapper findes ved at lede opad fra AppContext.BaseDirectory
+///  efter en mappe med *.sln, og bruge dens \Database.
+/// Hvis ikke fundet, bruges %LocalAppData%\Mastermind\Database.
+/// </remarks>
 public static class JsonFilePaths
 {
     public static string DatabaseDir

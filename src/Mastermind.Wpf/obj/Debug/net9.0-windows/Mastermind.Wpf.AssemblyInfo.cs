@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mastermind.Wpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a809f03567e358c6112d6711cd6015eaf9a00b40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b3f792398d8121d5e464cb0324502548d49670a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mastermind.Wpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mastermind.Wpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

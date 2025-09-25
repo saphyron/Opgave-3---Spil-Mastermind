@@ -3,6 +3,12 @@ using Mastermind.Core.Domain;
 
 namespace Mastermind.Core.Persistence
 {
+    /// <summary>
+    /// Vedvarende lager for statistik (flere GameResult)
+    /// </summary>
+    /// <remarks>
+    /// Implementeres som fil-lager i StatistikStore.
+    /// </remarks>
     public sealed class JsonStatistikStore : IStatistikStore
     {
         private static readonly JsonSerializerOptions _json = new() { WriteIndented = true };

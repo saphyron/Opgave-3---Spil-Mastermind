@@ -2,14 +2,25 @@ using System.Text.Json;
 using Mastermind.Core.Domain;
 
 namespace Mastermind.Core.Persistence;
-
+/// <summary>
+/// Repository for Options (indstillinger)
+/// </summary>
+/// <remarks>
+/// Gemmes i Options.json i Database-mappen.
+/// </remarks>
 public sealed class OptionsRepository
 {
     private static readonly JsonSerializerOptions _json = new()
     {
         WriteIndented = true
     };
-
+    /// <summary>
+    /// Læs Options fra fil, eller returner default (og skriv fil hvis ikke eksisterer)
+    /// </summary>
+    /// <returns>Options</returns>
+    /// <remarks>
+    /// Hvis filen er tom eller korrupt, overskrives den med default.
+    /// </remarks>
     public Options LoadOrDefault()
     {
         JsonFilePaths.EnsureDir();
@@ -50,7 +61,13 @@ public sealed class OptionsRepository
             return new Options();
         }
     }
-
+    /// <summary>
+    /// Gem Options til fil
+    /// </summary>
+    /// <param name="options"></param>
+    /// <remarks>
+    /// Overskriver eksisterende fil.
+    /// </remarks>
     public void Save(Options options)
     {
         JsonFilePaths.EnsureDir();
