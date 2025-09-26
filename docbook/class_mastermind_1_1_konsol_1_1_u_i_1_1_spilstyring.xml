@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring" xml:lang="en-US">
+<title>Mastermind.Konsol.UI.Spilstyring Class Reference</title>
+<indexterm><primary>Mastermind.Konsol.UI.Spilstyring</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6a98f7454cfb72b35b0f7639d317b811">Spilstyring</link> (Options options, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_secret_generator">SecretGenerator</link> generator, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_input">Input</link> input, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_evaluering">Evaluering</link> evaluering, <link linkend="_class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu">KonsolMenu</link> menu, <link linkend="_class_mastermind_1_1_konsol_1_1_utils_1_1_statistik">Statistik</link>? statistik, <link linkend="_interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store">IStatistikStore</link>? statistikStore)</para>
+
+<para>Initialiserer en ny instans af Spilstyring-klassen. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6f789210a33385a19e4ce371efd2f211">Start</link> ()</para>
+
+<para>Starter spillet og håndterer spillets hovedloop. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1affbe777e30287bee2e7ca101207a9428">SingularRunde</link> ()</para>
+
+<para>Håndterer en enkelt runde af Mastermind-spillet. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6a98f7454cfb72b35b0f7639d317b811"/><section>
+    <title>Spilstyring()</title>
+<indexterm><primary>Spilstyring</primary><secondary>Mastermind.Konsol.UI.Spilstyring</secondary></indexterm>
+<indexterm><primary>Mastermind.Konsol.UI.Spilstyring</primary><secondary>Spilstyring</secondary></indexterm>
+<para><computeroutput>Mastermind.Konsol.UI.Spilstyring.Spilstyring (Options options, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_secret_generator">SecretGenerator</link> generator, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_input">Input</link> input, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_evaluering">Evaluering</link> evaluering, <link linkend="_class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu">KonsolMenu</link> menu, <link linkend="_class_mastermind_1_1_konsol_1_1_utils_1_1_statistik">Statistik</link>? statistik, <link linkend="_interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store">IStatistikStore</link>? statistikStore)</computeroutput></para><para>
+
+<para>Initialiserer en ny instans af Spilstyring-klassen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>options</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>generator</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>input</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>evaluering</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>menu</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>statistik</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>statistikStore</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ArgumentNullException</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>Denne klasse håndterer spillets logik og interaktion mellem de forskellige komponenter. Den bruger Options til at konfigurere spillet, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_secret_generator">SecretGenerator</link> til at generere hemmelige koder, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_input">Input</link> til at håndtere brugerinput, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_evaluering">Evaluering</link> til at evaluere gæt, og <link linkend="_class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu">KonsolMenu</link> til at vise menuer og beskeder. </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1affbe777e30287bee2e7ca101207a9428"/><section>
+    <title>SingularRunde()</title>
+<indexterm><primary>SingularRunde</primary><secondary>Mastermind.Konsol.UI.Spilstyring</secondary></indexterm>
+<indexterm><primary>Mastermind.Konsol.UI.Spilstyring</primary><secondary>SingularRunde</secondary></indexterm>
+<para><computeroutput>void Mastermind.Konsol.UI.Spilstyring.SingularRunde ( )</computeroutput></para><para>
+
+<para>Håndterer en enkelt runde af Mastermind-spillet. </para>
+</para>
+
+<para>Denne metode genererer en hemmelig kode, håndterer brugerens gæt, evaluerer gæt, og viser feedback. Hvis brugeren gætter koden korrekt inden for det maksimale antal forsøg, vinder de spillet. Hvis de ikke gør, vises den korrekte kode ved spillets afslutning. </para>
+</section>
+<anchor xml:id="_class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6f789210a33385a19e4ce371efd2f211"/><section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>Mastermind.Konsol.UI.Spilstyring</secondary></indexterm>
+<indexterm><primary>Mastermind.Konsol.UI.Spilstyring</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void Mastermind.Konsol.UI.Spilstyring.Start ( )</computeroutput></para><para>
+
+<para>Starter spillet og håndterer spillets hovedloop. </para>
+</para>
+
+<para>Denne metode viser menuen, håndterer en enkelt runde af spillet, og spørger brugeren om de vil spille igen. Hvis brugeren vælger ikke at spille igen, afsluttes spillet med en farvelbesked. </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/Mastermind.Console/UI/Spilstyring.cs</section>
+</section>

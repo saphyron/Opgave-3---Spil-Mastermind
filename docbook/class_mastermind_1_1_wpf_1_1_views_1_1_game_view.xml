@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view" xml:lang="en-US">
+<title>Mastermind.Wpf.Views.GameView Class Reference</title>
+<indexterm><primary>Mastermind.Wpf.Views.GameView</primary></indexterm>
+<para>
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view">GameView</link>. </para>
+ 
+</para>
+<para>Inheritance diagram for Mastermind.Wpf.Views.GameView:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_mastermind_1_1_wpf_1_1_views_1_1_game_view.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac1ce62f4798ff27852aadb87401d5f36"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+            <listitem><para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad6de3b8f883e283c81e4f2e09fcef180">GameView</link> (<link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link> optRepo, <link linkend="_interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store">IStatistikStore</link> stats)</para>
+
+<para>Initialiserer en ny spilvisning og starter første runde. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>ObservableCollection&lt; <link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9">Farve</link> &gt; <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab02b713cd2b2195a5ab63bf6613d80e6">Palette</link><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a710777790de2b350d7d5978d889c9055"/><link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9">Farve</link> <emphasis role="strong">Guess0</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a6585902fe701b1cb0a948826589159f4"/><link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9">Farve</link> <emphasis role="strong">Guess1</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab4c9c574cdf39fc98a6a60167d49e732"/><link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9">Farve</link> <emphasis role="strong">Guess2</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9165ae45843e6452063c4d8fc26dbc1e"/><link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9">Farve</link> <emphasis role="strong">Guess3</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9a496dace716b6280f78917d3b29fc5b"/>ObservableCollection&lt; string &gt; <emphasis role="strong">History</emphasis> = new()<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a287e49df022802b7aedc98df06dd9497"/>string <emphasis role="strong">Footer</emphasis> = &quot;&quot;<computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9f4a12986f40bc7235e1c68ccbac8295"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">GaetCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1aaf399ea8c9465934258869dabad5db4d"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">NyRundeCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view">GameView</link>. </para>
+
+
+
+<para>Brugerflade til Mastermind-spillet, hvor spilleren kan gætte farver og starte nye runder.</para>
+
+<para>Implementerer WPF UserControl og styrer spildata, evaluering af gæt og opdatering af brugerfladen. Arbejder sammen med <link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link>, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_secret_generator">SecretGenerator</link>, <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_evaluering">Evaluering</link> og <link linkend="_interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store">IStatistikStore</link>. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad6de3b8f883e283c81e4f2e09fcef180"/><section>
+    <title>GameView()</title>
+<indexterm><primary>GameView</primary><secondary>Mastermind.Wpf.Views.GameView</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.Views.GameView</primary><secondary>GameView</secondary></indexterm>
+<para><computeroutput>Mastermind.Wpf.Views.GameView.GameView (<link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link> optRepo, <link linkend="_interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store">IStatistikStore</link> stats)</computeroutput></para><para>
+
+<para>Initialiserer en ny spilvisning og starter første runde. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>optRepo</entry><entry>
+<para>Repository til indstillinger.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>stats</entry><entry>
+<para>Vedvarende lager til statistik.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>Indstillinger indlæses ved start, og en ny hemmelig kode genereres. Kommandoer til at gætte og starte ny runde oprettes. </para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab02b713cd2b2195a5ab63bf6613d80e6"/><section>
+    <title>Palette</title>
+<indexterm><primary>Palette</primary><secondary>Mastermind.Wpf.Views.GameView</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.Views.GameView</primary><secondary>Palette</secondary></indexterm>
+<para><computeroutput>ObservableCollection&lt;<link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9">Farve</link>&gt; Mastermind.Wpf.Views.GameView.Palette<computeroutput>[get]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">new</emphasis>&#32;ObservableCollection&lt;Farve&gt;(Enum.GetValues&lt;Farve&gt;())
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cssrc/Mastermind.Wpf/Views/GameView.xaml.cs</section>
+</section>

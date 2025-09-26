@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_8aefc19ded1072de78d3cc8d75f6132d">src/Mastermind.Console</innerdir>
+    <innerdir refid="dir_d0d15d6f48b47357e131cfd52d07da36">src/Mastermind.Core</innerdir>
+    <innerdir refid="dir_362746c831db05b897d1c0dc55a1ff78">src/Mastermind.Wpf</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

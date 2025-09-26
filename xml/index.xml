@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="class_mastermind_1_1_wpf_1_1_app" kind="class"><name>Mastermind::Wpf::App</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_app_1a7761f04fbdd7d62fdc460e99ce56e32c" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_app_1a211b6ff5433cf535dec0fb9568dcbfd2" kind="function"><name>App</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_app_1af474964761cc5ea1213543b35e6af093" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_app_1aa063cf0e17845c2879bdff409cff6700" kind="function"><name>Log</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_app_1afa166703a3b005df3dc9c639e12ea32b" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kind="class"><name>Mastermind::Core::Services::Evaluering</name>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering_1ad937a495bf3b3d8a4ff28d946187c893" kind="function"><name>Evaluer</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper" kind="class"><name>Mastermind::Core::Domain::FarverHelper</name>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a588020b5f610f339c23fdc08cc67e382" kind="variable"><name>FarveMap</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1acad5d4eca97116e57a66e238c3efad2c" kind="variable"><name>_da</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a7ffca3d06f2726d320381c107e0ad820" kind="variable"><name>_en</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a63152a3f0a2fd39a3429cd9d146cbf79" kind="variable"><name>_palette</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a83f8a8d2dd206eb5f4b56ad16ed1ce3d" kind="property"><name>Palette</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a907256bd2d62194d1d225b0e4ed93f85" kind="function"><name>TryParse</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a37d9e52bbba4449982074ad71d219fc4" kind="function"><name>ToName</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1ac6502fa6af13e29b7b39cd728c80043c" kind="function"><name>AllCanonicalNames</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view" kind="class"><name>Mastermind::Wpf::Views::GameView</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a7addb9ecef50175ddf522857599f11d3" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ae245178333ab96fb6fa1610ef13e95aa" kind="variable"><name>_optRepo</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a6b9ae09dc018c1af8323d11c02235e49" kind="variable"><name>_stats</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a2129b32f5683261b4c5f5fbd637f0d15" kind="variable"><name>_opt</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac7ede93b777b11a3a9f620d6f9182140" kind="variable"><name>_secret</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac4aba4d05639cb90023f6b36760f1f67" kind="variable"><name>_generator</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a490958d70660bcc70fc3cc3be3f31341" kind="variable"><name>_eval</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a422b805e55693bbc9597fe83e94f3003" kind="variable"><name>_attempts</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a94574fa75e5248b188576eea64ba2840" kind="variable"><name>_roundOver</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab02b713cd2b2195a5ab63bf6613d80e6" kind="property"><name>Palette</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a710777790de2b350d7d5978d889c9055" kind="property"><name>Guess0</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a6585902fe701b1cb0a948826589159f4" kind="property"><name>Guess1</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab4c9c574cdf39fc98a6a60167d49e732" kind="property"><name>Guess2</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9165ae45843e6452063c4d8fc26dbc1e" kind="property"><name>Guess3</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9a496dace716b6280f78917d3b29fc5b" kind="property"><name>History</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a287e49df022802b7aedc98df06dd9497" kind="property"><name>Footer</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9f4a12986f40bc7235e1c68ccbac8295" kind="property"><name>GaetCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1aaf399ea8c9465934258869dabad5db4d" kind="property"><name>NyRundeCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a526e1f98122f090e277e18587c7ce2ff" kind="variable"><name>BlackPeg</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab31c3ecfaa3df1de51ed14d19a98308a" kind="variable"><name>WhitePeg</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac1ce62f4798ff27852aadb87401d5f36" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad6de3b8f883e283c81e4f2e09fcef180" kind="function"><name>GameView</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1aae87d58cfc9337fdf30b20418fe48155" kind="function"><name>Connect</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9e490cfd725f5e85bbc82cf7b707f00e" kind="function"><name>FormatFeedbackLine</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a44fe670781e0dc4ee4a8c72d098b4195" kind="function"><name>StartNewRound</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a096c67f30fb32490a6822d47c9ab545c" kind="function"><name>HandleGuess</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad5bdf09bbb683517f158a05e610be7d5" kind="function"><name>BuildFooterSummary</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_services_1_1_input" kind="class"><name>Mastermind::Core::Services::Input</name>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_input_1a3e82a5a18498acfee8552a30e4fbe891" kind="variable"><name>_options</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_input_1aaabd5926e759cda6350ee44842a5d25e" kind="function"><name>Input</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_input_1a3e9b26c743160d522ac5cc5ad4035857" kind="function"><name>prøvParseGæt</name></member>
+  </compound>
+  <compound refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" kind="interface"><name>Mastermind::Core::Persistence::IStatistikStore</name>
+    <member refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store_1a84993d8ee675af6229c5a39c05dcd0e9" kind="function"><name>LoadAll</name></member>
+    <member refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store_1a22505ffe49bb0d5810cfaca8ce35f3a8" kind="function"><name>Append</name></member>
+    <member refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store_1a730f48c5ff8b528d767027bcc78905d7" kind="function"><name>Reset</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_file_paths" kind="class"><name>Mastermind::Core::Persistence::JsonFilePaths</name>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_file_paths_1abd60e185d995a3a2a95e684edd3a27ea" kind="property"><name>DatabaseDir</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_file_paths_1ab787e6cafaf5e3ea761dd035aa35e2c3" kind="property"><name>OptionsPath</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_file_paths_1a92528231cd8fea3c5c04aea69b28c7a3" kind="property"><name>StatistikPath</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_file_paths_1a5d704bf5325fbf783b43e8a75b9a0a2c" kind="function"><name>EnsureDir</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store" kind="class"><name>Mastermind::Core::Persistence::JsonStatistikStore</name>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1ab48a08f4827c78364a3057af06388419" kind="variable"><name>_json</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1afbdc69e3becee9da86b0f602b2e42028" kind="function"><name>JsonStatistikStore</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1ab20ce975240ef7f6902615688a155627" kind="function"><name>LoadAll</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1a9fd8e7b26e97c1b614b0b972056361d3" kind="function"><name>Append</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1abcdaf894311fb6771f5105911e933338" kind="function"><name>Reset</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu" kind="class"><name>Mastermind::Konsol::UI::KonsolMenu</name>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a72a3fe6b3d48e61690ddb024ca42dce3" kind="variable"><name>_options</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1abb397b72b35f9bec99bf78945df0934b" kind="function"><name>KonsolMenu</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a3d62d79f981f487c16cf600e0c62526d" kind="function"><name>VisMenu</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1abb4fa6cec960b4b53a3b01f855e4ed3b" kind="function"><name>VisGætPrompt</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a4bcc1b13d40f85e93488c96ff07e33b8" kind="function"><name>VisFejlbesked</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a6d22daf8c66cfb1167a35abb1a028362" kind="function"><name>VisFeedback</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a5609948a46a5d6f1291d633353dd8939" kind="function"><name>VisVindermeddelelse</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a281400a14c22999e43ce8c21a037a7e3" kind="function"><name>VisTabermeddelelse</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a6799df66c1d94f550c86821360c22ca0" kind="function"><name>SpilIgen</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1abd90c79220e46cc0f4376df18b0a1857" kind="function"><name>YesNo</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a884c2b8c535d54a9ad7abeea6d273239" kind="function"><name>Farvel</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a6074d263a3da503aa6bdab3bfb12d302" kind="function"><name>RundeSeparator</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a647cb74f47dd33ded1e5f18ef62d0b6e" kind="function"><name>Loc</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1ae9bb932f36149d951765fc355518b85b" kind="function"><name>Da</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu_1a97f8dc53139fabc64a68e42794d068ed" kind="function"><name>En</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_wpf_1_1_localization" kind="class"><name>Mastermind::Wpf::Localization</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_localization_1a59e577c4c59123fb739b454f9415aeab" kind="variable"><name>_currentLangDict</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_localization_1a138ad614b8ff4886e4e8ea5b7958b2eb" kind="function"><name>SetLanguage</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_localization_1a649704d75f764b4734b9bdb758ebdb01" kind="function"><name>T</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_wpf_1_1_main_view_model" kind="class"><name>Mastermind::Wpf::MainViewModel</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a0ca2bb5f69b40c83ff59146151e2175b" kind="event"><name>PropertyChanged</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1ac5ba65e2cdddc68a9b56623acae4e52d" kind="property"><name>CurrentView</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a09fdcff4b3ceb3c9b4ab8573e51d8c8c" kind="property"><name>NytSpilCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a64f5a8de3751d8c55c764653365be0f1" kind="property"><name>OptionsCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a8c75e2d1d60d1ddd5dab4807571d65fb" kind="property"><name>StatistikCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a66ff391dbb37108b3fb410fc21cb3525" kind="property"><name>ExitCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1af9e5567990b8e8a711ca42b63ccd8699" kind="variable"><name>_optRepo</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1ab11681332ae47f322bd16c250066cfa4" kind="variable"><name>_statsStore</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a3e0cd447ead7ef4af3a64b18782c39b4" kind="function"><name>OnChanged</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a8b462cce3b23691bb0e2293cc144a44c" kind="function"><name>MainViewModel</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_wpf_1_1_main_window" kind="class"><name>Mastermind::Wpf::MainWindow</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a0ee2bf67d4852ddbc5553dfcfc29a518" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a5e027219e7dfaa92247bcad8c9b625e2" kind="function"><name>MainWindow</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a2a41cfc6317b68e8cb8d65577c3ab62d" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a36af7aa7747ab8bd89908cc461ff5ae9" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository" kind="class"><name>Mastermind::Core::Persistence::OptionsRepository</name>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository_1a049d1faac49f9214ecebb333bf7085e8" kind="variable"><name>_json</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository_1a9e2c66dbefcd6d0c8ae07b124344da11" kind="function"><name>LoadOrDefault</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository_1a031ded47724f4dc5634ac6f15c1638e4" kind="function"><name>Save</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view" kind="class"><name>Mastermind::Wpf::Views::OptionsView</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a934d8dc87beaba3471b1b44299f49be5" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a6a35e5b2d9e82ae057dd23d880debc1b" kind="variable"><name>_repo</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1aace959571db1e14afa390488d9a531ba" kind="property"><name>Længde</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a9196f736ab5305ed4fc6eaf84adf2e6b" kind="property"><name>MaxForsøg</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1afa5f5615ce8ef307af9ab1b22f4367ce" kind="property"><name>ShowEmojis</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a7d695daee035a155a50e3d48fe8dfcdb" kind="property"><name>SprogValg</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1acd7ff8bc4c8d9d6204285f5278e5ff7e" kind="property"><name>SaveCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a32998bdf0b2224e0faf7942497035640" kind="property"><name>ReloadCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1ad1a6a434f870db7a5f2f6cde3c97608f" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a20601001ff106d91fef12f90f10b440c" kind="function"><name>OptionsView</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a15778cefeb56d50dbe0e77633190eb74" kind="function"><name>Connect</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1af000ce456affe802423ee6318917f394" kind="function"><name>Load</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a183177fd12ab022adaac07944c477429" kind="function"><name>Save</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" kind="class"><name>Mastermind::Wpf::Infrastructure::RelayCommand</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a69af4ccefa021ba1a53d0800acee8a88" kind="variable"><name>_exec</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a002bac9ac0f0b736ea2300091a8a85d1" kind="variable"><name>_can</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a6a5f7d5001e3e0da17acd8ef97885172" kind="event"><name>CanExecuteChanged</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1af8cfd6763e5218852199347548365f3c" kind="function"><name>RelayCommand</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a6226ea4a0309b38e0e936639969e6247" kind="function"><name>CanExecute</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1af02597afdc91f0651ad7a8c54a561345" kind="function"><name>Execute</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a890cd47f1ef6425c0b0a6c84b4bd7bde" kind="function"><name>RaiseCanExecuteChanged</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_domain_1_1_respons" kind="class"><name>Mastermind::Core::Domain::Respons</name>
+    <member refid="class_mastermind_1_1_core_1_1_domain_1_1_respons_1ac93ed8a1e522acb78d3c1f9de62d89fa" kind="function"><name>SkrivRespons</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kind="class"><name>Mastermind::Core::Services::SecretGenerator</name>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator_1a39f3b0e08fd85b8a2456b1ec82e2948f" kind="variable"><name>_random</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator_1a165ba461d85cef9793f214d097a6a34b" kind="variable"><name>_farver</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator_1a8f9c098bd5d26163781861369671d677" kind="variable"><name>_options</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator_1add4ccb62be470d5583fb031ee1d88bed" kind="function"><name>SecretGenerator</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator_1af41c2bbe2704cb2757f29d71f8788269" kind="function"><name>GenerateSecret</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring" kind="class"><name>Mastermind::Konsol::UI::Spilstyring</name>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a32df5b9017ebc7113def1823da851b5d" kind="variable"><name>_options</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1aa7e1606abef5fe4fa8fdf3c174f6fb8e" kind="variable"><name>_menu</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1adffc154484a376ed7a34ada8edcf6c13" kind="variable"><name>_secretGenerator</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ad486979f1c218ee71db391f054037265" kind="variable"><name>_input</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ab5b29dd26a9520179710e171b2dc8909" kind="variable"><name>_evaluering</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a928a39191b52fc096b448a754737abf5" kind="variable"><name>_statistik</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ae8f10b755a5e57f9009682095e0795fa" kind="variable"><name>_statsStore</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6a98f7454cfb72b35b0f7639d317b811" kind="function"><name>Spilstyring</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6f789210a33385a19e4ce371efd2f211" kind="function"><name>Start</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1affbe777e30287bee2e7ca101207a9428" kind="function"><name>SingularRunde</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a7187582596b4b74679fb8db6b5058f9b" kind="function"><name>PrøvIgenJaNej</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik" kind="class"><name>Mastermind::Konsol::Utils::Statistik</name>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1aaded6baa9e658990b2db7064f5d950e5" kind="property"><name>AntalSpil</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a44b70f1a8933459de7d7b74fe486551e" kind="property"><name>AntalSejre</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ad34118d853e1bc5dcc243ef1faecedc6" kind="property"><name>AntalTab</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1aca4157d636e9b18d6be9437e6c8ff25a" kind="property"><name>SumForsøgVedSejr</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a1f639dbc4ff0e854321ed065b779d469" kind="property"><name>GnsForsøgVedSejr</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a3778f569a94698fe627fdc10b8238d5e" kind="property"><name>BedsteForsøgVedSejr</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1abc6b20b26c980635dad0781a05100ecf" kind="property"><name>BedsteForsøgVedTab</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a3e8d351793eb50bd100820384d27d8a4" kind="property"><name>VærsteForsøgVedSejr</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a418ec105c4f63d290409d93d84292ed6" kind="property"><name>NuværendeStreak</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a131817f7be3b77f6f07e0c8b2ff462e6" kind="property"><name>BedsteStreak</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a03ce121e7618580c8c9e26a4acd119be" kind="property"><name>WinRate</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ae08f3249756d378c60020fa2cf049503" kind="function"><name>RegisterSejr</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a748466f361345e11a14301e76f715426" kind="function"><name>RegisterTab</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ae3f7ba4f1bd744fc32a894127cd43d1d" kind="function"><name>Render</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a2d342cdaf3781460e0e4f98e29ee34e0" kind="function"><name>L</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a64483af1f250f15a048018e0d8f2898d" kind="function"><name>Da</name></member>
+    <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a6dae284b5a1d2a139c1d82b69a97fe90" kind="function"><name>En</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer" kind="class"><name>Mastermind::Core::Utils::StatistikTilføjer</name>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1adf7969ea79a8a22918a06a316842f3b1" kind="property"><name>Runder</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a66d5c36db7543fff5a82c4fd60d414a0" kind="property"><name>Vundne</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a05f40eaa51631ca903bebed6b6838361" kind="property"><name>Tabte</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a340ecae5b4827d96e8a46ba9ff889837" kind="property"><name>Sejrsrate</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a5ec5b4cef9e0449d873e2a89fc0bfe7c" kind="property"><name>GnsForsøgVedSejr</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1aa26948d5eb7a0dfe449bbc9f0e581bbd" kind="property"><name>BedsteSejrForsøg</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a738e36c19d7a0725a0bbc75e0b73de02" kind="property"><name>VærsteSejrForsøg</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1ad60b66e0ecd4144833158c7be5f3ca9f" kind="property"><name>BedsteWinStreak</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a2a2509e136c552806a305ed3d421687d" kind="property"><name>AktuelWinStreak</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a84e1f6a019c8fe92d08ce1a0b3ba6675" kind="property"><name>AktuelLoseStreak</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1adc2fe2f363f0314fd8babbaf03ca02f9" kind="function"><name>From</name></member>
+    <member refid="class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer_1a0da6be14c3f446a132ccf42d7774b625" kind="function"><name>RenderTable</name></member>
+  </compound>
+  <compound refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view" kind="class"><name>Mastermind::Wpf::Views::StatistikView</name>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1ae5a3ba278eef45ecac55d051cd77a719" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1a825348af50d7afd00acaa33bfb0eed32" kind="variable"><name>_stats</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1aabdb82ff506d957e811f4fa64f7263a0" kind="variable"><name>_optRepo</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1af591f51561acac164e1782513cc29387" kind="property"><name>Table</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1adfba6070566c2011149c7d4c70eee455" kind="property"><name>ResetCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1a2ffbec9182004b2c5f5a11db0661cf7b" kind="property"><name>RefreshCmd</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1a9fbc66c7ad1260a3306751076b694456" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1a6f54a58245ea90154d2992e00967acf9" kind="function"><name>StatistikView</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1a1e8c36e327b83c2c7ee6cd509e5e4245" kind="function"><name>Connect</name></member>
+    <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_1a878db7327df2e61af5ad767f9c7ea07c" kind="function"><name>Refresh</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_mastermind" kind="namespace"><name>Mastermind</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_core" kind="namespace"><name>Mastermind::Core</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_core_1_1_domain" kind="namespace"><name>Mastermind::Core::Domain</name>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kind="enum"><name>Farve</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a54397ad46e2bc2e0fa50c380e03d768c" kind="enumvalue"><name>Rød</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a102898eedad1def77b9800e96e253c7f" kind="enumvalue"><name>Grøn</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a14f337f87fc437f1abc3a6210d33463f" kind="enumvalue"><name>Blå</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a9b0631fb2253b0efc138241c05f58a2c" kind="enumvalue"><name>Gul</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a909cea0c97058cfe2e3ea8d675cb08e1" kind="enumvalue"><name>Orange</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a2c24feb609f63aa328058aeb2a71db59" kind="enumvalue"><name>Lilla</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a2fe48c95a067c614226f7a735d225ce9" kind="enumvalue"><name>Hvid</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9a6b46ae48421828d9973deec5fa9aa0c3" kind="enumvalue"><name>Sort</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1a2a1ccc519c9aa305e48061edddca44c4" kind="enum"><name>Sprog</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1a2a1ccc519c9aa305e48061edddca44c4ad95ce74bede69ad53327703b0afd9d93" kind="enumvalue"><name>Da</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1a2a1ccc519c9aa305e48061edddca44c4a6d416f7786dbe588eaa6ab48666588d1" kind="enumvalue"><name>En</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1ab635e94f297da224662ab5cde374ae14" kind="function"><name>Feedback</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1aa6714a62c08fb1a8091fc73bf89f8684" kind="function"><name>GameResult</name></member>
+    <member refid="namespace_mastermind_1_1_core_1_1_domain_1a59b2264dfdc72e75ddceaf8f675dbcf2" kind="function"><name>Options</name></member>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_core_1_1_persistence" kind="namespace"><name>Mastermind::Core::Persistence</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_core_1_1_services" kind="namespace"><name>Mastermind::Core::Services</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_core_1_1_utils" kind="namespace"><name>Mastermind::Core::Utils</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_konsol" kind="namespace"><name>Mastermind::Konsol</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_konsol_1_1_u_i" kind="namespace"><name>Mastermind::Konsol::UI</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_konsol_1_1_utils" kind="namespace"><name>Mastermind::Konsol::Utils</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_wpf" kind="namespace"><name>Mastermind::Wpf</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_wpf_1_1_infrastructure" kind="namespace"><name>Mastermind::Wpf::Infrastructure</name>
+  </compound>
+  <compound refid="namespace_mastermind_1_1_wpf_1_1_views" kind="namespace"><name>Mastermind::Wpf::Views</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_object_model" kind="namespace"><name>System::Collections::ObjectModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows" kind="namespace"><name>System::Windows</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_automation" kind="namespace"><name>System::Windows::Automation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls" kind="namespace"><name>System::Windows::Controls</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls_1_1_primitives" kind="namespace"><name>System::Windows::Controls::Primitives</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls_1_1_ribbon" kind="namespace"><name>System::Windows::Controls::Ribbon</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_data" kind="namespace"><name>System::Windows::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_documents" kind="namespace"><name>System::Windows::Documents</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_ink" kind="namespace"><name>System::Windows::Ink</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_input" kind="namespace"><name>System::Windows::Input</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_markup" kind="namespace"><name>System::Windows::Markup</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media" kind="namespace"><name>System::Windows::Media</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_animation" kind="namespace"><name>System::Windows::Media::Animation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_effects" kind="namespace"><name>System::Windows::Media::Effects</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_imaging" kind="namespace"><name>System::Windows::Media::Imaging</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_media3_d" kind="namespace"><name>System::Windows::Media::Media3D</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_text_formatting" kind="namespace"><name>System::Windows::Media::TextFormatting</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_navigation" kind="namespace"><name>System::Windows::Navigation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shapes" kind="namespace"><name>System::Windows::Shapes</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shell" kind="namespace"><name>System::Windows::Shell</name>
+  </compound>
+  <compound refid="_mastermind_8_console_2obj_2_debug_2net9_80_2_8_n_e_t_core_app_00_version_0av9_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_core_2obj_2_debug_2net9_80_2_8_n_e_t_core_app_00_version_0av9_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_wpf_2obj_2_debug_2net9_80-windows_2_8_n_e_t_core_app_00_version_0av9_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_console_8_assembly_info_8cs" kind="file"><name>Mastermind.Console.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_console_8_global_usings_8g_8cs" kind="file"><name>Mastermind.Console.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1a0717e747985fb4e7eb9a3cdc4f1426bf" kind="variable"><name>options</name></member>
+    <member refid="_program_8cs_1ae6104c261e98e4a7aa0970087ea10a47" kind="variable"><name>secretGenerator</name></member>
+    <member refid="_program_8cs_1a07a2aabd64594dc36dd810cad2669deb" kind="variable"><name>input</name></member>
+    <member refid="_program_8cs_1a19d08fc350d73d9ccc577a7a8ef61f8a" kind="variable"><name>evaluering</name></member>
+    <member refid="_program_8cs_1afa81b7016777a6376393d90a01558971" kind="variable"><name>menu</name></member>
+    <member refid="_program_8cs_1a3027e96d8827825eb67fe97f86ab52f1" kind="variable"><name>stats</name></member>
+    <member refid="_program_8cs_1aed50c5329cfcad5f5022e0269e2a3dbc" kind="variable"><name>statistikStore</name></member>
+    <member refid="_program_8cs_1a87f6efe1da45924e5c654916568fbe41" kind="variable"><name>spilstyring</name></member>
+    <member refid="_program_8cs_1aafd70b0421237abe29a854372507d82f" kind="function"><name>Start</name></member>
+  </compound>
+  <compound refid="_konsol_menu_8cs" kind="file"><name>KonsolMenu.cs</name>
+  </compound>
+  <compound refid="_spilstyring_8cs" kind="file"><name>Spilstyring.cs</name>
+  </compound>
+  <compound refid="_statistik_8cs" kind="file"><name>Statistik.cs</name>
+  </compound>
+  <compound refid="_farver_8cs" kind="file"><name>Farver.cs</name>
+  </compound>
+  <compound refid="_farver_helper_8cs" kind="file"><name>FarverHelper.cs</name>
+  </compound>
+  <compound refid="_feedback_8cs" kind="file"><name>Feedback.cs</name>
+  </compound>
+  <compound refid="_game_resultater_8cs" kind="file"><name>GameResultater.cs</name>
+  </compound>
+  <compound refid="_options_8cs" kind="file"><name>Options.cs</name>
+  </compound>
+  <compound refid="_respons_8cs" kind="file"><name>Respons.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_core_8_assembly_info_8cs" kind="file"><name>Mastermind.Core.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_core_8_global_usings_8g_8cs" kind="file"><name>Mastermind.Core.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_i_statistik_store_8cs" kind="file"><name>IStatistikStore.cs</name>
+  </compound>
+  <compound refid="_json_file_paths_8cs" kind="file"><name>JsonFilePaths.cs</name>
+  </compound>
+  <compound refid="_json_statistik_store_8cs" kind="file"><name>JsonStatistikStore.cs</name>
+  </compound>
+  <compound refid="_options_repository_8cs" kind="file"><name>OptionsRepository.cs</name>
+  </compound>
+  <compound refid="_evaluering_8cs" kind="file"><name>Evaluering.cs</name>
+  </compound>
+  <compound refid="_input_8cs" kind="file"><name>Input.cs</name>
+  </compound>
+  <compound refid="_secret_generator_8cs" kind="file"><name>SecretGenerator.cs</name>
+  </compound>
+  <compound refid="_statistik_tilf_xC3_xB8jer_8cs" kind="file"><name>StatistikTilføjer.cs</name>
+  </compound>
+  <compound refid="_app_8xaml_8cs" kind="file"><name>App.xaml.cs</name>
+  </compound>
+  <compound refid="_relay_command_8cs" kind="file"><name>RelayCommand.cs</name>
+  </compound>
+  <compound refid="_localization_8cs" kind="file"><name>Localization.cs</name>
+  </compound>
+  <compound refid="_main_view_model_8cs" kind="file"><name>MainViewModel.cs</name>
+  </compound>
+  <compound refid="_main_window_8xaml_8cs" kind="file"><name>MainWindow.xaml.cs</name>
+  </compound>
+  <compound refid="_app_8g_8cs" kind="file"><name>App.g.cs</name>
+  </compound>
+  <compound refid="_main_window_8g_8cs" kind="file"><name>MainWindow.g.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_wpf_8_assembly_info_8cs" kind="file"><name>Mastermind.Wpf.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_mastermind_8_wpf_8_global_usings_8g_8cs" kind="file"><name>Mastermind.Wpf.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_game_view_8g_8cs" kind="file"><name>GameView.g.cs</name>
+  </compound>
+  <compound refid="_options_view_8g_8cs" kind="file"><name>OptionsView.g.cs</name>
+  </compound>
+  <compound refid="_statistik_view_8g_8cs" kind="file"><name>StatistikView.g.cs</name>
+  </compound>
+  <compound refid="_game_view_8xaml_8cs" kind="file"><name>GameView.xaml.cs</name>
+  </compound>
+  <compound refid="_options_view_8xaml_8cs" kind="file"><name>OptionsView.xaml.cs</name>
+  </compound>
+  <compound refid="_statistik_view_8xaml_8cs" kind="file"><name>StatistikView.xaml.cs</name>
+  </compound>
+  <compound refid="dir_3e40d563f41f7fdcdc927443ba8231d4" kind="dir"><name>src/Mastermind.Console/obj/Debug</name>
+  </compound>
+  <compound refid="dir_1eaf79abba4091edf9b9bfd3065fc27b" kind="dir"><name>src/Mastermind.Core/obj/Debug</name>
+  </compound>
+  <compound refid="dir_87b1fb25bb097804bfaa26dd0d407c73" kind="dir"><name>src/Mastermind.Wpf/obj/Debug</name>
+  </compound>
+  <compound refid="dir_c0059f0ae7787f753819b2c02a4d4c54" kind="dir"><name>src/Mastermind.Core/Domain</name>
+  </compound>
+  <compound refid="dir_f7b41722519acb5154d08439f3dbe83f" kind="dir"><name>src/Mastermind.Wpf/Infrastructure</name>
+  </compound>
+  <compound refid="dir_8aefc19ded1072de78d3cc8d75f6132d" kind="dir"><name>src/Mastermind.Console</name>
+  </compound>
+  <compound refid="dir_d0d15d6f48b47357e131cfd52d07da36" kind="dir"><name>src/Mastermind.Core</name>
+  </compound>
+  <compound refid="dir_362746c831db05b897d1c0dc55a1ff78" kind="dir"><name>src/Mastermind.Wpf</name>
+  </compound>
+  <compound refid="dir_82adae60fc13b04a568123bdb51cf220" kind="dir"><name>src/Mastermind.Console/obj/Debug/net9.0</name>
+  </compound>
+  <compound refid="dir_bec8d2d5db41c31cdb5e7af2475babff" kind="dir"><name>src/Mastermind.Core/obj/Debug/net9.0</name>
+  </compound>
+  <compound refid="dir_f7c89457b86270b39e9c9629966b84d0" kind="dir"><name>src/Mastermind.Wpf/obj/Debug/net9.0-windows</name>
+  </compound>
+  <compound refid="dir_742fe39e8be894b3379c1e7b6c186bf8" kind="dir"><name>src/Mastermind.Console/obj</name>
+  </compound>
+  <compound refid="dir_b1de398724aae1675e2be709cea8c4f8" kind="dir"><name>src/Mastermind.Core/obj</name>
+  </compound>
+  <compound refid="dir_1493c9e6e92fde68a040e59f78e2ef43" kind="dir"><name>src/Mastermind.Wpf/obj</name>
+  </compound>
+  <compound refid="dir_f79d37993ce0d592fc564d20197cfd0c" kind="dir"><name>src/Mastermind.Core/Persistence</name>
+  </compound>
+  <compound refid="dir_be09ceb60cf0b28607c1da0b33318b09" kind="dir"><name>src/Mastermind.Core/Services</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_b87a32c8259bd6614d6cbda5638349f0" kind="dir"><name>src/Mastermind.Console/UI</name>
+  </compound>
+  <compound refid="dir_4cad91846297bf6572b4ffecff93779a" kind="dir"><name>src/Mastermind.Console/Utils</name>
+  </compound>
+  <compound refid="dir_2c28e5615c28001c9d163c192418707a" kind="dir"><name>src/Mastermind.Core/Utils</name>
+  </compound>
+  <compound refid="dir_f1e5fc618c881e26068561d0dcc749bb" kind="dir"><name>src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views</name>
+  </compound>
+  <compound refid="dir_4dcf21b1ed9ac53a2de80ba4ec2ef77a" kind="dir"><name>src/Mastermind.Wpf/Views</name>
+  </compound>
+</doxygenindex>

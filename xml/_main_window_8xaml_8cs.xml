@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_main_window_8xaml_8cs" kind="file" language="C#">
+    <compoundname>MainWindow.xaml.cs</compoundname>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_main_window" prot="public">Mastermind::Wpf::MainWindow</innerclass>
+    <innernamespace refid="namespace_mastermind">Mastermind</innernamespace>
+    <innernamespace refid="namespace_mastermind_1_1_wpf">Mastermind::Wpf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Windows;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_mastermind_1_1_wpf" kindref="compound">Mastermind.Wpf</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="class_mastermind_1_1_wpf_1_1_main_window" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">partial<sp/>class<sp/></highlight><highlight class="normal"><ref refid="class_mastermind_1_1_wpf_1_1_main_window_1a5e027219e7dfaa92247bcad8c9b625e2" kindref="member">MainWindow</ref><sp/>:<sp/>Window</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_wpf_1_1_main_window_1a5e027219e7dfaa92247bcad8c9b625e2" kindref="member">MainWindow</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mastermind_1_1_wpf_1_1_main_window_1a2a41cfc6317b68e8cb8d65577c3ab62d" kindref="member">InitializeComponent</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataContext<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_wpf_1_1_main_view_model" kindref="compound">MainViewModel</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Mastermind.Wpf/MainWindow.xaml.cs"/>
+  </compounddef>
+</doxygen>

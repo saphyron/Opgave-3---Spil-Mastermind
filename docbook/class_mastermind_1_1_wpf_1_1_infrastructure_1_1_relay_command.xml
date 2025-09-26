@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" xml:lang="en-US">
+<title>Mastermind.Wpf.Infrastructure.RelayCommand Class Reference</title>
+<indexterm><primary>Mastermind.Wpf.Infrastructure.RelayCommand</primary></indexterm>
+<para>
+
+<para>En simpel ICommand-implementering til WPF/MVVM, der pakker en udførselsdelegat og en valgfri betingelse for, om kommandoen kan køres. </para>
+ 
+</para>
+<para>Inheritance diagram for Mastermind.Wpf.Infrastructure.RelayCommand:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1af8cfd6763e5218852199347548365f3c">RelayCommand</link> (Action exec, Func&lt; bool &gt;? can=null)</para>
+
+<para>Opret en ny instans af <link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link>. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a6226ea4a0309b38e0e936639969e6247">CanExecute</link> (object? parameter)</para>
+
+<para>Kan kommandoen køres? </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1af02597afdc91f0651ad7a8c54a561345">Execute</link> (object? parameter)</para>
+
+<para>Udfører kommandoens handling. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a890cd47f1ef6425c0b0a6c84b4bd7bde">RaiseCanExecuteChanged</link> ()</para>
+
+<para>Underret WPF om, at CanExecute-værdien er ændret. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a6a5f7d5001e3e0da17acd8ef97885172"/>EventHandler? <emphasis role="strong">CanExecuteChanged</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>En simpel ICommand-implementering til WPF/MVVM, der pakker en udførselsdelegat og en valgfri betingelse for, om kommandoen kan køres. </para>
+
+
+
+<para>Kan bruges direkte i code-behind, eller i en ViewModel. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1af8cfd6763e5218852199347548365f3c"/><section>
+    <title>RelayCommand()</title>
+<indexterm><primary>RelayCommand</primary><secondary>Mastermind.Wpf.Infrastructure.RelayCommand</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.Infrastructure.RelayCommand</primary><secondary>RelayCommand</secondary></indexterm>
+<para><computeroutput>Mastermind.Wpf.Infrastructure.RelayCommand.RelayCommand (Action exec, Func&lt; bool &gt;? can = <computeroutput>null</computeroutput>
+)</computeroutput></para><para>
+
+<para>Opret en ny instans af <link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>exec</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>can</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para><emphasis>exec</emphasis>  må ikke være null. <emphasis>can</emphasis>  kan være null (i så fald kan kommandoen altid køres). </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a6226ea4a0309b38e0e936639969e6247"/><section>
+    <title>CanExecute()</title>
+<indexterm><primary>CanExecute</primary><secondary>Mastermind.Wpf.Infrastructure.RelayCommand</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.Infrastructure.RelayCommand</primary><secondary>CanExecute</secondary></indexterm>
+<para><computeroutput>bool Mastermind.Wpf.Infrastructure.RelayCommand.CanExecute (object? parameter)</computeroutput></para><para>
+
+<para>Kan kommandoen køres? </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parameter</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true hvis kommandoen kan udføres; ellers false.</para>
+</formalpara>
+</para>
+
+<para>Parameteret ignoreres. </para>
+</section>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1af02597afdc91f0651ad7a8c54a561345"/><section>
+    <title>Execute()</title>
+<indexterm><primary>Execute</primary><secondary>Mastermind.Wpf.Infrastructure.RelayCommand</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.Infrastructure.RelayCommand</primary><secondary>Execute</secondary></indexterm>
+<para><computeroutput>void Mastermind.Wpf.Infrastructure.RelayCommand.Execute (object? parameter)</computeroutput></para><para>
+
+<para>Udfører kommandoens handling. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parameter</entry><entry>
+<para>Ignoreres.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a890cd47f1ef6425c0b0a6c84b4bd7bde"/><section>
+    <title>RaiseCanExecuteChanged()</title>
+<indexterm><primary>RaiseCanExecuteChanged</primary><secondary>Mastermind.Wpf.Infrastructure.RelayCommand</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.Infrastructure.RelayCommand</primary><secondary>RaiseCanExecuteChanged</secondary></indexterm>
+<para><computeroutput>void Mastermind.Wpf.Infrastructure.RelayCommand.RaiseCanExecuteChanged ( )</computeroutput></para><para>
+
+<para>Underret WPF om, at CanExecute-værdien er ændret. </para>
+</para>
+
+<para>Skal kaldes, når den underliggende tilstand, som <link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_1a6226ea4a0309b38e0e936639969e6247">CanExecute(object?)</link> er baseret på, ændres. </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/Mastermind.Wpf/Infrastructure/RelayCommand.cs</section>
+</section>

@@ -1,0 +1,65 @@
+\doxysection{Mastermind.\+Wpf.\+Main\+View\+Model Class Reference}
+\hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model}{}\label{class_mastermind_1_1_wpf_1_1_main_view_model}\index{Mastermind.Wpf.MainViewModel@{Mastermind.Wpf.MainViewModel}}
+
+
+Hoved-\/viewmodel der skifter mellem visninger (spil, indstillinger, statistik) og håndterer exit.  
+
+
+Inheritance diagram for Mastermind.\+Wpf.\+Main\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mastermind_1_1_wpf_1_1_main_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_main_view_model_a8b462cce3b23691bb0e2293cc144a44c}{Main\+View\+Model}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_ac5ba65e2cdddc68a9b56623acae4e52d}\label{class_mastermind_1_1_wpf_1_1_main_view_model_ac5ba65e2cdddc68a9b56623acae4e52d} 
+object? {\bfseries Current\+View}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_a09fdcff4b3ceb3c9b4ab8573e51d8c8c}\label{class_mastermind_1_1_wpf_1_1_main_view_model_a09fdcff4b3ceb3c9b4ab8573e51d8c8c} 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}} {\bfseries Nyt\+Spil\+Cmd}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_a64f5a8de3751d8c55c764653365be0f1}\label{class_mastermind_1_1_wpf_1_1_main_view_model_a64f5a8de3751d8c55c764653365be0f1} 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}} {\bfseries Options\+Cmd}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_a8c75e2d1d60d1ddd5dab4807571d65fb}\label{class_mastermind_1_1_wpf_1_1_main_view_model_a8c75e2d1d60d1ddd5dab4807571d65fb} 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}} {\bfseries Statistik\+Cmd}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_a66ff391dbb37108b3fb410fc21cb3525}\label{class_mastermind_1_1_wpf_1_1_main_view_model_a66ff391dbb37108b3fb410fc21cb3525} 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}} {\bfseries Exit\+Cmd}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_a0ca2bb5f69b40c83ff59146151e2175b}\label{class_mastermind_1_1_wpf_1_1_main_view_model_a0ca2bb5f69b40c83ff59146151e2175b} 
+Property\+Changed\+Event\+Handler? {\bfseries Property\+Changed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hoved-\/viewmodel der skifter mellem visninger (spil, indstillinger, statistik) og håndterer exit. 
+
+Implementerer INotify\+Property\+Changed og eksponerer kommandoer til navigation\+: {\ttfamily Nyt\+Spil\+Cmd}, {\ttfamily Options\+Cmd}, {\ttfamily Statistik\+Cmd}, {\ttfamily Exit\+Cmd}. Opretter og genbruger \doxylink{class_mastermind_1_1_core_1_1_persistence_1_1_options_repository}{Options\+Repository} og \doxylink{class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store}{Json\+Statistik\+Store} og sætter {\ttfamily Current\+View} til den aktive WPF-\/view (User\+Control). Ved ændringer kaldes On\+Changed(string?) for at opdatere bindings. 
+
+\label{doc-constructors}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_main_view_model_a8b462cce3b23691bb0e2293cc144a44c}\index{Mastermind.Wpf.MainViewModel@{Mastermind.Wpf.MainViewModel}!MainViewModel@{MainViewModel}}
+\index{MainViewModel@{MainViewModel}!Mastermind.Wpf.MainViewModel@{Mastermind.Wpf.MainViewModel}}
+\doxysubsubsection{\texorpdfstring{MainViewModel()}{MainViewModel()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_wpf_1_1_main_view_model_a8b462cce3b23691bb0e2293cc144a44c} 
+Mastermind.\+Wpf.\+Main\+View\+Model.\+Main\+View\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Initialiserer kommandoer, sætter startvisning og håndterer afslutning af app.
+
+Opretter kommandoer til at skifte mellem \doxylink{class_mastermind_1_1_wpf_1_1_views_1_1_game_view}{Views.\+Game\+View}, \doxylink{class_mastermind_1_1_wpf_1_1_views_1_1_options_view}{Views.\+Options\+View} og \doxylink{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view}{Views.\+Statistik\+View}. Starter med \doxylink{class_mastermind_1_1_wpf_1_1_views_1_1_game_view}{Views.\+Game\+View} som aktiv visning. Exit-\/kommandoen lukker WPF-\/appen eller, hvis den ikke findes, kalder Environment.\+Exit(int). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Mastermind.\+Wpf/Main\+View\+Model.\+cs\end{DoxyCompactItemize}

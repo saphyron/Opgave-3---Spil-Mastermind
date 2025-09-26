@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_f1e5fc618c881e26068561d0dcc749bb" kind="dir">
+    <compoundname>src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views</compoundname>
+    <innerfile refid="_game_view_8g_8cs">GameView.g.cs</innerfile>
+    <innerfile refid="_options_view_8g_8cs">OptionsView.g.cs</innerfile>
+    <innerfile refid="_statistik_view_8g_8cs">StatistikView.g.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/"/>
+  </compounddef>
+</doxygen>

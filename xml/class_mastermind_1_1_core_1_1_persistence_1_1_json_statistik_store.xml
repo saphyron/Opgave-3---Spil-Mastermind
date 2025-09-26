@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>Mastermind::Core::Persistence::JsonStatistikStore</compoundname>
+    <basecompoundref refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" prot="public" virt="non-virtual">Mastermind.Core.Persistence.IStatistikStore</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1ab48a08f4827c78364a3057af06388419" prot="private" static="yes" mutable="no">
+        <type>readonly JsonSerializerOptions</type>
+        <definition>readonly JsonSerializerOptions Mastermind.Core.Persistence.JsonStatistikStore._json</definition>
+        <argsstring></argsstring>
+        <name>_json</name>
+        <qualifiedname>Mastermind.Core.Persistence.JsonStatistikStore._json</qualifiedname>
+        <initializer>= new() { WriteIndented = true }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" line="14" column="55" bodyfile="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1afbdc69e3becee9da86b0f602b2e42028" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mastermind.Core.Persistence.JsonStatistikStore.JsonStatistikStore</definition>
+        <argsstring>()</argsstring>
+        <name>JsonStatistikStore</name>
+        <qualifiedname>Mastermind.Core.Persistence.JsonStatistikStore.JsonStatistikStore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" line="16" column="16" bodyfile="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1ab20ce975240ef7f6902615688a155627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IReadOnlyList&lt; GameResult &gt;</type>
+        <definition>IReadOnlyList&lt; GameResult &gt; Mastermind.Core.Persistence.JsonStatistikStore.LoadAll</definition>
+        <argsstring>()</argsstring>
+        <name>LoadAll</name>
+        <qualifiedname>Mastermind.Core.Persistence.JsonStatistikStore.LoadAll</qualifiedname>
+        <reimplements refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store_1a84993d8ee675af6229c5a39c05dcd0e9">LoadAll</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" line="23" column="30" bodyfile="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" bodystart="23" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1a9fd8e7b26e97c1b614b0b972056361d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Core.Persistence.JsonStatistikStore.Append</definition>
+        <argsstring>(GameResult result)</argsstring>
+        <name>Append</name>
+        <qualifiedname>Mastermind.Core.Persistence.JsonStatistikStore.Append</qualifiedname>
+        <reimplements refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store_1a22505ffe49bb0d5810cfaca8ce35f3a8">Append</reimplements>
+        <param>
+          <type>GameResult</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" line="45" column="21" bodyfile="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1abcdaf894311fb6771f5105911e933338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Core.Persistence.JsonStatistikStore.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <qualifiedname>Mastermind.Core.Persistence.JsonStatistikStore.Reset</qualifiedname>
+        <reimplements refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store_1a730f48c5ff8b528d767027bcc78905d7">Reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" line="53" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Vedvarende lager for statistik (flere GameResult) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementeres som fil-lager i StatistikStore. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mastermind.Core.Persistence.JsonStatistikStore</label>
+        <link refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mastermind.Core.Persistence.IStatistikStore</label>
+        <link refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mastermind.Core.Persistence.JsonStatistikStore</label>
+        <link refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mastermind.Core.Persistence.IStatistikStore</label>
+        <link refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" line="12" column="11" bodyfile="src/Mastermind.Core/Persistence/JsonStatistikStore.cs" bodystart="13" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1ab48a08f4827c78364a3057af06388419" prot="private" virt="non-virtual"><scope>Mastermind::Core::Persistence::JsonStatistikStore</scope><name>_json</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1a9fd8e7b26e97c1b614b0b972056361d3" prot="public" virt="non-virtual"><scope>Mastermind::Core::Persistence::JsonStatistikStore</scope><name>Append</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1afbdc69e3becee9da86b0f602b2e42028" prot="public" virt="non-virtual"><scope>Mastermind::Core::Persistence::JsonStatistikStore</scope><name>JsonStatistikStore</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1ab20ce975240ef7f6902615688a155627" prot="public" virt="non-virtual"><scope>Mastermind::Core::Persistence::JsonStatistikStore</scope><name>LoadAll</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store_1abcdaf894311fb6771f5105911e933338" prot="public" virt="non-virtual"><scope>Mastermind::Core::Persistence::JsonStatistikStore</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

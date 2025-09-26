@@ -1,0 +1,114 @@
+\doxysection{Mastermind.\+Wpf.\+Infrastructure.\+Relay\+Command Class Reference}
+\hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{}\label{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}\index{Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}}
+
+
+En simpel ICommand-\/implementering til WPF/\+MVVM, der pakker en udførselsdelegat og en valgfri betingelse for, om kommandoen kan køres.  
+
+
+Inheritance diagram for Mastermind.\+Wpf.\+Infrastructure.\+Relay\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_af8cfd6763e5218852199347548365f3c}{Relay\+Command}} (Action exec, Func$<$ bool $>$? can=null)
+\begin{DoxyCompactList}\small\item\em Opret en ny instans af \doxylink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a6226ea4a0309b38e0e936639969e6247}{Can\+Execute}} (object? parameter)
+\begin{DoxyCompactList}\small\item\em Kan kommandoen køres? \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_af02597afdc91f0651ad7a8c54a561345}{Execute}} (object? parameter)
+\begin{DoxyCompactList}\small\item\em Udfører kommandoens handling. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a890cd47f1ef6425c0b0a6c84b4bd7bde}{Raise\+Can\+Execute\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em Underret WPF om, at Can\+Execute-\/værdien er ændret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a6a5f7d5001e3e0da17acd8ef97885172}\label{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a6a5f7d5001e3e0da17acd8ef97885172} 
+Event\+Handler? {\bfseries Can\+Execute\+Changed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+En simpel ICommand-\/implementering til WPF/\+MVVM, der pakker en udførselsdelegat og en valgfri betingelse for, om kommandoen kan køres. 
+
+Kan bruges direkte i code-\/behind, eller i en View\+Model. 
+
+\label{doc-constructors}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_af8cfd6763e5218852199347548365f3c}\index{Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}!RelayCommand@{RelayCommand}}
+\index{RelayCommand@{RelayCommand}!Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{RelayCommand()}{RelayCommand()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_af8cfd6763e5218852199347548365f3c} 
+Mastermind.\+Wpf.\+Infrastructure.\+Relay\+Command.\+Relay\+Command (\begin{DoxyParamCaption}\item[{Action}]{exec}{, }\item[{Func$<$ bool $>$?}]{can}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Opret en ny instans af \doxylink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exec} & \\
+\hline
+{\em can} & \\
+\hline
+\end{DoxyParams}
+
+
+{\itshape exec}  må ikke være null. {\itshape can}  kan være null (i så fald kan kommandoen altid køres). 
+
+\label{doc-func-members}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a6226ea4a0309b38e0e936639969e6247}\index{Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}!CanExecute@{CanExecute}}
+\index{CanExecute@{CanExecute}!Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{CanExecute()}{CanExecute()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a6226ea4a0309b38e0e936639969e6247} 
+bool Mastermind.\+Wpf.\+Infrastructure.\+Relay\+Command.\+Can\+Execute (\begin{DoxyParamCaption}\item[{object?}]{parameter}{}\end{DoxyParamCaption})}
+
+
+
+Kan kommandoen køres? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true hvis kommandoen kan udføres; ellers false.
+\end{DoxyReturn}
+
+
+Parameteret ignoreres. \Hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_af02597afdc91f0651ad7a8c54a561345}\index{Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}!Execute@{Execute}}
+\index{Execute@{Execute}!Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_af02597afdc91f0651ad7a8c54a561345} 
+void Mastermind.\+Wpf.\+Infrastructure.\+Relay\+Command.\+Execute (\begin{DoxyParamCaption}\item[{object?}]{parameter}{}\end{DoxyParamCaption})}
+
+
+
+Udfører kommandoens handling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Ignoreres.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a890cd47f1ef6425c0b0a6c84b4bd7bde}\index{Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}!RaiseCanExecuteChanged@{RaiseCanExecuteChanged}}
+\index{RaiseCanExecuteChanged@{RaiseCanExecuteChanged}!Mastermind.Wpf.Infrastructure.RelayCommand@{Mastermind.Wpf.Infrastructure.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{RaiseCanExecuteChanged()}{RaiseCanExecuteChanged()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a890cd47f1ef6425c0b0a6c84b4bd7bde} 
+void Mastermind.\+Wpf.\+Infrastructure.\+Relay\+Command.\+Raise\+Can\+Execute\+Changed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Underret WPF om, at Can\+Execute-\/værdien er ændret. 
+
+Skal kaldes, når den underliggende tilstand, som \doxylink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command_a6226ea4a0309b38e0e936639969e6247}{Can\+Execute(object?)} er baseret på, ændres. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Mastermind.\+Wpf/\+Infrastructure/Relay\+Command.\+cs\end{DoxyCompactItemize}

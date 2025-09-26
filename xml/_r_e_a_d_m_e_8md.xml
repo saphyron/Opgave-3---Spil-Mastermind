@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Mastermind<sp/>(C#<sp/>•<sp/>WPF<sp/>&amp;<sp/>Konsol)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">En<sp/>moderne<sp/>udgave<sp/>af<sp/>**Mastermind**<sp/>skrevet<sp/>i<sp/>C#<sp/>med<sp/>både<sp/>**konsol-app**<sp/>og<sp/>**WPF<sp/>GUI**.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Løsningen<sp/>er<sp/>opdelt<sp/>i<sp/>en<sp/>**Core**-pakke<sp/>med<sp/>spil-logik,<sp/>en<sp/>**Wpf**-klient<sp/>(MVVM)<sp/>og<sp/>en<sp/>**Console**-klient.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📦<sp/>Løsningsstruktur</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">📦<sp/>Opgave-3---Spil-Mastermind</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>Mastermind.sln</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>README.md</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>LICENSE</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>appsettings.json</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>appsettings.Development.json</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📂<sp/>Properties</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>└─<sp/>📄<sp/>launchSettings.json</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📂<sp/>Database</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>├─<sp/>📄<sp/>Options.json</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>├─<sp/>📄<sp/>Statistik.json</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>└─<sp/>📄<sp/>log.txt</highlight></codeline>
+<codeline><highlight class="normal">└─<sp/>📂<sp/>src</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>├─<sp/>📂<sp/>Mastermind.Core</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Domain</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Farver.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>FarverHelper.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Feedback.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>GameResultater.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Options.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Respons.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Sprog.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Services</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Evaluering.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Input.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>SecretGenerator.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Persistence</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>IStatistikStore.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>JsonFilePaths.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>JsonStatistikStore.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>OptionsRepository.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Utils</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>StatistikTilføjer.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>(projektfil)<sp/><sp/>—<sp/>*hvis<sp/>relevant*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>├─<sp/>📂<sp/>Mastermind.Wpf</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>App.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>App.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>MainWindow.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>MainWindow.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>MainViewModel.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Infrastructure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>RelayCommand.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Resources</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Strings.da.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Strings.en.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Views</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>GameView.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>GameView.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>OptionsView.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>OptionsView.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>StatistikView.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>StatistikView.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Mastermind.Wpf.csproj</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>└─<sp/>📂<sp/>Mastermind.Console</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>├─<sp/>📄<sp/>Program.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>├─<sp/>📂<sp/>UI</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>KonsolMenu.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Spilstyring.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>├─<sp/>📂<sp/>Utils</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Statistik.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>└─<sp/>📄<sp/>Mastermind.Console.csproj</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🚀<sp/>Kørsel</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Du<sp/>kan<sp/>køre<sp/>hvert<sp/>projekt<sp/>direkte<sp/>med<sp/>`--project`:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Konsol-app**</highlight></codeline>
+<codeline><highlight class="normal">```powershell</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>run<sp/>--project<sp/>&quot;src/Mastermind.Console&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**WPF-app**</highlight></codeline>
+<codeline><highlight class="normal">```powershell</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>run<sp/>--project<sp/>&quot;src/Mastermind.Wpf&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Alternativt<sp/>kan<sp/>løsningen<sp/>åbnes<sp/>i<sp/>Visual<sp/>Studio<sp/>og<sp/>de<sp/>enkelte<sp/>startprojekter<sp/>vælges<sp/>derfra.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🧠<sp/>Hovedidé<sp/>&amp;<sp/>gameplay</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Spillet<sp/>genererer<sp/>en<sp/>hemmelig<sp/>rækkefølge<sp/>af<sp/>farver<sp/>(længde<sp/>og<sp/>forsøg<sp/>er<sp/>konfigurerbart<sp/>via<sp/>`Options`).<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Spilleren<sp/>gætter<sp/>kombinationer<sp/>indenfor<sp/>et<sp/>maks.<sp/>antal<sp/>forsøg.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Feedback<sp/>gives<sp/>med<sp/>**sorte**<sp/>(rigtig<sp/>farve<sp/>på<sp/>rigtig<sp/>plads)<sp/>og<sp/>**hvide**<sp/>(rigtig<sp/>farve,<sp/>forkert<sp/>plads)<sp/>markeringer.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Resultater<sp/>gemmes<sp/>og<sp/>kan<sp/>aflæses<sp/>i<sp/>**Statistik**<sp/>(WPF)<sp/>og<sp/>via<sp/>konsol.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🧩<sp/>Arkitektur<sp/>&amp;<sp/>kode</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Core<sp/>(Mastermind.Core)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Domain**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`Farver`,<sp/>`Options`,<sp/>`Feedback`,<sp/>`Respons`,<sp/>`GameResultater`<sp/>–<sp/>de<sp/>centrale<sp/>domænemodeller.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Services**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`SecretGenerator`<sp/>(genererer<sp/>hemmelig<sp/>kombination),<sp/>`Input`<sp/>(validerer/parsing),<sp/>`Evaluering`<sp/>(beregner<sp/>sort/hvid<sp/>feedback).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Persistence**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`OptionsRepository`<sp/>gemmer/loader<sp/>`Options`<sp/>til/fra<sp/>`Database/Options.json`.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`JsonStatistikStore`<sp/>implementerer<sp/>`IStatistikStore`<sp/>og<sp/>gemmer<sp/>resultater<sp/>i<sp/>`Database/Statistik.json`.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`JsonFilePaths`<sp/>sørger<sp/>for<sp/>mappe/sti-opsætning<sp/>og<sp/>`EnsureDir()`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Utils**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`StatistikTilføjer`<sp/>–<sp/>hjælpefunktioner<sp/>ifm.<sp/>statistik.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>WPF<sp/>(Mastermind.Wpf)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**MVVM**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`MainViewModel`<sp/>(INotifyPropertyChanged)<sp/>holder<sp/>`CurrentView`<sp/>og<sp/>eksponerer<sp/>kommandoer:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`NytSpilCmd`,<sp/>`OptionsCmd`,<sp/>`StatistikCmd`,<sp/>`ExitCmd`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Navigation**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Skifter<sp/>mellem<sp/>`Views/GameView`,<sp/>`Views/OptionsView`,<sp/>`Views/StatistikView`<sp/>og<sp/>afslutter<sp/>via<sp/>`ExitCmd`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**RelayCommand**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Let<sp/>ICommand-implementering<sp/>til<sp/>bindinger.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Lokalisering**<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`Resources/Strings.da.xaml`<sp/>og<sp/>`Strings.en.xaml`<sp/>muliggør<sp/>dansk/engelsk<sp/>tekst<sp/>i<sp/>UI.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Konsol<sp/>(Mastermind.Console)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`Program.cs`<sp/>opretter<sp/>`Options`<sp/>(fx<sp/>`længde:<sp/>3,<sp/>maxForsøg:<sp/>9,<sp/>showEmojis:<sp/>true,<sp/>sprog:<sp/>Sprog.En`)<sp/>samt<sp/>`SecretGenerator`,<sp/>`Input`,<sp/>`Evaluering`,<sp/>`KonsolMenu`,<sp/>`Statistik`,<sp/>`JsonStatistikStore`<sp/>og<sp/>starter<sp/>`Spilstyring`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>💾<sp/>Persistens</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**Indstillinger**:<sp/>`Database/Options.json`<sp/>(læses/skrives<sp/>via<sp/>`OptionsRepository`).<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Statistik**:<sp/>`Database/Statistik.json`<sp/>(append/reset<sp/>via<sp/>`JsonStatistikStore`).<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Hvis<sp/>filer/mappen<sp/>ikke<sp/>findes,<sp/>oprettes<sp/>de<sp/>ved<sp/>brug<sp/>(`EnsureDir`).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🛠<sp/>Krav<sp/>&amp;<sp/>værktøjer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**.NET<sp/>SDK<sp/>9.0**<sp/>(projekterne<sp/>målretter<sp/>`net9.0`/`net9.0-windows`).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Windows<sp/>10/11<sp/>for<sp/>WPF-klienten.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>PowerShell<sp/>5.1+<sp/>(eller<sp/>en<sp/>vilkårlig<sp/>shell<sp/>til<sp/>`dotnet`<sp/>CLI).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🌐<sp/>Sprog<sp/>(UI)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">WPF-UI<sp/>understøtter<sp/>dansk<sp/>og<sp/>engelsk<sp/>via<sp/>`Resources/Strings.da.xaml`<sp/>og<sp/>`Resources/Strings.en.xaml`.</highlight></codeline>
+<codeline><highlight class="normal">Standard-sproget<sp/>kan<sp/>ændres<sp/>i<sp/>runtime<sp/>afhængigt<sp/>af<sp/>bindinger/ressourcer<sp/>(se<sp/>XAML).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🧰<sp/>Fejlfinding<sp/>/<sp/>kendte<sp/>issues</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**`InitializeComponent`<sp/>findes<sp/>ikke**:<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>Fejl<sp/>i<sp/>IDE,<sp/>kode<sp/>virker<sp/>som<sp/>om<sp/>de<sp/>er<sp/>tilstede<sp/>og<sp/>kører.<sp/>Har<sp/>ingen<sp/>ide<sp/>om<sp/>hvorfor<sp/>fejlen<sp/>er<sp/>der.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Auto-genererede<sp/>filer**:<sp/>Nogle<sp/>builds<sp/>genererer<sp/>`*.g.cs`<sp/>i<sp/>stedet<sp/>for<sp/>`*.g.i.cs`<sp/>–<sp/>det<sp/>er<sp/>OK.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Filsystem-skriverettigheder**:<sp/>Sørg<sp/>for,<sp/>at<sp/>processen<sp/>kan<sp/>skrive<sp/>til<sp/>`Database/`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Valideringsproblem<sp/>i<sp/>Konsol<sp/>udgave**:<sp/>Skal<sp/>fixes<sp/>når<sp/>tid,<sp/>Konsol<sp/>har<sp/>problemer<sp/>med<sp/>æøå,<sp/>og<sp/>Sprog.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Versions<sp/>Historik</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>0.5</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>GUI<sp/>Tilføjet</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Persistent<sp/>Statistik<sp/>tilføjet</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Persistent<sp/>Options<sp/>tilføjet</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Opdateret<sp/>README.md</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>0.3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Tilføjet<sp/>statistik</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Opdateret<sp/>README.md</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Opdateret<sp/>tidligere<sp/>funktioner<sp/>for<sp/>at<sp/>kunne<sp/>håndtere<sp/>statistik</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>0.2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Fuld<sp/>Konsol<sp/>Funktionalitet</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>0.1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*<sp/>Init</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📄<sp/>Licens</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Se<sp/>[`LICENSE`](./LICENSE).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Ressourcer</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[wikihow:<sp/>How<sp/>to<sp/>Play<sp/>Mastermind](https://www.wikihow.com/Play-Mastermind)</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

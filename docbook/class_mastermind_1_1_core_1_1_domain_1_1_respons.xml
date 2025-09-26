@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mastermind_1_1_core_1_1_domain_1_1_respons" xml:lang="en-US">
+<title>Mastermind.Core.Domain.Respons Class Reference</title>
+<indexterm><primary>Mastermind.Core.Domain.Respons</primary></indexterm>
+<para>
+
+<para>Håndterer visning af feedback til brugeren baseret på evalueringsresultater. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_mastermind_1_1_core_1_1_domain_1_1_respons_1ac93ed8a1e522acb78d3c1f9de62d89fa">SkrivRespons</link> (<link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ab635e94f297da224662ab5cde374ae14">Feedback</link> feedback, <link linkend="_namespace_mastermind_1_1_core_1_1_domain_1a59b2264dfdc72e75ddceaf8f675dbcf2">Options</link> options)</para>
+
+<para>Skriver feedback til konsollen baseret på evalueringsresultater. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Håndterer visning af feedback til brugeren baseret på evalueringsresultater. </para>
+
+
+
+<para>Denne klasse bruger Options til at tilpasse visningen baseret på spillets indstillinger, såsom sprog og om emojis skal vises. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_core_1_1_domain_1_1_respons_1ac93ed8a1e522acb78d3c1f9de62d89fa"/><section>
+    <title>SkrivRespons()</title>
+<indexterm><primary>SkrivRespons</primary><secondary>Mastermind.Core.Domain.Respons</secondary></indexterm>
+<indexterm><primary>Mastermind.Core.Domain.Respons</primary><secondary>SkrivRespons</secondary></indexterm>
+<para><computeroutput>void Mastermind.Core.Domain.Respons.SkrivRespons (<link linkend="_namespace_mastermind_1_1_core_1_1_domain_1ab635e94f297da224662ab5cde374ae14">Feedback</link> feedback, <link linkend="_namespace_mastermind_1_1_core_1_1_domain_1a59b2264dfdc72e75ddceaf8f675dbcf2">Options</link> options)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Skriver feedback til konsollen baseret på evalueringsresultater. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>feedback</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>options</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>Denne metode viser feedback til brugeren, inklusive antal sorte og hvide markører. Hvis emojis er aktiveret i Options, vises også en visuel repræsentation af feedbacken. </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/Mastermind.Core/Domain/Respons.cs</section>
+</section>

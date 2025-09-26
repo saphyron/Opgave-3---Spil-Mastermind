@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_1eaf79abba4091edf9b9bfd3065fc27b" kind="dir">
+    <compoundname>src/Mastermind.Core/obj/Debug</compoundname>
+    <innerdir refid="dir_bec8d2d5db41c31cdb5e7af2475babff">src/Mastermind.Core/obj/Debug/net9.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mastermind.Core/obj/Debug/"/>
+  </compounddef>
+</doxygen>

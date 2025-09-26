@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_mastermind_1_1_core_1_1_persistence" xml:lang="en-US">
+<title>Mastermind.Core.Persistence Namespace Reference</title>
+<indexterm><primary>Mastermind.Core.Persistence</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>interface <link linkend="_interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store">IStatistikStore</link></para>
+
+<para>Vedvarende lager for statistik (flere GameResult) </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">JsonFilePaths</emphasis></para>
+
+<para>Stier til JSON-filer (Options, Statistik) </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store">JsonStatistikStore</link></para>
+
+<para>Vedvarende lager for statistik (flere GameResult) </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link></para>
+
+<para>Repository for Options (indstillinger) </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

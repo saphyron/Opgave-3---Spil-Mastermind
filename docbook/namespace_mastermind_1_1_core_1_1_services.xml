@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_mastermind_1_1_core_1_1_services" xml:lang="en-US">
+<title>Mastermind.Core.Services Namespace Reference</title>
+<indexterm><primary>Mastermind.Core.Services</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_evaluering">Evaluering</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_input">Input</link></para>
+
+<para>Håndterer brugerinput og validering af gæt. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_core_1_1_services_1_1_secret_generator">SecretGenerator</link></para>
+
+<para>Genererer en tilfældig hemmelig kode bestående af farver. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

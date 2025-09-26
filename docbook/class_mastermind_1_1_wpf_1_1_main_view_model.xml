@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model" xml:lang="en-US">
+<title>Mastermind.Wpf.MainViewModel Class Reference</title>
+<indexterm><primary>Mastermind.Wpf.MainViewModel</primary></indexterm>
+<para>
+
+<para>Hoved-viewmodel der skifter mellem visninger (spil, indstillinger, statistik) og håndterer exit. </para>
+ 
+</para>
+<para>Inheritance diagram for Mastermind.Wpf.MainViewModel:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_mastermind_1_1_wpf_1_1_main_view_model.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_mastermind_1_1_wpf_1_1_main_view_model_1a8b462cce3b23691bb0e2293cc144a44c">MainViewModel</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model_1ac5ba65e2cdddc68a9b56623acae4e52d"/>object? <emphasis role="strong">CurrentView</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model_1a09fdcff4b3ceb3c9b4ab8573e51d8c8c"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">NytSpilCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model_1a64f5a8de3751d8c55c764653365be0f1"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">OptionsCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model_1a8c75e2d1d60d1ddd5dab4807571d65fb"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">StatistikCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model_1a66ff391dbb37108b3fb410fc21cb3525"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">ExitCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model_1a0ca2bb5f69b40c83ff59146151e2175b"/>PropertyChangedEventHandler? <emphasis role="strong">PropertyChanged</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Hoved-viewmodel der skifter mellem visninger (spil, indstillinger, statistik) og håndterer exit. </para>
+
+
+
+<para>Implementerer INotifyPropertyChanged og eksponerer kommandoer til navigation: <computeroutput>NytSpilCmd</computeroutput>, <computeroutput>OptionsCmd</computeroutput>, <computeroutput>StatistikCmd</computeroutput>, <computeroutput>ExitCmd</computeroutput>. Opretter og genbruger <link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link> og <link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store">JsonStatistikStore</link> og sætter <computeroutput>CurrentView</computeroutput> til den aktive WPF-view (UserControl). Ved ændringer kaldes OnChanged(string?) for at opdatere bindings. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_main_view_model_1a8b462cce3b23691bb0e2293cc144a44c"/><section>
+    <title>MainViewModel()</title>
+<indexterm><primary>MainViewModel</primary><secondary>Mastermind.Wpf.MainViewModel</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.MainViewModel</primary><secondary>MainViewModel</secondary></indexterm>
+<para><computeroutput>Mastermind.Wpf.MainViewModel.MainViewModel ( )</computeroutput></para>
+<para>Initialiserer kommandoer, sætter startvisning og håndterer afslutning af app.</para>
+
+<para>Opretter kommandoer til at skifte mellem <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view">Views.GameView</link>, <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view">Views.OptionsView</link> og <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view">Views.StatistikView</link>. Starter med <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view">Views.GameView</link> som aktiv visning. Exit-kommandoen lukker WPF-appen eller, hvis den ikke findes, kalder Environment.Exit(int). </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/Mastermind.Wpf/MainViewModel.cs</section>
+</section>

@@ -1,0 +1,108 @@
+\doxysection{Mastermind.\+Core.\+Domain Namespace Reference}
+\hypertarget{namespace_mastermind_1_1_core_1_1_domain}{}\label{namespace_mastermind_1_1_core_1_1_domain}\index{Mastermind.Core.Domain@{Mastermind.Core.Domain}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Farver\+Helper}
+\begin{DoxyCompactList}\small\item\em Hjælpeklasse til håndtering af farver i Mastermind-\/spillet. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mastermind_1_1_core_1_1_domain_1_1_respons}{Respons}}
+\begin{DoxyCompactList}\small\item\em Håndterer visning af feedback til brugeren baseret på evalueringsresultater. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespace_mastermind_1_1_core_1_1_domain_ae918be05ac87bee4adb4d7fac4535fc9}\label{namespace_mastermind_1_1_core_1_1_domain_ae918be05ac87bee4adb4d7fac4535fc9} 
+enum \mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_ae918be05ac87bee4adb4d7fac4535fc9}{Farve}} \{ \newline
+{\bfseries Rød}
+, {\bfseries Grøn}
+, {\bfseries Blå}
+, {\bfseries Gul}
+, \newline
+{\bfseries Orange}
+, {\bfseries Lilla}
+, {\bfseries Hvid}
+, {\bfseries Sort}
+ \}
+\begin{DoxyCompactList}\small\item\em Definerer de mulige farver i Mastermind-\/spillet. \end{DoxyCompactList}\item 
+\Hypertarget{namespace_mastermind_1_1_core_1_1_domain_a2a1ccc519c9aa305e48061edddca44c4}\label{namespace_mastermind_1_1_core_1_1_domain_a2a1ccc519c9aa305e48061edddca44c4} 
+enum {\bfseries Sprog} \{ {\bfseries Da}
+, {\bfseries En}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+readonly record struct \mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_ab635e94f297da224662ab5cde374ae14}{Feedback}} (int Black, int White)
+\begin{DoxyCompactList}\small\item\em Repræsenterer feedback fra en evaluering af et gæt i \doxylink{namespace_mastermind}{Mastermind}. \end{DoxyCompactList}\item 
+record \mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_aa6714a62c08fb1a8091fc73bf89f8684}{Game\+Result}} (Date\+Time Timestamp\+Utc, bool Vundet, int Forsøg)
+\begin{DoxyCompactList}\small\item\em Én spilsession (én runde) resultat. \end{DoxyCompactList}\item 
+record \mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_a59b2264dfdc72e75ddceaf8f675dbcf2}{Options}} (int længde=4, int max\+Forsøg=12, bool show\+Emojis=true, Sprog sprog=Sprog.\+Da)
+\begin{DoxyCompactList}\small\item\em Indstillinger for spillet, herunder længde på koden, maksimale forsøg, visning af emojis og sprog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_mastermind_1_1_core_1_1_domain_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_mastermind_1_1_core_1_1_domain_ab635e94f297da224662ab5cde374ae14}\index{Mastermind.Core.Domain@{Mastermind.Core.Domain}!Feedback@{Feedback}}
+\index{Feedback@{Feedback}!Mastermind.Core.Domain@{Mastermind.Core.Domain}}
+\doxysubsubsection{\texorpdfstring{Feedback()}{Feedback()}}
+{\footnotesize\ttfamily \label{namespace_mastermind_1_1_core_1_1_domain_ab635e94f297da224662ab5cde374ae14} 
+readonly record struct Mastermind.\+Core.\+Domain.\+Feedback (\begin{DoxyParamCaption}\item[{int}]{Black}{, }\item[{int}]{White}{}\end{DoxyParamCaption})}
+
+
+
+Repræsenterer feedback fra en evaluering af et gæt i \doxylink{namespace_mastermind}{Mastermind}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Black} & \\
+\hline
+{\em White} & \\
+\hline
+\end{DoxyParams}
+
+
+Denne record struct indeholder antallet af sorte (Black) og hvide (White) markører i feedbacken. \Hypertarget{namespace_mastermind_1_1_core_1_1_domain_aa6714a62c08fb1a8091fc73bf89f8684}\index{Mastermind.Core.Domain@{Mastermind.Core.Domain}!GameResult@{GameResult}}
+\index{GameResult@{GameResult}!Mastermind.Core.Domain@{Mastermind.Core.Domain}}
+\doxysubsubsection{\texorpdfstring{GameResult()}{GameResult()}}
+{\footnotesize\ttfamily \label{namespace_mastermind_1_1_core_1_1_domain_aa6714a62c08fb1a8091fc73bf89f8684} 
+record Mastermind.\+Core.\+Domain.\+Game\+Result (\begin{DoxyParamCaption}\item[{Date\+Time}]{Timestamp\+Utc}{, }\item[{bool}]{Vundet}{, }\item[{int}]{Forsøg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [sealed]}}
+
+
+
+Én spilsession (én runde) resultat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Timestamp\+Utc} & \\
+\hline
+{\em Vundet} & \\
+\hline
+{\em Forsøg} & \\
+\hline
+\end{DoxyParams}
+
+
+Gemmes i statistik-\/filen som JSON. \Hypertarget{namespace_mastermind_1_1_core_1_1_domain_a59b2264dfdc72e75ddceaf8f675dbcf2}\index{Mastermind.Core.Domain@{Mastermind.Core.Domain}!Options@{Options}}
+\index{Options@{Options}!Mastermind.Core.Domain@{Mastermind.Core.Domain}}
+\doxysubsubsection{\texorpdfstring{Options()}{Options()}}
+{\footnotesize\ttfamily \label{namespace_mastermind_1_1_core_1_1_domain_a59b2264dfdc72e75ddceaf8f675dbcf2} 
+record Mastermind.\+Core.\+Domain.\+Options (\begin{DoxyParamCaption}\item[{int}]{længde}{ = {\ttfamily 4}, }\item[{int}]{max\+Forsøg}{ = {\ttfamily 12}, }\item[{bool}]{show\+Emojis}{ = {\ttfamily true}, }\item[{Sprog}]{sprog}{ = {\ttfamily Sprog.Da}}\end{DoxyParamCaption})}
+
+
+
+Indstillinger for spillet, herunder længde på koden, maksimale forsøg, visning af emojis og sprog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em længde} & \\
+\hline
+{\em max\+Forsøg} & \\
+\hline
+{\em show\+Emojis} & \\
+\hline
+{\em sprog} & \\
+\hline
+\end{DoxyParams}
+
+
+Denne record bruges til at konfigurere spillets indstillinger og kan nemt udvides med flere indstillinger i fremtiden. 

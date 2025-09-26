@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md__r_e_a_d_m_e</compoundname>
+    <title>Mastermind (C# • WPF &amp; Konsol)</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__r_e_a_d_m_e_1autotoc_md0"/></para>
+<para>En moderne udgave af <bold>Mastermind</bold> skrevet i C# med både <bold>konsol-app</bold> og <bold>WPF GUI</bold>. Løsningen er opdelt i en <bold>Core</bold>-pakke med spil-logik, en <bold>Wpf</bold>-klient (MVVM) og en <bold>Console</bold>-klient.</para>
+<para><hruler/>
+</para>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md2">
+<title>📦 Løsningsstruktur</title><para><programlisting><codeline><highlight class="normal">📦<sp/>Opgave-3---Spil-Mastermind</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>Mastermind.sln</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>README.md</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>LICENSE</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>appsettings.json</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📄<sp/>appsettings.Development.json</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📂<sp/>Properties</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>└─<sp/>📄<sp/>launchSettings.json</highlight></codeline>
+<codeline><highlight class="normal">├─<sp/>📂<sp/>Database</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>├─<sp/>📄<sp/>Options.json</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>├─<sp/>📄<sp/>Statistik.json</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/>└─<sp/>📄<sp/>log.txt</highlight></codeline>
+<codeline><highlight class="normal">└─<sp/>📂<sp/>src</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>├─<sp/>📂<sp/>Mastermind.Core</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Domain</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Farver.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>FarverHelper.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Feedback.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>GameResultater.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Options.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Respons.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Sprog.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Services</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Evaluering.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Input.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>SecretGenerator.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Persistence</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>IStatistikStore.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>JsonFilePaths.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>JsonStatistikStore.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>OptionsRepository.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Utils</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>StatistikTilføjer.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>(projektfil)<sp/><sp/>—<sp/>*hvis<sp/>relevant*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>├─<sp/>📂<sp/>Mastermind.Wpf</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>App.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>App.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>MainWindow.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>MainWindow.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>MainViewModel.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Infrastructure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>RelayCommand.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Resources</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>Strings.da.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Strings.en.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📂<sp/>Views</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>GameView.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>GameView.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>OptionsView.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>OptionsView.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>StatistikView.xaml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>StatistikView.xaml.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Mastermind.Wpf.csproj</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>└─<sp/>📂<sp/>Mastermind.Console</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>├─<sp/>📄<sp/>Program.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>├─<sp/>📂<sp/>UI</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>│<sp/><sp/>├─<sp/>📄<sp/>KonsolMenu.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Spilstyring.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>├─<sp/>📂<sp/>Utils</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>│<sp/><sp/>└─<sp/>📄<sp/>Statistik.cs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>└─<sp/>📄<sp/>Mastermind.Console.csproj</highlight></codeline>
+</programlisting></para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md4">
+<title>🚀 Kørsel</title><para>Du kan køre hvert projekt direkte med <computeroutput>--project</computeroutput>:</para>
+<para><bold>Konsol-app</bold> <programlisting filename=".powershell"><codeline><highlight class="normal">dotnet<sp/>run<sp/>--project<sp/>&quot;src/Mastermind.Console&quot;</highlight></codeline>
+</programlisting></para>
+<para><bold>WPF-app</bold> <programlisting filename=".powershell"><codeline><highlight class="normal">dotnet<sp/>run<sp/>--project<sp/>&quot;src/Mastermind.Wpf&quot;</highlight></codeline>
+</programlisting></para>
+<para><blockquote><para>Alternativt kan løsningen åbnes i Visual Studio og de enkelte startprojekter vælges derfra. </para>
+</blockquote></para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md6">
+<title>🧠 Hovedidé &amp; gameplay</title><para><itemizedlist>
+<listitem><para>Spillet genererer en hemmelig rækkefølge af farver (længde og forsøg er konfigurerbart via <computeroutput>Options</computeroutput>). <linebreak/>
+</para>
+</listitem><listitem><para>Spilleren gætter kombinationer indenfor et maks. antal forsøg.</para>
+</listitem><listitem><para>Feedback gives med <bold>sorte</bold> (rigtig farve på rigtig plads) og <bold>hvide</bold> (rigtig farve, forkert plads) markeringer.</para>
+</listitem><listitem><para>Resultater gemmes og kan aflæses i <bold>Statistik</bold> (WPF) og via konsol.</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md8">
+<title>🧩 Arkitektur &amp; kode</title><sect2 id="md__r_e_a_d_m_e_1autotoc_md9">
+<title>Core (Mastermind.Core)</title><para><itemizedlist>
+<listitem><para><bold>Domain</bold> <linebreak/>
+ <computeroutput>Farver</computeroutput>, <computeroutput>Options</computeroutput>, <computeroutput>Feedback</computeroutput>, <computeroutput>Respons</computeroutput>, <computeroutput>GameResultater</computeroutput> – de centrale domænemodeller.</para>
+</listitem><listitem><para><bold>Services</bold> <linebreak/>
+ <computeroutput>SecretGenerator</computeroutput> (genererer hemmelig kombination), <computeroutput>Input</computeroutput> (validerer/parsing), <computeroutput>Evaluering</computeroutput> (beregner sort/hvid feedback).</para>
+</listitem><listitem><para><bold>Persistence</bold> <linebreak/>
+ <computeroutput>OptionsRepository</computeroutput> gemmer/loader <computeroutput>Options</computeroutput> til/fra <computeroutput>Database/Options.json</computeroutput>. <linebreak/>
+ <computeroutput>JsonStatistikStore</computeroutput> implementerer <computeroutput>IStatistikStore</computeroutput> og gemmer resultater i <computeroutput>Database/Statistik.json</computeroutput>. <linebreak/>
+ <computeroutput>JsonFilePaths</computeroutput> sørger for mappe/sti-opsætning og <computeroutput>EnsureDir()</computeroutput>.</para>
+</listitem><listitem><para><bold>Utils</bold> <linebreak/>
+ <computeroutput>StatistikTilføjer</computeroutput> – hjælpefunktioner ifm. statistik.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md10">
+<title>WPF (Mastermind.Wpf)</title><para><itemizedlist>
+<listitem><para><bold>MVVM</bold> <linebreak/>
+ <computeroutput>MainViewModel</computeroutput> (INotifyPropertyChanged) holder <computeroutput>CurrentView</computeroutput> og eksponerer kommandoer: <computeroutput>NytSpilCmd</computeroutput>, <computeroutput>OptionsCmd</computeroutput>, <computeroutput>StatistikCmd</computeroutput>, <computeroutput>ExitCmd</computeroutput>.</para>
+</listitem><listitem><para><bold>Navigation</bold> <linebreak/>
+ Skifter mellem <computeroutput>Views/GameView</computeroutput>, <computeroutput>Views/OptionsView</computeroutput>, <computeroutput>Views/StatistikView</computeroutput> og afslutter via <computeroutput>ExitCmd</computeroutput>.</para>
+</listitem><listitem><para><bold>RelayCommand</bold> <linebreak/>
+ Let ICommand-implementering til bindinger.</para>
+</listitem><listitem><para><bold>Lokalisering</bold> <linebreak/>
+ <computeroutput>Resources/Strings.da.xaml</computeroutput> og <computeroutput>Strings.en.xaml</computeroutput> muliggør dansk/engelsk tekst i UI.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md11">
+<title>Konsol (Mastermind.Console)</title><para><itemizedlist>
+<listitem><para><computeroutput>Program.cs</computeroutput> opretter <computeroutput>Options</computeroutput> (fx <computeroutput>længde: 3, maxForsøg: 9, showEmojis: true, sprog: Sprog.En</computeroutput>) samt <computeroutput>SecretGenerator</computeroutput>, <computeroutput>Input</computeroutput>, <computeroutput>Evaluering</computeroutput>, <computeroutput>KonsolMenu</computeroutput>, <computeroutput>Statistik</computeroutput>, <computeroutput>JsonStatistikStore</computeroutput> og starter <computeroutput>Spilstyring</computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect2>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md13">
+<title>💾 Persistens</title><para><itemizedlist>
+<listitem><para><bold>Indstillinger</bold>: <computeroutput>Database/Options.json</computeroutput> (læses/skrives via <computeroutput>OptionsRepository</computeroutput>). <linebreak/>
+</para>
+</listitem><listitem><para><bold>Statistik</bold>: <computeroutput>Database/Statistik.json</computeroutput> (append/reset via <computeroutput>JsonStatistikStore</computeroutput>). <linebreak/>
+</para>
+</listitem><listitem><para>Hvis filer/mappen ikke findes, oprettes de ved brug (<computeroutput>EnsureDir</computeroutput>).</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md15">
+<title>🛠 Krav &amp; værktøjer</title><para><itemizedlist>
+<listitem><para><bold>.NET SDK 9.0</bold> (projekterne målretter <computeroutput>net9.0</computeroutput>/<computeroutput>net9.0-windows</computeroutput>).</para>
+</listitem><listitem><para>Windows 10/11 for WPF-klienten.</para>
+</listitem><listitem><para>PowerShell 5.1+ (eller en vilkårlig shell til <computeroutput>dotnet</computeroutput> CLI).</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md17">
+<title>🌐 Sprog (UI)</title><para>WPF-UI understøtter dansk og engelsk via <computeroutput>Resources/Strings.da.xaml</computeroutput> og <computeroutput>Resources/Strings.en.xaml</computeroutput>. Standard-sproget kan ændres i runtime afhængigt af bindinger/ressourcer (se XAML).</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md19">
+<title>🧰 Fejlfinding / kendte issues</title><para><itemizedlist>
+<listitem><para><bold><computeroutput>InitializeComponent</computeroutput> findes ikke</bold>: <linebreak/>
+<itemizedlist>
+<listitem><para>Fejl i IDE, kode virker som om de er tilstede og kører. Har ingen ide om hvorfor fejlen er der.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Auto-genererede filer</bold>: Nogle builds genererer <computeroutput>*.g.cs</computeroutput> i stedet for <computeroutput>*.g.i.cs</computeroutput> – det er OK.</para>
+</listitem><listitem><para><bold>Filsystem-skriverettigheder</bold>: Sørg for, at processen kan skrive til <computeroutput>Database/</computeroutput>.</para>
+</listitem><listitem><para><bold>Valideringsproblem i Konsol udgave</bold>: Skal fixes når tid, Konsol har problemer med æøå, og Sprog.</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md21">
+<title>Versions Historik</title><para><itemizedlist>
+<listitem><para>0.5<itemizedlist>
+<listitem><para>GUI Tilføjet</para>
+</listitem><listitem><para>Persistent Statistik tilføjet</para>
+</listitem><listitem><para>Persistent Options tilføjet</para>
+</listitem><listitem><para>Opdateret README.md</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>0.3<itemizedlist>
+<listitem><para>Tilføjet statistik</para>
+</listitem><listitem><para>Opdateret README.md</para>
+</listitem><listitem><para>Opdateret tidligere funktioner for at kunne håndtere statistik</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>0.2<itemizedlist>
+<listitem><para>Fuld Konsol Funktionalitet</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>0.1<itemizedlist>
+<listitem><para>Init</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md23">
+<title>📄 Licens</title><para>Se <ulink url="./LICENSE"><computeroutput>LICENSE</computeroutput></ulink>.</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md24">
+<title>Ressourcer</title><para><itemizedlist>
+<listitem><para><ulink url="https://www.wikihow.com/Play-Mastermind">wikihow: How to Play Mastermind</ulink> </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

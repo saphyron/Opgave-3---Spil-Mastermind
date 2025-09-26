@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Konsol::Utils::Statistik</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1aaded6baa9e658990b2db7064f5d950e5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mastermind.Konsol.Utils.Statistik.AntalSpil</definition>
+        <argsstring></argsstring>
+        <name>AntalSpil</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.AntalSpil</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="18" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a44b70f1a8933459de7d7b74fe486551e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mastermind.Konsol.Utils.Statistik.AntalSejre</definition>
+        <argsstring></argsstring>
+        <name>AntalSejre</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.AntalSejre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="19" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ad34118d853e1bc5dcc243ef1faecedc6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mastermind.Konsol.Utils.Statistik.AntalTab</definition>
+        <argsstring></argsstring>
+        <name>AntalTab</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.AntalTab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="20" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1aca4157d636e9b18d6be9437e6c8ff25a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mastermind.Konsol.Utils.Statistik.SumForsøgVedSejr</definition>
+        <argsstring></argsstring>
+        <name>SumForsøgVedSejr</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.SumForsøgVedSejr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="22" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a1f639dbc4ff0e854321ed065b779d469" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Mastermind.Konsol.Utils.Statistik.GnsForsøgVedSejr</definition>
+        <argsstring></argsstring>
+        <name>GnsForsøgVedSejr</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.GnsForsøgVedSejr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="23" column="23" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a3778f569a94698fe627fdc10b8238d5e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Mastermind.Konsol.Utils.Statistik.BedsteForsøgVedSejr</definition>
+        <argsstring></argsstring>
+        <name>BedsteForsøgVedSejr</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.BedsteForsøgVedSejr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="24" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1abc6b20b26c980635dad0781a05100ecf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Mastermind.Konsol.Utils.Statistik.BedsteForsøgVedTab</definition>
+        <argsstring></argsstring>
+        <name>BedsteForsøgVedTab</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.BedsteForsøgVedTab</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="25" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a3e8d351793eb50bd100820384d27d8a4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Mastermind.Konsol.Utils.Statistik.VærsteForsøgVedSejr</definition>
+        <argsstring></argsstring>
+        <name>VærsteForsøgVedSejr</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.VærsteForsøgVedSejr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="26" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a418ec105c4f63d290409d93d84292ed6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mastermind.Konsol.Utils.Statistik.NuværendeStreak</definition>
+        <argsstring></argsstring>
+        <name>NuværendeStreak</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.NuværendeStreak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="29" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a131817f7be3b77f6f07e0c8b2ff462e6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mastermind.Konsol.Utils.Statistik.BedsteStreak</definition>
+        <argsstring></argsstring>
+        <name>BedsteStreak</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.BedsteStreak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="30" column="20" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a03ce121e7618580c8c9e26a4acd119be" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Mastermind.Konsol.Utils.Statistik.WinRate</definition>
+        <argsstring></argsstring>
+        <name>WinRate</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.WinRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="31" column="23" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ae08f3249756d378c60020fa2cf049503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Konsol.Utils.Statistik.RegisterSejr</definition>
+        <argsstring>(int forsøg)</argsstring>
+        <name>RegisterSejr</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.RegisterSejr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>forsøg</declname>
+        </param>
+        <briefdescription>
+<para>Registrerer en sejr i statistikken med det givne antal forsøg. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>forsøg</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Opdaterer statistikdata såsom antal spil, sejre, forsøg ved sejr, og win-streaks. Sørger også for at opdatere bedste og værste forsøg ved sejr. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="40" column="21" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="40" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a748466f361345e11a14301e76f715426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Konsol.Utils.Statistik.RegisterTab</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterTab</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.RegisterTab</qualifiedname>
+        <briefdescription>
+<para>Registrerer et tab i statistikken. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Opdaterer statistikdata såsom antal spil, tab, og nulstiller den nuværende win-streak. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="60" column="21" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ae3f7ba4f1bd744fc32a894127cd43d1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Konsol.Utils.Statistik.Render</definition>
+        <argsstring>(Options options)</argsstring>
+        <name>Render</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.Render</qualifiedname>
+        <param>
+          <type>Options</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Viser en oversigt over statistikken i konsollen baseret på de angivne Options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Denne metode viser statistikdata såsom antal spil, sejre, tab, win-rate, gennemsnitlige forsøg ved sejr, bedste og værste forsøg ved sejr. Layoutet er i ren ASCII-stil og tilpasses baseret på det valgte sprog i Options. Derudover håndteres sprogvalg (dansk/engelsk) for labels i oversigten. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="76" column="21" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="76" bodyend="131"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a2d342cdaf3781460e0e4f98e29ee34e0" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mastermind.Konsol.Utils.Statistik.L</definition>
+        <argsstring>(string key, Sprog s)</argsstring>
+        <name>L</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.L</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>Sprog</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Lokaliserer en streng baseret på det angivne sprog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Den lokaliserede streng.</para>
+</simplesect>
+</para>
+<para>Denne metode håndterer oversættelse af nøgler til den korrekte sprogversion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="141" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a64483af1f250f15a048018e0d8f2898d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mastermind.Konsol.Utils.Statistik.Da</definition>
+        <argsstring>(string key)</argsstring>
+        <name>Da</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.Da</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Danske lokaliserede strenge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Den lokaliserede danske streng.</para>
+</simplesect>
+</para>
+<para>Denne metode håndterer oversættelse af nøgler til den danske sprogversion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="150" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a6dae284b5a1d2a139c1d82b69a97fe90" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mastermind.Konsol.Utils.Statistik.En</definition>
+        <argsstring>(string key)</argsstring>
+        <name>En</name>
+        <qualifiedname>Mastermind.Konsol.Utils.Statistik.En</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Engelske lokaliserede strenge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Den lokaliserede engelske streng.</para>
+</simplesect>
+</para>
+<para>Denne metode håndterer oversættelse af nøgler til den engelske sprogversion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Utils/Statistik.cs" line="172" column="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Håndterer statistik for Mastermind-spillet, herunder antal spil, sejre, tab, forsøg og win-streaks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Statistikken kan registrere resultater af spil og vise en oversigt baseret på de angivne Options. Denne klasse bruger Options til at tilpasse visningen baseret på spillets indstillinger, såsom sprog. Derudover beregnes statistik som gennemsnitlige forsøg ved sejr, bedste og værste forsøg, samt win-rate. </para>
+    </detaileddescription>
+    <location file="src/Mastermind.Console/Utils/Statistik.cs" line="14" column="11" bodyfile="src/Mastermind.Console/Utils/Statistik.cs" bodystart="15" bodyend="186"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a44b70f1a8933459de7d7b74fe486551e" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>AntalSejre</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1aaded6baa9e658990b2db7064f5d950e5" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>AntalSpil</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ad34118d853e1bc5dcc243ef1faecedc6" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>AntalTab</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a3778f569a94698fe627fdc10b8238d5e" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>BedsteForsøgVedSejr</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1abc6b20b26c980635dad0781a05100ecf" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>BedsteForsøgVedTab</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a131817f7be3b77f6f07e0c8b2ff462e6" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>BedsteStreak</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a64483af1f250f15a048018e0d8f2898d" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>Da</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a6dae284b5a1d2a139c1d82b69a97fe90" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>En</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a1f639dbc4ff0e854321ed065b779d469" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>GnsForsøgVedSejr</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a2d342cdaf3781460e0e4f98e29ee34e0" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>L</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a418ec105c4f63d290409d93d84292ed6" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>NuværendeStreak</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ae08f3249756d378c60020fa2cf049503" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>RegisterSejr</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a748466f361345e11a14301e76f715426" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>RegisterTab</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1ae3f7ba4f1bd744fc32a894127cd43d1d" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>Render</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1aca4157d636e9b18d6be9437e6c8ff25a" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>SumForsøgVedSejr</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a3e8d351793eb50bd100820384d27d8a4" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>VærsteForsøgVedSejr</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik_1a03ce121e7618580c8c9e26a4acd119be" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::Utils::Statistik</scope><name>WinRate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

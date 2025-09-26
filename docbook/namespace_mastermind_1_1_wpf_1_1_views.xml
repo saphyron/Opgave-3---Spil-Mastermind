@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_mastermind_1_1_wpf_1_1_views" xml:lang="en-US">
+<title>Mastermind.Wpf.Views Namespace Reference</title>
+<indexterm><primary>Mastermind.Wpf.Views</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view">GameView</link></para>
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_game_view">GameView</link>. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view">OptionsView</link></para>
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view">OptionsView</link>. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view">StatistikView</link></para>
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view">StatistikView</link>. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

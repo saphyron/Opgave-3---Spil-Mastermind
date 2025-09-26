@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mastermind_1_1_wpf_1_1_app" xml:lang="en-US">
+<title>Mastermind.Wpf.App Class Reference</title>
+<indexterm><primary>Mastermind.Wpf.App</primary></indexterm>
+<para>
+
+<para>Starter appen og fanger uventede fejl: viser en besked til brugeren og skriver en logfil. </para>
+ 
+</para>
+<para>Inheritance diagram for Mastermind.Wpf.App:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_mastermind_1_1_wpf_1_1_app.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_mastermind_1_1_wpf_1_1_app_1a211b6ff5433cf535dec0fb9568dcbfd2">App</link> ()</para>
+
+<para>Initialiserer globale fejlhandlere og logger fejl ved runtime. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_app_1af474964761cc5ea1213543b35e6af093"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_app_1afa166703a3b005df3dc9c639e12ea32b"/>static void <emphasis role="strong">Main</emphasis> ()</para>
+
+<para>Application Entry Point. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Starter appen og fanger uventede fejl: viser en besked til brugeren og skriver en logfil. </para>
+
+
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_app">App</link>.</para>
+
+<para>Abonnerer på tre globale fejlhændelser: <itemizedlist>
+<listitem>
+
+<para>Application.DispatcherUnhandledException for UI-tråden (markeres som håndteret for at undgå crash). </para>
+</listitem>
+<listitem>
+
+<para>AppDomain.UnhandledException for ikke-UI tråde. </para>
+</listitem>
+<listitem>
+
+<para>TaskScheduler.UnobservedTaskException for uobserverede task-exceptions (kalder <computeroutput>SetObserved()</computeroutput>). </para>
+</listitem>
+</itemizedlist>
+Alle fejl skrives appendende til <computeroutput>log.txt</computeroutput> i JsonFilePaths.DatabaseDir efter at JsonFilePaths.EnsureDir er kaldt. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_app_1a211b6ff5433cf535dec0fb9568dcbfd2"/><section>
+    <title>App()</title>
+<indexterm><primary>App</primary><secondary>Mastermind.Wpf.App</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.App</primary><secondary>App</secondary></indexterm>
+<para><computeroutput>Mastermind.Wpf.App.App ( )</computeroutput></para><para>
+
+<para>Initialiserer globale fejlhandlere og logger fejl ved runtime. </para>
+</para>
+
+<para>Se klassekommentar for detaljer. </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/Mastermind.Wpf/App.xaml.cssrc/Mastermind.Wpf/obj/Debug/net9.0-windows/App.g.cs</section>
+</section>

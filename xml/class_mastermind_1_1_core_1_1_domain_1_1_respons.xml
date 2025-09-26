@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_core_1_1_domain_1_1_respons" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Core::Domain::Respons</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_domain_1_1_respons_1ac93ed8a1e522acb78d3c1f9de62d89fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mastermind.Core.Domain.Respons.SkrivRespons</definition>
+        <argsstring>(Feedback feedback, Options options)</argsstring>
+        <name>SkrivRespons</name>
+        <qualifiedname>Mastermind.Core.Domain.Respons.SkrivRespons</qualifiedname>
+        <param>
+          <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1ab635e94f297da224662ab5cde374ae14" kindref="member">Feedback</ref></type>
+          <declname>feedback</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1a59b2264dfdc72e75ddceaf8f675dbcf2" kindref="member">Options</ref></type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Skriver feedback til konsollen baseret på evalueringsresultater. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>feedback</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Denne metode viser feedback til brugeren, inklusive antal sorte og hvide markører. Hvis emojis er aktiveret i Options, vises også en visuel repræsentation af feedbacken. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/Respons.cs" line="21" column="28" bodyfile="src/Mastermind.Core/Domain/Respons.cs" bodystart="21" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Håndterer visning af feedback til brugeren baseret på evalueringsresultater. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Denne klasse bruger Options til at tilpasse visningen baseret på spillets indstillinger, såsom sprog og om emojis skal vises. </para>
+    </detaileddescription>
+    <location file="src/Mastermind.Core/Domain/Respons.cs" line="10" column="11" bodyfile="src/Mastermind.Core/Domain/Respons.cs" bodystart="11" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_respons_1ac93ed8a1e522acb78d3c1f9de62d89fa" prot="public" virt="non-virtual"><scope>Mastermind::Core::Domain::Respons</scope><name>SkrivRespons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

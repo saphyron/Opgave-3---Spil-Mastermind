@@ -1,0 +1,70 @@
+\doxysection{Mastermind.\+Wpf.\+Views.\+Statistik\+View Class Reference}
+\hypertarget{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view}{}\label{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view}\index{Mastermind.Wpf.Views.StatistikView@{Mastermind.Wpf.Views.StatistikView}}
+
+
+\doxylink{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view}{Statistik\+View}.  
+
+
+Inheritance diagram for Mastermind.\+Wpf.\+Views.\+Statistik\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.287356cm]{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_a9fbc66c7ad1260a3306751076b694456}\label{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_a9fbc66c7ad1260a3306751076b694456} 
+void {\bfseries Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\+Component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_a6f54a58245ea90154d2992e00967acf9}{Statistik\+View}} (\mbox{\hyperlink{interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store}{IStatistik\+Store}} stats, \mbox{\hyperlink{class_mastermind_1_1_core_1_1_persistence_1_1_options_repository}{Options\+Repository}} opt\+Repo)
+\begin{DoxyCompactList}\small\item\em Initialiserer statistikvisningen, opsætter kommandoer og henter første visning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_af591f51561acac164e1782513cc29387}\label{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_af591f51561acac164e1782513cc29387} 
+string {\bfseries Table} = "{}"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_adfba6070566c2011149c7d4c70eee455}\label{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_adfba6070566c2011149c7d4c70eee455} 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}} {\bfseries Reset\+Cmd}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_a2ffbec9182004b2c5f5a11db0661cf7b}\label{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_a2ffbec9182004b2c5f5a11db0661cf7b} 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command}{Relay\+Command}} {\bfseries Refresh\+Cmd}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view}{Statistik\+View}. 
+
+Viser en tabel med vedvarende spilstatistik og giver knapper til at nulstille og opdatere.
+
+WPF User\+Control der henter data fra \doxylink{interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store}{IStatistik\+Store}, aggregerer med \doxylink{class_mastermind_1_1_core_1_1_utils_1_1_statistik_tilf_xC3_xB8jer}{Statistik\+Tilføjer} og formatterer output via kultur bestemt af \doxylink{class_mastermind_1_1_core_1_1_persistence_1_1_options_repository}{Options\+Repository} (da-\/\+DK / en-\/\+US). UI bindes til {\ttfamily Table}, og kommandoer (Reset\+Cmd, Refresh\+Cmd) løfter ændringer gennem {\ttfamily Data\+Context}-\/refresh. 
+
+\label{doc-constructors}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_a6f54a58245ea90154d2992e00967acf9}\index{Mastermind.Wpf.Views.StatistikView@{Mastermind.Wpf.Views.StatistikView}!StatistikView@{StatistikView}}
+\index{StatistikView@{StatistikView}!Mastermind.Wpf.Views.StatistikView@{Mastermind.Wpf.Views.StatistikView}}
+\doxysubsubsection{\texorpdfstring{StatistikView()}{StatistikView()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view_a6f54a58245ea90154d2992e00967acf9} 
+Mastermind.\+Wpf.\+Views.\+Statistik\+View.\+Statistik\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store}{IStatistik\+Store}}}]{stats}{, }\item[{\mbox{\hyperlink{class_mastermind_1_1_core_1_1_persistence_1_1_options_repository}{Options\+Repository}}}]{opt\+Repo}{}\end{DoxyParamCaption})}
+
+
+
+Initialiserer statistikvisningen, opsætter kommandoer og henter første visning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Vedvarende lager til statistik.\\
+\hline
+{\em opt\+Repo} & Repository til indstillinger.\\
+\hline
+\end{DoxyParams}
+
+
+Kommandoer til at nulstille og opdatere statistik oprettes. Første visning hentes ved start. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Mastermind.\+Wpf/obj/\+Debug/net9.\+0-\/windows/\+Views/Statistik\+View.\+g.\+cs\item 
+src/\+Mastermind.\+Wpf/\+Views/Statistik\+View.\+xaml.\+cs\end{DoxyCompactItemize}

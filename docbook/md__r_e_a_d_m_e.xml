@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__r_e_a_d_m_e" xml:lang="en-US">
+<title>
+<para>Mastermind (C# • WPF &amp; Konsol) </para>
+</title>
+<indexterm><primary>Mastermind (C# • WPF &amp; Konsol)</primary></indexterm>
+
+<para><anchor xml:id="_md__r_e_a_d_m_e_1autotoc_md0"/></para>
+
+<para>En moderne udgave af <emphasis role="bold">Mastermind</emphasis> skrevet i C# med både <emphasis role="bold">konsol-app</emphasis> og <emphasis role="bold">WPF GUI</emphasis>. Løsningen er opdelt i en <emphasis role="bold">Core</emphasis>-pakke med spil-logik, en <emphasis role="bold">Wpf</emphasis>-klient (MVVM) og en <emphasis role="bold">Console</emphasis>-klient.</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md2">
+<title>📦 Løsningsstruktur</title>
+<para><literallayout><computeroutput>📦&#32;Opgave-3---Spil-Mastermind
+├─&#32;📄&#32;Mastermind.sln
+├─&#32;📄&#32;README.md
+├─&#32;📄&#32;LICENSE
+├─&#32;📄&#32;appsettings.json
+├─&#32;📄&#32;appsettings.Development.json
+├─&#32;📂&#32;Properties
+│&#32;&#32;└─&#32;📄&#32;launchSettings.json
+├─&#32;📂&#32;Database
+│&#32;&#32;├─&#32;📄&#32;Options.json
+│&#32;&#32;├─&#32;📄&#32;Statistik.json
+│&#32;&#32;└─&#32;📄&#32;log.txt
+└─&#32;📂&#32;src
+&#32;&#32;&#32;├─&#32;📂&#32;Mastermind.Core
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📂&#32;Domain
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;Farver.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;FarverHelper.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;Feedback.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;GameResultater.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;Options.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;Respons.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;└─&#32;📄&#32;Sprog.cs
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📂&#32;Services
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;Evaluering.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;Input.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;└─&#32;📄&#32;SecretGenerator.cs
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📂&#32;Persistence
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;IStatistikStore.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;JsonFilePaths.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;JsonStatistikStore.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;└─&#32;📄&#32;OptionsRepository.cs
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📂&#32;Utils
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;└─&#32;📄&#32;StatistikTilføjer.cs
+&#32;&#32;&#32;│&#32;&#32;└─&#32;📄&#32;(projektfil)&#32;&#32;—&#32;*hvis&#32;relevant*
+&#32;&#32;&#32;│
+&#32;&#32;&#32;├─&#32;📂&#32;Mastermind.Wpf
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📄&#32;App.xaml
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📄&#32;App.xaml.cs
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📄&#32;MainWindow.xaml
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📄&#32;MainWindow.xaml.cs
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📄&#32;MainViewModel.cs
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📂&#32;Infrastructure
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;└─&#32;📄&#32;RelayCommand.cs
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📂&#32;Resources
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;Strings.da.xaml
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;└─&#32;📄&#32;Strings.en.xaml
+&#32;&#32;&#32;│&#32;&#32;├─&#32;📂&#32;Views
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;GameView.xaml
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;GameView.xaml.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;OptionsView.xaml
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;OptionsView.xaml.cs
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;├─&#32;📄&#32;StatistikView.xaml
+&#32;&#32;&#32;│&#32;&#32;│&#32;&#32;└─&#32;📄&#32;StatistikView.xaml.cs
+&#32;&#32;&#32;│&#32;&#32;└─&#32;📄&#32;Mastermind.Wpf.csproj
+&#32;&#32;&#32;│
+&#32;&#32;&#32;└─&#32;📂&#32;Mastermind.Console
+&#32;&#32;&#32;&#32;&#32;&#32;├─&#32;📄&#32;Program.cs
+&#32;&#32;&#32;&#32;&#32;&#32;├─&#32;📂&#32;UI
+&#32;&#32;&#32;&#32;&#32;&#32;│&#32;&#32;├─&#32;📄&#32;KonsolMenu.cs
+&#32;&#32;&#32;&#32;&#32;&#32;│&#32;&#32;└─&#32;📄&#32;Spilstyring.cs
+&#32;&#32;&#32;&#32;&#32;&#32;├─&#32;📂&#32;Utils
+&#32;&#32;&#32;&#32;&#32;&#32;│&#32;&#32;└─&#32;📄&#32;Statistik.cs
+&#32;&#32;&#32;&#32;&#32;&#32;└─&#32;📄&#32;Mastermind.Console.csproj
+</computeroutput></literallayout></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md4">
+<title>🚀 Kørsel</title>
+<para>Du kan køre hvert projekt direkte med <computeroutput>--project</computeroutput>:</para>
+
+<para><emphasis role="bold">Konsol-app</emphasis> <literallayout><computeroutput>dotnet&#32;run&#32;--project&#32;&quot;src/Mastermind.Console&quot;
+</computeroutput></literallayout></para>
+
+<para><emphasis role="bold">WPF-app</emphasis> <literallayout><computeroutput>dotnet&#32;run&#32;--project&#32;&quot;src/Mastermind.Wpf&quot;
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>Alternativt kan løsningen åbnes i Visual Studio og de enkelte startprojekter vælges derfra. </para>
+</blockquote></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md6">
+<title>🧠 Hovedidé &amp; gameplay</title>
+<para><itemizedlist>
+<listitem>
+<para>Spillet genererer en hemmelig rækkefølge af farver (længde og forsøg er konfigurerbart via <computeroutput>Options</computeroutput>). <?linebreak?></para>
+</listitem><listitem>
+<para>Spilleren gætter kombinationer indenfor et maks. antal forsøg.</para>
+</listitem><listitem>
+<para>Feedback gives med <emphasis role="bold">sorte</emphasis> (rigtig farve på rigtig plads) og <emphasis role="bold">hvide</emphasis> (rigtig farve, forkert plads) markeringer.</para>
+</listitem><listitem>
+<para>Resultater gemmes og kan aflæses i <emphasis role="bold">Statistik</emphasis> (WPF) og via konsol.</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md8">
+<title>🧩 Arkitektur &amp; kode</title><section xml:id="_md__r_e_a_d_m_e_1autotoc_md9">
+<title>Core (Mastermind.Core)</title>
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">Domain</emphasis> <?linebreak?> <computeroutput>Farver</computeroutput>, <computeroutput>Options</computeroutput>, <computeroutput>Feedback</computeroutput>, <computeroutput>Respons</computeroutput>, <computeroutput>GameResultater</computeroutput> – de centrale domænemodeller.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Services</emphasis> <?linebreak?> <computeroutput>SecretGenerator</computeroutput> (genererer hemmelig kombination), <computeroutput>Input</computeroutput> (validerer/parsing), <computeroutput>Evaluering</computeroutput> (beregner sort/hvid feedback).</para>
+</listitem><listitem>
+<para><emphasis role="bold">Persistence</emphasis> <?linebreak?> <computeroutput>OptionsRepository</computeroutput> gemmer/loader <computeroutput>Options</computeroutput> til/fra <computeroutput>Database/Options.json</computeroutput>. <?linebreak?> <computeroutput>JsonStatistikStore</computeroutput> implementerer <computeroutput>IStatistikStore</computeroutput> og gemmer resultater i <computeroutput>Database/Statistik.json</computeroutput>. <?linebreak?> <computeroutput>JsonFilePaths</computeroutput> sørger for mappe/sti-opsætning og <computeroutput>EnsureDir()</computeroutput>.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Utils</emphasis> <?linebreak?> <computeroutput>StatistikTilføjer</computeroutput> – hjælpefunktioner ifm. statistik.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md10">
+<title>WPF (Mastermind.Wpf)</title>
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">MVVM</emphasis> <?linebreak?> <computeroutput>MainViewModel</computeroutput> (INotifyPropertyChanged) holder <computeroutput>CurrentView</computeroutput> og eksponerer kommandoer: <computeroutput>NytSpilCmd</computeroutput>, <computeroutput>OptionsCmd</computeroutput>, <computeroutput>StatistikCmd</computeroutput>, <computeroutput>ExitCmd</computeroutput>.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Navigation</emphasis> <?linebreak?> Skifter mellem <computeroutput>Views/GameView</computeroutput>, <computeroutput>Views/OptionsView</computeroutput>, <computeroutput>Views/StatistikView</computeroutput> og afslutter via <computeroutput>ExitCmd</computeroutput>.</para>
+</listitem><listitem>
+<para><emphasis role="bold">RelayCommand</emphasis> <?linebreak?> Let ICommand-implementering til bindinger.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Lokalisering</emphasis> <?linebreak?> <computeroutput>Resources/Strings.da.xaml</computeroutput> og <computeroutput>Strings.en.xaml</computeroutput> muliggør dansk/engelsk tekst i UI.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md11">
+<title>Konsol (Mastermind.Console)</title>
+<para><itemizedlist>
+<listitem>
+<para><computeroutput>Program.cs</computeroutput> opretter <computeroutput>Options</computeroutput> (fx <computeroutput>længde: 3, maxForsøg: 9, showEmojis: true, sprog: Sprog.En</computeroutput>) samt <computeroutput>SecretGenerator</computeroutput>, <computeroutput>Input</computeroutput>, <computeroutput>Evaluering</computeroutput>, <computeroutput>KonsolMenu</computeroutput>, <computeroutput>Statistik</computeroutput>, <computeroutput>JsonStatistikStore</computeroutput> og starter <computeroutput>Spilstyring</computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md13">
+<title>💾 Persistens</title>
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">Indstillinger</emphasis>: <computeroutput>Database/Options.json</computeroutput> (læses/skrives via <computeroutput>OptionsRepository</computeroutput>). <?linebreak?></para>
+</listitem><listitem>
+<para><emphasis role="bold">Statistik</emphasis>: <computeroutput>Database/Statistik.json</computeroutput> (append/reset via <computeroutput>JsonStatistikStore</computeroutput>). <?linebreak?></para>
+</listitem><listitem>
+<para>Hvis filer/mappen ikke findes, oprettes de ved brug (<computeroutput>EnsureDir</computeroutput>).</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md15">
+<title>🛠 Krav &amp; værktøjer</title>
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">.NET SDK 9.0</emphasis> (projekterne målretter <computeroutput>net9.0</computeroutput>/<computeroutput>net9.0-windows</computeroutput>).</para>
+</listitem><listitem>
+<para>Windows 10/11 for WPF-klienten.</para>
+</listitem><listitem>
+<para>PowerShell 5.1+ (eller en vilkårlig shell til <computeroutput>dotnet</computeroutput> CLI).</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md17">
+<title>🌐 Sprog (UI)</title>
+<para>WPF-UI understøtter dansk og engelsk via <computeroutput>Resources/Strings.da.xaml</computeroutput> og <computeroutput>Resources/Strings.en.xaml</computeroutput>. Standard-sproget kan ændres i runtime afhængigt af bindinger/ressourcer (se XAML).</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md19">
+<title>🧰 Fejlfinding / kendte issues</title>
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold"><computeroutput>InitializeComponent</computeroutput> findes ikke</emphasis>: <?linebreak?><itemizedlist>
+<listitem>
+<para>Fejl i IDE, kode virker som om de er tilstede og kører. Har ingen ide om hvorfor fejlen er der.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem>
+<para><emphasis role="bold">Auto-genererede filer</emphasis>: Nogle builds genererer <computeroutput>*.g.cs</computeroutput> i stedet for <computeroutput>*.g.i.cs</computeroutput> – det er OK.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Filsystem-skriverettigheder</emphasis>: Sørg for, at processen kan skrive til <computeroutput>Database/</computeroutput>.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Valideringsproblem i Konsol udgave</emphasis>: Skal fixes når tid, Konsol har problemer med æøå, og Sprog.</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md21">
+<title>Versions Historik</title>
+<para><itemizedlist>
+<listitem>
+<para>0.5<itemizedlist>
+<listitem>
+<para>GUI Tilføjet</para>
+</listitem><listitem>
+<para>Persistent Statistik tilføjet</para>
+</listitem><listitem>
+<para>Persistent Options tilføjet</para>
+</listitem><listitem>
+<para>Opdateret README.md</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem>
+<para>0.3<itemizedlist>
+<listitem>
+<para>Tilføjet statistik</para>
+</listitem><listitem>
+<para>Opdateret README.md</para>
+</listitem><listitem>
+<para>Opdateret tidligere funktioner for at kunne håndtere statistik</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem>
+<para>0.2<itemizedlist>
+<listitem>
+<para>Fuld Konsol Funktionalitet</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem>
+<para>0.1<itemizedlist>
+<listitem>
+<para>Init</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md23">
+<title>📄 Licens</title>
+<para>Se <link xlink:href="./LICENSE"><computeroutput>LICENSE</computeroutput></link>.</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md24">
+<title>Ressourcer</title>
+<para><itemizedlist>
+<listitem>
+<para><link xlink:href="https://www.wikihow.com/Play-Mastermind">wikihow: How to Play Mastermind</link> </para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>

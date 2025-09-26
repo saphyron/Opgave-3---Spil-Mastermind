@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view" xml:lang="en-US">
+<title>Mastermind.Wpf.Views.OptionsView Class Reference</title>
+<indexterm><primary>Mastermind.Wpf.Views.OptionsView</primary></indexterm>
+<para>
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view">OptionsView</link>. </para>
+ 
+</para>
+<para>Inheritance diagram for Mastermind.Wpf.Views.OptionsView:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_mastermind_1_1_wpf_1_1_views_1_1_options_view.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1ad1a6a434f870db7a5f2f6cde3c97608f"/>void <emphasis role="strong">InitializeComponent</emphasis> ()</para>
+
+<para>InitializeComponent. </para>
+</listitem>
+            <listitem><para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a20601001ff106d91fef12f90f10b440c">OptionsView</link> (<link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link> repo)</para>
+
+<para>Initialiserer indstillingsvinduet og loader eksisterende konfiguration. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1aace959571db1e14afa390488d9a531ba"/>int <emphasis role="strong">Længde</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a9196f736ab5305ed4fc6eaf84adf2e6b"/>int <emphasis role="strong">MaxForsøg</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1afa5f5615ce8ef307af9ab1b22f4367ce"/>bool <emphasis role="strong">ShowEmojis</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a7d695daee035a155a50e3d48fe8dfcdb"/>Sprog <emphasis role="strong">SprogValg</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1acd7ff8bc4c8d9d6204285f5278e5ff7e"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">SaveCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a32998bdf0b2224e0faf7942497035640"/><link linkend="_class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command">RelayCommand</link> <emphasis role="strong">ReloadCmd</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view">OptionsView</link>. </para>
+
+
+
+<para>Brugerflade til at ændre spilindstillinger som længde, max forsøg, emojis og sprog.</para>
+
+<para>Implementerer en WPF UserControl hvor indstillinger bindes direkte til felter og kan gemmes eller genindlæses via <link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link>. Indeholder kommandoer til Save og Reload uden brug af separat ViewModel. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_mastermind_1_1_wpf_1_1_views_1_1_options_view_1a20601001ff106d91fef12f90f10b440c"/><section>
+    <title>OptionsView()</title>
+<indexterm><primary>OptionsView</primary><secondary>Mastermind.Wpf.Views.OptionsView</secondary></indexterm>
+<indexterm><primary>Mastermind.Wpf.Views.OptionsView</primary><secondary>OptionsView</secondary></indexterm>
+<para><computeroutput>Mastermind.Wpf.Views.OptionsView.OptionsView (<link linkend="_class_mastermind_1_1_core_1_1_persistence_1_1_options_repository">OptionsRepository</link> repo)</computeroutput></para><para>
+
+<para>Initialiserer indstillingsvinduet og loader eksisterende konfiguration. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>repo</entry><entry>
+<para>Repository til indstillinger.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>Kommandoer til at gemme og genindlæse indstillinger oprettes. Indstillinger indlæses ved start. </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/OptionsView.g.cssrc/Mastermind.Wpf/Views/OptionsView.xaml.cs</section>
+</section>

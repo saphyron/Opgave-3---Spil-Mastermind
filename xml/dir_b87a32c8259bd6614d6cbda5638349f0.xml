@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_b87a32c8259bd6614d6cbda5638349f0" kind="dir">
+    <compoundname>src/Mastermind.Console/UI</compoundname>
+    <innerfile refid="_konsol_menu_8cs">KonsolMenu.cs</innerfile>
+    <innerfile refid="_spilstyring_8cs">Spilstyring.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mastermind.Console/UI/"/>
+  </compounddef>
+</doxygen>

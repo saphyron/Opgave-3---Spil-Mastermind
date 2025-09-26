@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_mastermind_1_1_wpf" xml:lang="en-US">
+<title>Mastermind.Wpf Namespace Reference</title>
+<indexterm><primary>Mastermind.Wpf</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_wpf_1_1_app">App</link></para>
+
+<para>Starter appen og fanger uventede fejl: viser en besked til brugeren og skriver en logfil. </para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Localization</emphasis></para>
+
+<para>Skifter app’ens sprog (da/en) og henter tekster med nøgler. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_wpf_1_1_main_view_model">MainViewModel</link></para>
+
+<para>Hoved-viewmodel der skifter mellem visninger (spil, indstillinger, statistik) og håndterer exit. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_mastermind_1_1_wpf_1_1_main_window">MainWindow</link></para>
+
+<para>App’ens hovedvindue der viser indholdet fra <computeroutput><link linkend="_class_mastermind_1_1_wpf_1_1_main_view_model">MainViewModel</link></computeroutput>. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

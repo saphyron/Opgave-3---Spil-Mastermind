@@ -1,0 +1,37 @@
+\doxysection{Mastermind.\+Core.\+Services.\+Evaluering Class Reference}
+\hypertarget{class_mastermind_1_1_core_1_1_services_1_1_evaluering}{}\label{class_mastermind_1_1_core_1_1_services_1_1_evaluering}\index{Mastermind.Core.Services.Evaluering@{Mastermind.Core.Services.Evaluering}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Feedback \mbox{\hyperlink{class_mastermind_1_1_core_1_1_services_1_1_evaluering_ad937a495bf3b3d8a4ff28d946187c893}{Evaluer}} (\mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_ae918be05ac87bee4adb4d7fac4535fc9}{Farve}}\mbox{[}$\,$\mbox{]} gæt, \mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_ae918be05ac87bee4adb4d7fac4535fc9}{Farve}}\mbox{[}$\,$\mbox{]} secret)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_mastermind_1_1_core_1_1_services_1_1_evaluering_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mastermind_1_1_core_1_1_services_1_1_evaluering_ad937a495bf3b3d8a4ff28d946187c893}\index{Mastermind.Core.Services.Evaluering@{Mastermind.Core.Services.Evaluering}!Evaluer@{Evaluer}}
+\index{Evaluer@{Evaluer}!Mastermind.Core.Services.Evaluering@{Mastermind.Core.Services.Evaluering}}
+\doxysubsubsection{\texorpdfstring{Evaluer()}{Evaluer()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_core_1_1_services_1_1_evaluering_ad937a495bf3b3d8a4ff28d946187c893} 
+Feedback Mastermind.\+Core.\+Services.\+Evaluering.\+Evaluer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_ae918be05ac87bee4adb4d7fac4535fc9}{Farve}}\mbox{[}$\,$\mbox{]}}]{gæt}{, }\item[{\mbox{\hyperlink{namespace_mastermind_1_1_core_1_1_domain_ae918be05ac87bee4adb4d7fac4535fc9}{Farve}}\mbox{[}$\,$\mbox{]}}]{secret}{}\end{DoxyParamCaption})}
+
+Evaluerer et gæt mod den hemmelige kode og returnerer antallet af sorte og hvide pegge.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gæt} & Array af farver, som repræsenterer spillerens gæt.\\
+\hline
+{\em secret} & Array af farver, som repræsenterer den hemmelige kode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Et \doxylink{namespace_mastermind_1_1_core_1_1_domain_ab635e94f297da224662ab5cde374ae14}{Feedback}-\/objekt med antal sorte og hvide pegge.
+\end{DoxyReturn}
+
+
+Metoden sammenligner først hvert element i {\itshape gæt}  med det tilsvarende element i {\itshape secret}  for at finde sorte pegge (korrekt farve og position). Derefter gennemgås de resterende elementer for at finde hvide pegge (korrekt farve, forkert position), hvor der tages højde for allerede matchede positioner. Hvis længden af {\itshape gæt}  og {\itshape secret}  ikke er ens, kastes en Argument\+Exception. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Mastermind.\+Core/\+Services/Evaluering.\+cs\end{DoxyCompactItemize}

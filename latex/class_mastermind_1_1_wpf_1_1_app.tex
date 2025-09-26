@@ -1,0 +1,60 @@
+\doxysection{Mastermind.\+Wpf.\+App Class Reference}
+\hypertarget{class_mastermind_1_1_wpf_1_1_app}{}\label{class_mastermind_1_1_wpf_1_1_app}\index{Mastermind.Wpf.App@{Mastermind.Wpf.App}}
+
+
+Starter appen og fanger uventede fejl\+: viser en besked til brugeren og skriver en logfil.  
+
+
+Inheritance diagram for Mastermind.\+Wpf.\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mastermind_1_1_wpf_1_1_app}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mastermind_1_1_wpf_1_1_app_a211b6ff5433cf535dec0fb9568dcbfd2}{App}} ()
+\begin{DoxyCompactList}\small\item\em Initialiserer globale fejlhandlere og logger fejl ved runtime. \end{DoxyCompactList}\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_app_af474964761cc5ea1213543b35e6af093}\label{class_mastermind_1_1_wpf_1_1_app_af474964761cc5ea1213543b35e6af093} 
+void {\bfseries Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\+Component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mastermind_1_1_wpf_1_1_app_afa166703a3b005df3dc9c639e12ea32b}\label{class_mastermind_1_1_wpf_1_1_app_afa166703a3b005df3dc9c639e12ea32b} 
+static void {\bfseries Main} ()
+\begin{DoxyCompactList}\small\item\em Application Entry Point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Starter appen og fanger uventede fejl\+: viser en besked til brugeren og skriver en logfil. 
+
+\doxylink{class_mastermind_1_1_wpf_1_1_app}{App}.
+
+Abonnerer på tre globale fejlhændelser\+: 
+\begin{DoxyItemize}
+\item Application.\+Dispatcher\+Unhandled\+Exception for UI-\/tråden (markeres som håndteret for at undgå crash). 
+\item App\+Domain.\+Unhandled\+Exception for ikke-\/\+UI tråde. 
+\item Task\+Scheduler.\+Unobserved\+Task\+Exception for uobserverede task-\/exceptions (kalder {\ttfamily Set\+Observed()}). 
+\end{DoxyItemize}Alle fejl skrives appendende til {\ttfamily log.\+txt} i Json\+File\+Paths.\+Database\+Dir efter at Json\+File\+Paths.\+Ensure\+Dir er kaldt. 
+
+\label{doc-constructors}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_app_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mastermind_1_1_wpf_1_1_app_a211b6ff5433cf535dec0fb9568dcbfd2}\index{Mastermind.Wpf.App@{Mastermind.Wpf.App}!App@{App}}
+\index{App@{App}!Mastermind.Wpf.App@{Mastermind.Wpf.App}}
+\doxysubsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily \label{class_mastermind_1_1_wpf_1_1_app_a211b6ff5433cf535dec0fb9568dcbfd2} 
+Mastermind.\+Wpf.\+App.\+App (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initialiserer globale fejlhandlere og logger fejl ved runtime. 
+
+Se klassekommentar for detaljer. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Mastermind.\+Wpf/App.\+xaml.\+cs\item 
+src/\+Mastermind.\+Wpf/obj/\+Debug/net9.\+0-\/windows/App.\+g.\+cs\end{DoxyCompactItemize}
