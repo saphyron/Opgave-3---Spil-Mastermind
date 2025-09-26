@@ -163,7 +163,12 @@ Standard-sproget kan ændres i runtime afhængigt af bindinger/ressourcer (se XA
   - Fejl i IDE, kode virker som om de er tilstede og kører. Har ingen ide om hvorfor fejlen er der.
 - **Auto-genererede filer**: Nogle builds genererer `*.g.cs` i stedet for `*.g.i.cs` – det er OK.
 - **Filsystem-skriverettigheder**: Sørg for, at processen kan skrive til `Database/`.
-- **Valideringsproblem i Konsol udgave**: Skal fixes når tid, Konsol har problemer med æøå, og Sprog.
+- **Valideringsproblem i Konsol udgave**: Skal fixes når tid, Konsol har problemer med Sprog.
+
+### Planlægning for næste version
+- Fix Sprog problemer med GUI i henhold til Sprog i Tekst og Sprog I GUI.
+- Fix Sprog Problemer i Konsol.
+- Fix Persistent Statistik i Konsol.
 
 ---
 
