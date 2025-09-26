@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Wpf::Views::GameView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Controls.UserControl</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Controls.UserControl</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a7addb9ecef50175ddf522857599f11d3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mastermind.Wpf.Views.GameView._contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" line="42" column="22" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ae245178333ab96fb6fa1610ef13e95aa" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository" kindref="compound">OptionsRepository</ref></type>
+        <definition>readonly OptionsRepository Mastermind.Wpf.Views.GameView._optRepo</definition>
+        <argsstring></argsstring>
+        <name>_optRepo</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._optRepo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="34" column="44" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a6b9ae09dc018c1af8323d11c02235e49" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" kindref="compound">IStatistikStore</ref></type>
+        <definition>readonly IStatistikStore Mastermind.Wpf.Views.GameView._stats</definition>
+        <argsstring></argsstring>
+        <name>_stats</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="35" column="42" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a2129b32f5683261b4c5f5fbd637f0d15" prot="private" static="no" mutable="no">
+        <type>Options</type>
+        <definition>Options Mastermind.Wpf.Views.GameView._opt</definition>
+        <argsstring></argsstring>
+        <name>_opt</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._opt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="37" column="25" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac7ede93b777b11a3a9f620d6f9182140" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>[]</type>
+        <definition>Farve [] Mastermind.Wpf.Views.GameView._secret</definition>
+        <argsstring></argsstring>
+        <name>_secret</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._secret</qualifiedname>
+        <initializer>= Array.Empty&lt;<ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="38" column="23" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac4aba4d05639cb90023f6b36760f1f67" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kindref="compound">SecretGenerator</ref></type>
+        <definition>readonly SecretGenerator Mastermind.Wpf.Views.GameView._generator</definition>
+        <argsstring></argsstring>
+        <name>_generator</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._generator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="39" column="42" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a490958d70660bcc70fc3cc3be3f31341" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kindref="compound">Evaluering</ref></type>
+        <definition>readonly Evaluering Mastermind.Wpf.Views.GameView._eval</definition>
+        <argsstring></argsstring>
+        <name>_eval</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._eval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="40" column="37" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a422b805e55693bbc9597fe83e94f3003" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mastermind.Wpf.Views.GameView._attempts</definition>
+        <argsstring></argsstring>
+        <name>_attempts</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._attempts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="45" column="21" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a94574fa75e5248b188576eea64ba2840" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mastermind.Wpf.Views.GameView._roundOver</definition>
+        <argsstring></argsstring>
+        <name>_roundOver</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView._roundOver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="46" column="22" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab02b713cd2b2195a5ab63bf6613d80e6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ObservableCollection&lt; <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref> &gt;</type>
+        <definition>ObservableCollection&lt;Farve&gt; Mastermind.Wpf.Views.GameView.Palette</definition>
+        <argsstring></argsstring>
+        <name>Palette</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.Palette</qualifiedname>
+        <initializer>=
+            new ObservableCollection&lt;<ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>&gt;(Enum.GetValues&lt;<ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>&gt;())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="23" column="37" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a710777790de2b350d7d5978d889c9055" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref></type>
+        <definition>Farve Mastermind.Wpf.Views.GameView.Guess0</definition>
+        <argsstring></argsstring>
+        <name>Guess0</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.Guess0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="26" column="22" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a6585902fe701b1cb0a948826589159f4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref></type>
+        <definition>Farve Mastermind.Wpf.Views.GameView.Guess1</definition>
+        <argsstring></argsstring>
+        <name>Guess1</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.Guess1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="27" column="22" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab4c9c574cdf39fc98a6a60167d49e732" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref></type>
+        <definition>Farve Mastermind.Wpf.Views.GameView.Guess2</definition>
+        <argsstring></argsstring>
+        <name>Guess2</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.Guess2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="28" column="22" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9165ae45843e6452063c4d8fc26dbc1e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref></type>
+        <definition>Farve Mastermind.Wpf.Views.GameView.Guess3</definition>
+        <argsstring></argsstring>
+        <name>Guess3</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.Guess3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="29" column="22" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9a496dace716b6280f78917d3b29fc5b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ObservableCollection&lt; string &gt;</type>
+        <definition>ObservableCollection&lt;string&gt; Mastermind.Wpf.Views.GameView.History</definition>
+        <argsstring></argsstring>
+        <name>History</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.History</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="31" column="37" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a287e49df022802b7aedc98df06dd9497" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Mastermind.Wpf.Views.GameView.Footer</definition>
+        <argsstring></argsstring>
+        <name>Footer</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.Footer</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="32" column="23" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9f4a12986f40bc7235e1c68ccbac8295" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" kindref="compound">RelayCommand</ref></type>
+        <definition>RelayCommand Mastermind.Wpf.Views.GameView.GaetCmd</definition>
+        <argsstring></argsstring>
+        <name>GaetCmd</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.GaetCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="42" column="29" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1aaf399ea8c9465934258869dabad5db4d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" kindref="compound">RelayCommand</ref></type>
+        <definition>RelayCommand Mastermind.Wpf.Views.GameView.NyRundeCmd</definition>
+        <argsstring></argsstring>
+        <name>NyRundeCmd</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.NyRundeCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="43" column="29" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a526e1f98122f090e277e18587c7ce2ff" prot="private" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Mastermind.Wpf.Views.GameView.BlackPeg</definition>
+        <argsstring></argsstring>
+        <name>BlackPeg</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.BlackPeg</qualifiedname>
+        <initializer>= &apos;⚫&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="47" column="28" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab31c3ecfaa3df1de51ed14d19a98308a" prot="private" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Mastermind.Wpf.Views.GameView.WhitePeg</definition>
+        <argsstring></argsstring>
+        <name>WhitePeg</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.WhitePeg</qualifiedname>
+        <initializer>= &apos;⚪&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="48" column="28" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac1ce62f4798ff27852aadb87401d5f36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Wpf.Views.GameView.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" line="49" column="21" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" bodystart="49" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad6de3b8f883e283c81e4f2e09fcef180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mastermind.Wpf.Views.GameView.GameView</definition>
+        <argsstring>(OptionsRepository optRepo, IStatistikStore stats)</argsstring>
+        <name>GameView</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.GameView</qualifiedname>
+        <param>
+          <type><ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository" kindref="compound">OptionsRepository</ref></type>
+          <declname>optRepo</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" kindref="compound">IStatistikStore</ref></type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Initialiserer en ny spilvisning og starter første runde. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>optRepo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Repository til indstillinger.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vedvarende lager til statistik.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Indstillinger indlæses ved start, og en ny hemmelig kode genereres. Kommandoer til at gætte og starte ny runde oprettes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="58" column="16" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="58" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1aae87d58cfc9337fdf30b20418fe48155" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Mastermind.Wpf.Views.GameView.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" line="69" column="52" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9e490cfd725f5e85bbc82cf7b707f00e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Mastermind.Wpf.Views.GameView.FormatFeedbackLine</definition>
+        <argsstring>(int attemptNumber, Feedback fb)</argsstring>
+        <name>FormatFeedbackLine</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.FormatFeedbackLine</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>attemptNumber</declname>
+        </param>
+        <param>
+          <type>Feedback</type>
+          <declname>fb</declname>
+        </param>
+        <briefdescription>
+<para>Formatterer en feedback-linje med emojis eller tekst baseret på indstillinger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attemptNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fb</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Formatteret feedback-linje.</para>
+</simplesect>
+</para>
+<para>Bruger emojis (⚫ og ⚪) hvis Options.showEmojis er sand; ellers tekstbaseret feedback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="85" column="24" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="85" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a44fe670781e0dc4ee4a8c72d098b4195" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Wpf.Views.GameView.StartNewRound</definition>
+        <argsstring>()</argsstring>
+        <name>StartNewRound</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.StartNewRound</qualifiedname>
+        <briefdescription>
+<para>Starter en ny runde og nulstiller hemmelig kode, historik og forsøgstæller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Indstillinger genindlæses, og brugerfladen opdateres. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="113" column="22" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="113" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a096c67f30fb32490a6822d47c9ab545c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Wpf.Views.GameView.HandleGuess</definition>
+        <argsstring>()</argsstring>
+        <name>HandleGuess</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.HandleGuess</qualifiedname>
+        <briefdescription>
+<para>Håndterer et gæt og evaluerer om spilleren har vundet, tabt eller kan fortsætte. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Opdaterer historik, statistik og brugerflade baseret på resultatet af gættet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="130" column="22" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="130" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad5bdf09bbb683517f158a05e610be7d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Mastermind.Wpf.Views.GameView.BuildFooterSummary</definition>
+        <argsstring>(bool won, bool showSecret)</argsstring>
+        <name>BuildFooterSummary</name>
+        <qualifiedname>Mastermind.Wpf.Views.GameView.BuildFooterSummary</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>won</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showSecret</declname>
+        </param>
+        <briefdescription>
+<para>Bygger en opsummering til fodnoten med resultat og statistik. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>won</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Om spilleren har vundet.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>showSecret</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Om den hemmelige kode skal vises.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Opsummeringstekst.</para>
+</simplesect>
+</para>
+<para>Inkluderer resultatlinje, hemmelig kode (hvis relevant), samlet statistik og instruktion om at starte ny runde. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Views/GameView.xaml.cs" line="191" column="24" bodyfile="src/Mastermind.Wpf/Views/GameView.xaml.cs" bodystart="191" bodyend="225"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view" kindref="compound">GameView</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Brugerflade til Mastermind-spillet, hvor spilleren kan gætte farver og starte nye runder.</para>
+<para>Implementerer WPF UserControl og styrer spildata, evaluering af gæt og opdatering af brugerfladen. Arbejder sammen med <ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository" kindref="compound">OptionsRepository</ref>, <ref refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kindref="compound">SecretGenerator</ref>, <ref refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kindref="compound">Evaluering</ref> og <ref refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" kindref="compound">IStatistikStore</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mastermind.Wpf.Views.GameView</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System.Windows.Markup.IComponentConnector</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mastermind.Wpf.Views.GameView</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Controls::UserControl</label>
+      </node>
+      <node id="3">
+        <label>System.Windows.Markup.IComponentConnector</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" line="40" column="19" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" bodystart="40" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a422b805e55693bbc9597fe83e94f3003" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_attempts</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a7addb9ecef50175ddf522857599f11d3" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_contentLoaded</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a490958d70660bcc70fc3cc3be3f31341" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_eval</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac4aba4d05639cb90023f6b36760f1f67" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_generator</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a2129b32f5683261b4c5f5fbd637f0d15" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_opt</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ae245178333ab96fb6fa1610ef13e95aa" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_optRepo</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a94574fa75e5248b188576eea64ba2840" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_roundOver</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac7ede93b777b11a3a9f620d6f9182140" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_secret</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a6b9ae09dc018c1af8323d11c02235e49" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>_stats</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a526e1f98122f090e277e18587c7ce2ff" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>BlackPeg</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad5bdf09bbb683517f158a05e610be7d5" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>BuildFooterSummary</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1aae87d58cfc9337fdf30b20418fe48155" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>Connect</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a287e49df022802b7aedc98df06dd9497" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>Footer</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9e490cfd725f5e85bbc82cf7b707f00e" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>FormatFeedbackLine</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9f4a12986f40bc7235e1c68ccbac8295" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>GaetCmd</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ad6de3b8f883e283c81e4f2e09fcef180" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>GameView</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a710777790de2b350d7d5978d889c9055" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>Guess0</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a6585902fe701b1cb0a948826589159f4" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>Guess1</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab4c9c574cdf39fc98a6a60167d49e732" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>Guess2</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9165ae45843e6452063c4d8fc26dbc1e" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>Guess3</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a096c67f30fb32490a6822d47c9ab545c" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>HandleGuess</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a9a496dace716b6280f78917d3b29fc5b" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>History</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ac1ce62f4798ff27852aadb87401d5f36" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>InitializeComponent</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1aaf399ea8c9465934258869dabad5db4d" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>NyRundeCmd</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab02b713cd2b2195a5ab63bf6613d80e6" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>Palette</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1a44fe670781e0dc4ee4a8c72d098b4195" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>StartNewRound</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view_1ab31c3ecfaa3df1de51ed14d19a98308a" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Views::GameView</scope><name>WhitePeg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

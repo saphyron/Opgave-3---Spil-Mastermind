@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespace_mastermind_1_1_wpf_1_1_views" kind="namespace" language="C#">
+    <compoundname>Mastermind::Wpf::Views</compoundname>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view" prot="public">Mastermind::Wpf::Views::GameView</innerclass>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view" prot="public">Mastermind::Wpf::Views::OptionsView</innerclass>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view" prot="public">Mastermind::Wpf::Views::StatistikView</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/Views/GameView.g.cs" line="34" column="1"/>
+  </compounddef>
+</doxygen>

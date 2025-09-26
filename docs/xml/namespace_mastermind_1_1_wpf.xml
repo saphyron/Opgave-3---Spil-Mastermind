@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespace_mastermind_1_1_wpf" kind="namespace" language="C#">
+    <compoundname>Mastermind::Wpf</compoundname>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_app" prot="public">Mastermind::Wpf::App</innerclass>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_localization" prot="public">Mastermind::Wpf::Localization</innerclass>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_main_view_model" prot="public">Mastermind::Wpf::MainViewModel</innerclass>
+    <innerclass refid="class_mastermind_1_1_wpf_1_1_main_window" prot="public">Mastermind::Wpf::MainWindow</innerclass>
+    <innernamespace refid="namespace_mastermind_1_1_wpf_1_1_infrastructure">Mastermind::Wpf::Infrastructure</innernamespace>
+    <innernamespace refid="namespace_mastermind_1_1_wpf_1_1_views">Mastermind::Wpf::Views</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mastermind.Wpf/App.xaml.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

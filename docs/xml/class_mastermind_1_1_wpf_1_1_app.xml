@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_wpf_1_1_app" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Wpf::App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Application</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_app_1a7761f04fbdd7d62fdc460e99ce56e32c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mastermind.Wpf.App._contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Mastermind.Wpf.App._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/App.g.cs" line="42" column="22" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/App.g.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_app_1a211b6ff5433cf535dec0fb9568dcbfd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mastermind.Wpf.App.App</definition>
+        <argsstring>()</argsstring>
+        <name>App</name>
+        <qualifiedname>Mastermind.Wpf.App.App</qualifiedname>
+        <briefdescription>
+<para>Initialiserer globale fejlhandlere og logger fejl ved runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Se klassekommentar for detaljer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/App.xaml.cs" line="29" column="16" bodyfile="src/Mastermind.Wpf/App.xaml.cs" bodystart="29" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_app_1af474964761cc5ea1213543b35e6af093" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Wpf.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Mastermind.Wpf.App.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/App.g.cs" line="49" column="21" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/App.g.cs" bodystart="49" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_app_1aa063cf0e17845c2879bdff409cff6700" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mastermind.Wpf.App.Log</definition>
+        <argsstring>(string kind, Exception? ex)</argsstring>
+        <name>Log</name>
+        <qualifiedname>Mastermind.Wpf.App.Log</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>Exception?</type>
+          <declname>ex</declname>
+        </param>
+        <briefdescription>
+<para>Skriver en loglinje med tidsstempel, fejltype og exception til logfilen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kort betegnelse for fejlkilden (fx &quot;UnhandledException&quot;).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Den tilhørende exception (kan være <computeroutput>null</computeroutput>).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Forsøger at sikre at JsonFilePaths.DatabaseDir eksisterer. Hvis logskrivning fejler, ignoreres fejlen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/App.xaml.cs" line="58" column="29" bodyfile="src/Mastermind.Wpf/App.xaml.cs" bodystart="58" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_app_1afa166703a3b005df3dc9c639e12ea32b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mastermind.Wpf.App.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Mastermind.Wpf.App.Main</qualifiedname>
+        <briefdescription>
+<para>Application Entry Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/App.g.cs" line="75" column="28" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/App.g.cs" bodystart="75" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Starter appen og fanger uventede fejl: viser en besked til brugeren og skriver en logfil. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_mastermind_1_1_wpf_1_1_app" kindref="compound">App</ref>.</para>
+<para>Abonnerer på tre globale fejlhændelser: <itemizedlist>
+<listitem>
+<para>Application.DispatcherUnhandledException for UI-tråden (markeres som håndteret for at undgå crash). </para>
+</listitem>
+<listitem>
+<para>AppDomain.UnhandledException for ikke-UI tråde. </para>
+</listitem>
+<listitem>
+<para>TaskScheduler.UnobservedTaskException for uobserverede task-exceptions (kalder <computeroutput>SetObserved()</computeroutput>). </para>
+</listitem>
+</itemizedlist>
+Alle fejl skrives appendende til <computeroutput>log.txt</computeroutput> i JsonFilePaths.DatabaseDir efter at JsonFilePaths.EnsureDir er kaldt. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>Mastermind.Wpf.App</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Application</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>Mastermind.Wpf.App</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Application</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/Mastermind.Wpf/App.xaml.cs" line="21" column="19" bodyfile="src/Mastermind.Wpf/App.xaml.cs" bodystart="22" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_wpf_1_1_app_1a7761f04fbdd7d62fdc460e99ce56e32c" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::App</scope><name>_contentLoaded</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_app_1a211b6ff5433cf535dec0fb9568dcbfd2" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::App</scope><name>App</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_app_1af474964761cc5ea1213543b35e6af093" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_app_1aa063cf0e17845c2879bdff409cff6700" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::App</scope><name>Log</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_app_1afa166703a3b005df3dc9c639e12ea32b" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::App</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

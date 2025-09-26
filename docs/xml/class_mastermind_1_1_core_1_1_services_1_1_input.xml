@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_core_1_1_services_1_1_input" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Core::Services::Input</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_core_1_1_services_1_1_input_1a3e82a5a18498acfee8552a30e4fbe891" prot="private" static="no" mutable="no">
+        <type>readonly Options</type>
+        <definition>readonly Options Mastermind.Core.Services.Input._options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <qualifiedname>Mastermind.Core.Services.Input._options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Services/Input.cs" line="13" column="34" bodyfile="src/Mastermind.Core/Services/Input.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_services_1_1_input_1aaabd5926e759cda6350ee44842a5d25e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mastermind.Core.Services.Input.Input</definition>
+        <argsstring>(Options options)</argsstring>
+        <name>Input</name>
+        <qualifiedname>Mastermind.Core.Services.Input.Input</qualifiedname>
+        <param>
+          <type>Options</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Services/Input.cs" line="14" column="16" bodyfile="src/Mastermind.Core/Services/Input.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_services_1_1_input_1a3e9b26c743160d522ac5cc5ad4035857" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mastermind.Core.Services.Input.prøvParseGæt</definition>
+        <argsstring>(string? linje, out Farve[] gæt, out string? fejl)</argsstring>
+        <name>prøvParseGæt</name>
+        <qualifiedname>Mastermind.Core.Services.Input.prøvParseGæt</qualifiedname>
+        <param>
+          <type>string?</type>
+          <declname>linje</declname>
+        </param>
+        <param>
+          <type>out <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>[]</type>
+          <declname>gæt</declname>
+        </param>
+        <param>
+          <type>out string?</type>
+          <declname>fejl</declname>
+        </param>
+        <briefdescription>
+<para>Prøver at parse brugerens input til et gæt bestående af farver. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linje</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gæt</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fejl</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True hvis parsing lykkedes, ellers false.</para>
+</simplesect>
+</para>
+<para>Denne metode forsøger at parse en linje af tekst til et gæt bestående af farver. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Services/Input.cs" line="28" column="21" bodyfile="src/Mastermind.Core/Services/Input.cs" bodystart="28" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Håndterer brugerinput og validering af gæt. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Denne klasse bruger Options til at tilpasse valideringen baseret på spillets indstillinger, såsom længde på koden og sprog. </para>
+    </detaileddescription>
+    <location file="src/Mastermind.Core/Services/Input.cs" line="11" column="11" bodyfile="src/Mastermind.Core/Services/Input.cs" bodystart="12" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_core_1_1_services_1_1_input_1a3e82a5a18498acfee8552a30e4fbe891" prot="private" virt="non-virtual"><scope>Mastermind::Core::Services::Input</scope><name>_options</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_services_1_1_input_1aaabd5926e759cda6350ee44842a5d25e" prot="public" virt="non-virtual"><scope>Mastermind::Core::Services::Input</scope><name>Input</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_services_1_1_input_1a3e9b26c743160d522ac5cc5ad4035857" prot="public" virt="non-virtual"><scope>Mastermind::Core::Services::Input</scope><name>prøvParseGæt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

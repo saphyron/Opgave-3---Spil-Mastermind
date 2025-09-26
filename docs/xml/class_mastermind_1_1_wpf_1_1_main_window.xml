@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_wpf_1_1_main_window" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Wpf::MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Window</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Window</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_main_window_1a0ee2bf67d4852ddbc5553dfcfc29a518" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mastermind.Wpf.MainWindow._contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Mastermind.Wpf.MainWindow._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/MainWindow.g.cs" line="42" column="22" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/MainWindow.g.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_main_window_1a5e027219e7dfaa92247bcad8c9b625e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mastermind.Wpf.MainWindow.MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>Mastermind.Wpf.MainWindow.MainWindow</qualifiedname>
+        <briefdescription>
+<para>Initialiserer hovedvinduet og binder til <ref refid="class_mastermind_1_1_wpf_1_1_main_view_model" kindref="compound">MainViewModel</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Kalder <computeroutput><ref refid="class_mastermind_1_1_wpf_1_1_main_window_1a2a41cfc6317b68e8cb8d65577c3ab62d" kindref="member">InitializeComponent()</ref></computeroutput> (kræver matchende XAML) og sætter <computeroutput>DataContext</computeroutput> til en ny <ref refid="class_mastermind_1_1_wpf_1_1_main_view_model" kindref="compound">MainViewModel</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainWindow.xaml.cs" line="21" column="16" bodyfile="src/Mastermind.Wpf/MainWindow.xaml.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_main_window_1a2a41cfc6317b68e8cb8d65577c3ab62d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Wpf.MainWindow.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Mastermind.Wpf.MainWindow.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/MainWindow.g.cs" line="49" column="21" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/MainWindow.g.cs" bodystart="49" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_main_window_1a36af7aa7747ab8bd89908cc461ff5ae9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Mastermind.Wpf.MainWindow.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Mastermind.Wpf.MainWindow.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/obj/Debug/net9.0-windows/MainWindow.g.cs" line="69" column="52" bodyfile="src/Mastermind.Wpf/obj/Debug/net9.0-windows/MainWindow.g.cs" bodystart="69" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>App’ens hovedvindue der viser indholdet fra <computeroutput><ref refid="class_mastermind_1_1_wpf_1_1_main_view_model" kindref="compound">MainViewModel</ref></computeroutput>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_mastermind_1_1_wpf_1_1_main_window" kindref="compound">MainWindow</ref>.</para>
+<para>Er en WPF Window. Kalder <computeroutput><ref refid="class_mastermind_1_1_wpf_1_1_main_window_1a2a41cfc6317b68e8cb8d65577c3ab62d" kindref="member">InitializeComponent()</ref></computeroutput> (kræver matchende XAML) og sætter <computeroutput>DataContext</computeroutput> til en ny <ref refid="class_mastermind_1_1_wpf_1_1_main_view_model" kindref="compound">MainViewModel</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mastermind.Wpf.MainWindow</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Window</label>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mastermind.Wpf.MainWindow</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Window</label>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/Mastermind.Wpf/MainWindow.xaml.cs" line="12" column="19" bodyfile="src/Mastermind.Wpf/MainWindow.xaml.cs" bodystart="13" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a0ee2bf67d4852ddbc5553dfcfc29a518" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::MainWindow</scope><name>_contentLoaded</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a36af7aa7747ab8bd89908cc461ff5ae9" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::MainWindow</scope><name>Connect</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a2a41cfc6317b68e8cb8d65577c3ab62d" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainWindow</scope><name>InitializeComponent</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_window_1a5e027219e7dfaa92247bcad8c9b625e2" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainWindow</scope><name>MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_wpf_1_1_main_view_model" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>Mastermind::Wpf::MainViewModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">INotifyPropertyChanged</basecompoundref>
+    <sectiondef kind="event">
+      <memberdef kind="event" id="class_mastermind_1_1_wpf_1_1_main_view_model_1a0ca2bb5f69b40c83ff59146151e2175b" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>PropertyChangedEventHandler?</type>
+        <definition>PropertyChangedEventHandler? Mastermind.Wpf.MainViewModel.PropertyChanged</definition>
+        <argsstring></argsstring>
+        <name>PropertyChanged</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.PropertyChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="20" column="46" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_main_view_model_1ac5ba65e2cdddc68a9b56623acae4e52d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>object?</type>
+        <definition>object? Mastermind.Wpf.MainViewModel.CurrentView</definition>
+        <argsstring></argsstring>
+        <name>CurrentView</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.CurrentView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="30" column="19" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_main_view_model_1a09fdcff4b3ceb3c9b4ab8573e51d8c8c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" kindref="compound">RelayCommand</ref></type>
+        <definition>RelayCommand Mastermind.Wpf.MainViewModel.NytSpilCmd</definition>
+        <argsstring></argsstring>
+        <name>NytSpilCmd</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.NytSpilCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="32" column="25" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_main_view_model_1a64f5a8de3751d8c55c764653365be0f1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" kindref="compound">RelayCommand</ref></type>
+        <definition>RelayCommand Mastermind.Wpf.MainViewModel.OptionsCmd</definition>
+        <argsstring></argsstring>
+        <name>OptionsCmd</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.OptionsCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="33" column="25" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_main_view_model_1a8c75e2d1d60d1ddd5dab4807571d65fb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" kindref="compound">RelayCommand</ref></type>
+        <definition>RelayCommand Mastermind.Wpf.MainViewModel.StatistikCmd</definition>
+        <argsstring></argsstring>
+        <name>StatistikCmd</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.StatistikCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="34" column="25" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mastermind_1_1_wpf_1_1_main_view_model_1a66ff391dbb37108b3fb410fc21cb3525" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mastermind_1_1_wpf_1_1_infrastructure_1_1_relay_command" kindref="compound">RelayCommand</ref></type>
+        <definition>RelayCommand Mastermind.Wpf.MainViewModel.ExitCmd</definition>
+        <argsstring></argsstring>
+        <name>ExitCmd</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.ExitCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="35" column="25" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_main_view_model_1af9e5567990b8e8a711ca42b63ccd8699" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository" kindref="compound">OptionsRepository</ref></type>
+        <definition>readonly OptionsRepository Mastermind.Wpf.MainViewModel._optRepo</definition>
+        <argsstring></argsstring>
+        <name>_optRepo</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel._optRepo</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="37" column="40" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_main_view_model_1ab11681332ae47f322bd16c250066cfa4" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" kindref="compound">IStatistikStore</ref></type>
+        <definition>readonly IStatistikStore Mastermind.Wpf.MainViewModel._statsStore</definition>
+        <argsstring></argsstring>
+        <name>_statsStore</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel._statsStore</qualifiedname>
+        <initializer>= new <ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store" kindref="compound">JsonStatistikStore</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="38" column="34" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_main_view_model_1a3e0cd447ead7ef4af3a64b18782c39b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Wpf.MainViewModel.OnChanged</definition>
+        <argsstring>([CallerMemberName] string? n=null)</argsstring>
+        <name>OnChanged</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.OnChanged</qualifiedname>
+        <param>
+          <attributes>[CallerMemberName]</attributes>
+          <type>string?</type>
+          <declname>n</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Udløser PropertyChanged for bindings.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Navnet på den ændrede property (udfyldes automatisk).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Kaldes når en property ændres for at opdatere UI via bindings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="28" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_main_view_model_1a8b462cce3b23691bb0e2293cc144a44c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mastermind.Wpf.MainViewModel.MainViewModel</definition>
+        <argsstring>()</argsstring>
+        <name>MainViewModel</name>
+        <qualifiedname>Mastermind.Wpf.MainViewModel.MainViewModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialiserer kommandoer, sætter startvisning og håndterer afslutning af app.</para>
+<para>Opretter kommandoer til at skifte mellem <ref refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view" kindref="compound">Views.GameView</ref>, <ref refid="class_mastermind_1_1_wpf_1_1_views_1_1_options_view" kindref="compound">Views.OptionsView</ref> og <ref refid="class_mastermind_1_1_wpf_1_1_views_1_1_statistik_view" kindref="compound">Views.StatistikView</ref>. Starter med <ref refid="class_mastermind_1_1_wpf_1_1_views_1_1_game_view" kindref="compound">Views.GameView</ref> som aktiv visning. Exit-kommandoen lukker WPF-appen eller, hvis den ikke findes, kalder Environment.Exit(int). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/MainViewModel.cs" line="50" column="12" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="50" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hoved-viewmodel der skifter mellem visninger (spil, indstillinger, statistik) og håndterer exit. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementerer INotifyPropertyChanged og eksponerer kommandoer til navigation: <computeroutput>NytSpilCmd</computeroutput>, <computeroutput>OptionsCmd</computeroutput>, <computeroutput>StatistikCmd</computeroutput>, <computeroutput>ExitCmd</computeroutput>. Opretter og genbruger <ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_options_repository" kindref="compound">OptionsRepository</ref> og <ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store" kindref="compound">JsonStatistikStore</ref> og sætter <computeroutput>CurrentView</computeroutput> til den aktive WPF-view (UserControl). Ved ændringer kaldes OnChanged(string?) for at opdatere bindings. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1">
+        <label>Mastermind.Wpf.MainViewModel</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_main_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>INotifyPropertyChanged</label>
+      </node>
+      <node id="1">
+        <label>Mastermind.Wpf.MainViewModel</label>
+        <link refid="class_mastermind_1_1_wpf_1_1_main_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Mastermind.Wpf/MainViewModel.cs" line="18" column="7" bodyfile="src/Mastermind.Wpf/MainViewModel.cs" bodystart="19" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1af9e5567990b8e8a711ca42b63ccd8699" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>_optRepo</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1ab11681332ae47f322bd16c250066cfa4" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>_statsStore</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1ac5ba65e2cdddc68a9b56623acae4e52d" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>CurrentView</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a66ff391dbb37108b3fb410fc21cb3525" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>ExitCmd</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a8b462cce3b23691bb0e2293cc144a44c" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>MainViewModel</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a09fdcff4b3ceb3c9b4ab8573e51d8c8c" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>NytSpilCmd</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a3e0cd447ead7ef4af3a64b18782c39b4" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>OnChanged</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a64f5a8de3751d8c55c764653365be0f1" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>OptionsCmd</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a0ca2bb5f69b40c83ff59146151e2175b" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>PropertyChanged</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_main_view_model_1a8c75e2d1d60d1ddd5dab4807571d65fb" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::MainViewModel</scope><name>StatistikCmd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

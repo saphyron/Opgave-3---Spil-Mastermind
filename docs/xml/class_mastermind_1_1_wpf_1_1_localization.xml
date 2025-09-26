@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_wpf_1_1_localization" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Wpf::Localization</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_wpf_1_1_localization_1a59e577c4c59123fb739b454f9415aeab" prot="private" static="yes" mutable="no">
+        <type>? ResourceDictionary</type>
+        <definition>? ResourceDictionary Mastermind.Wpf.Localization._currentLangDict</definition>
+        <argsstring></argsstring>
+        <name>_currentLangDict</name>
+        <qualifiedname>Mastermind.Wpf.Localization._currentLangDict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Localization.cs" line="20" column="39" bodyfile="src/Mastermind.Wpf/Localization.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_localization_1a138ad614b8ff4886e4e8ea5b7958b2eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mastermind.Wpf.Localization.SetLanguage</definition>
+        <argsstring>(Sprog sprog)</argsstring>
+        <name>SetLanguage</name>
+        <qualifiedname>Mastermind.Wpf.Localization.SetLanguage</qualifiedname>
+        <param>
+          <type>Sprog</type>
+          <declname>sprog</declname>
+        </param>
+        <briefdescription>
+<para>Skifter sprog i UI’et (indsætter korrekt tekst-ressource og sætter kultur). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sprog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ønsket sprog (dansk/engelsk).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Indsætter en ResourceDictionary (Strings.da/en.xaml) i Opdaterer også Thread.CurrentThread.Thread.CurrentUICulture til henholdsvis <computeroutput>da-DK</computeroutput> eller <computeroutput>en-US</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Localization.cs" line="30" column="24" bodyfile="src/Mastermind.Wpf/Localization.cs" bodystart="30" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_wpf_1_1_localization_1a649704d75f764b4734b9bdb758ebdb01" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mastermind.Wpf.Localization.T</definition>
+        <argsstring>(string key, params object[] args)</argsstring>
+        <name>T</name>
+        <qualifiedname>Mastermind.Wpf.Localization.T</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Slår en tekstnøgle op og formatere med argumenter (fallback = nøglen). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ressourcenøgle i sprogfilen.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valgfrie format-argumenter.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Den lokaliserede tekst eller nøglen, hvis ikke fundet.</para>
+</simplesect>
+</para>
+<para>Bruger Application.TryFindResource(object) til opslag i den aktuelle ResourceDictionary (eller forældre). Hvis fundet og <emphasis>args</emphasis>  er angivet, bruges string.Format(string, object[]) til at formatere teksten. Hvis ikke fundet, returneres <emphasis>key</emphasis>  uændret. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Wpf/Localization.cs" line="68" column="26" bodyfile="src/Mastermind.Wpf/Localization.cs" bodystart="68" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Skifter app’ens sprog (da/en) og henter tekster med nøgler. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Indsætter en ResourceDictionary (Strings.da/en.xaml) i Opdaterer også Thread.CurrentThread.Thread.CurrentUICulture til henholdsvis <computeroutput>da-DK</computeroutput> eller <computeroutput>en-US</computeroutput>. Opslagsmetoden bruger Application.TryFindResource(object) og string.Format(string, object[]). </para>
+    </detaileddescription>
+    <location file="src/Mastermind.Wpf/Localization.cs" line="18" column="15" bodyfile="src/Mastermind.Wpf/Localization.cs" bodystart="19" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_wpf_1_1_localization_1a59e577c4c59123fb739b454f9415aeab" prot="private" virt="non-virtual"><scope>Mastermind::Wpf::Localization</scope><name>_currentLangDict</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_localization_1a138ad614b8ff4886e4e8ea5b7958b2eb" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Localization</scope><name>SetLanguage</name></member>
+      <member refid="class_mastermind_1_1_wpf_1_1_localization_1a649704d75f764b4734b9bdb758ebdb01" prot="public" virt="non-virtual"><scope>Mastermind::Wpf::Localization</scope><name>T</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

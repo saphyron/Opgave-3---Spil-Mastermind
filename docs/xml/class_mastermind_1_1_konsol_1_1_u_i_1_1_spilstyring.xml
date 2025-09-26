@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Konsol::UI::Spilstyring</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a32df5b9017ebc7113def1823da851b5d" prot="private" static="no" mutable="no">
+        <type>readonly Options</type>
+        <definition>readonly Options Mastermind.Konsol.UI.Spilstyring._options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring._options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="11" column="34" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1aa7e1606abef5fe4fa8fdf3c174f6fb8e" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu" kindref="compound">KonsolMenu</ref></type>
+        <definition>readonly KonsolMenu Mastermind.Konsol.UI.Spilstyring._menu</definition>
+        <argsstring></argsstring>
+        <name>_menu</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring._menu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="12" column="37" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1adffc154484a376ed7a34ada8edcf6c13" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kindref="compound">SecretGenerator</ref></type>
+        <definition>readonly SecretGenerator Mastermind.Konsol.UI.Spilstyring._secretGenerator</definition>
+        <argsstring></argsstring>
+        <name>_secretGenerator</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring._secretGenerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="13" column="42" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ad486979f1c218ee71db391f054037265" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_core_1_1_services_1_1_input" kindref="compound">Input</ref></type>
+        <definition>readonly Input Mastermind.Konsol.UI.Spilstyring._input</definition>
+        <argsstring></argsstring>
+        <name>_input</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring._input</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="14" column="32" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ab5b29dd26a9520179710e171b2dc8909" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kindref="compound">Evaluering</ref></type>
+        <definition>readonly Evaluering Mastermind.Konsol.UI.Spilstyring._evaluering</definition>
+        <argsstring></argsstring>
+        <name>_evaluering</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring._evaluering</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="15" column="37" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a928a39191b52fc096b448a754737abf5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik" kindref="compound">Statistik</ref></type>
+        <definition>Statistik Mastermind.Konsol.UI.Spilstyring._statistik</definition>
+        <argsstring></argsstring>
+        <name>_statistik</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring._statistik</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="16" column="27" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ae8f10b755a5e57f9009682095e0795fa" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" kindref="compound">IStatistikStore</ref></type>
+        <definition>readonly IStatistikStore Mastermind.Konsol.UI.Spilstyring._statsStore</definition>
+        <argsstring></argsstring>
+        <name>_statsStore</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring._statsStore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="17" column="42" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6a98f7454cfb72b35b0f7639d317b811" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mastermind.Konsol.UI.Spilstyring.Spilstyring</definition>
+        <argsstring>(Options options, SecretGenerator generator, Input input, Evaluering evaluering, KonsolMenu menu, Statistik? statistik, IStatistikStore? statistikStore)</argsstring>
+        <name>Spilstyring</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring.Spilstyring</qualifiedname>
+        <param>
+          <type>Options</type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kindref="compound">SecretGenerator</ref></type>
+          <declname>generator</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mastermind_1_1_core_1_1_services_1_1_input" kindref="compound">Input</ref></type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kindref="compound">Evaluering</ref></type>
+          <declname>evaluering</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu" kindref="compound">KonsolMenu</ref></type>
+          <declname>menu</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik" kindref="compound">Statistik</ref>?</type>
+          <declname>statistik</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mastermind_1_1_core_1_1_persistence_1_1_i_statistik_store" kindref="compound">IStatistikStore</ref>?</type>
+          <declname>statistikStore</declname>
+        </param>
+        <briefdescription>
+<para>Initialiserer en ny instans af Spilstyring-klassen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>generator</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evaluering</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>menu</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statistik</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statistikStore</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentNullException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Denne klasse håndterer spillets logik og interaktion mellem de forskellige komponenter. Den bruger Options til at konfigurere spillet, <ref refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kindref="compound">SecretGenerator</ref> til at generere hemmelige koder, <ref refid="class_mastermind_1_1_core_1_1_services_1_1_input" kindref="compound">Input</ref> til at håndtere brugerinput, <ref refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kindref="compound">Evaluering</ref> til at evaluere gæt, og <ref refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu" kindref="compound">KonsolMenu</ref> til at vise menuer og beskeder. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="34" column="16" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="34" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6f789210a33385a19e4ce371efd2f211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Konsol.UI.Spilstyring.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring.Start</qualifiedname>
+        <briefdescription>
+<para>Starter spillet og håndterer spillets hovedloop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Denne metode viser menuen, håndterer en enkelt runde af spillet, og spørger brugeren om de vil spille igen. Hvis brugeren vælger ikke at spille igen, afsluttes spillet med en farvelbesked. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="58" column="21" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="58" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1affbe777e30287bee2e7ca101207a9428" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mastermind.Konsol.UI.Spilstyring.SingularRunde</definition>
+        <argsstring>()</argsstring>
+        <name>SingularRunde</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring.SingularRunde</qualifiedname>
+        <briefdescription>
+<para>Håndterer en enkelt runde af Mastermind-spillet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Denne metode genererer en hemmelig kode, håndterer brugerens gæt, evaluerer gæt, og viser feedback. Hvis brugeren gætter koden korrekt inden for det maksimale antal forsøg, vinder de spillet. Hvis de ikke gør, vises den korrekte kode ved spillets afslutning. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="81" column="21" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="81" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a7187582596b4b74679fb8db6b5058f9b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mastermind.Konsol.UI.Spilstyring.PrøvIgenJaNej</definition>
+        <argsstring>()</argsstring>
+        <name>PrøvIgenJaNej</name>
+        <qualifiedname>Mastermind.Konsol.UI.Spilstyring.PrøvIgenJaNej</qualifiedname>
+        <briefdescription>
+<para>Spørger brugeren, om de vil spille igen, og returnerer deres svar som en boolesk værdi. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True hvis brugeren vil spille igen, ellers false.</para>
+</simplesect>
+</para>
+<para>Denne metode viser en prompt til brugeren og venter på deres svar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="125" column="22" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="125" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Mastermind.Console/UI/Spilstyring.cs" line="9" column="11" bodyfile="src/Mastermind.Console/UI/Spilstyring.cs" bodystart="10" bodyend="151"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ab5b29dd26a9520179710e171b2dc8909" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>_evaluering</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ad486979f1c218ee71db391f054037265" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>_input</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1aa7e1606abef5fe4fa8fdf3c174f6fb8e" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>_menu</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a32df5b9017ebc7113def1823da851b5d" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>_options</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1adffc154484a376ed7a34ada8edcf6c13" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>_secretGenerator</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a928a39191b52fc096b448a754737abf5" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>_statistik</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1ae8f10b755a5e57f9009682095e0795fa" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>_statsStore</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a7187582596b4b74679fb8db6b5058f9b" prot="private" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>PrøvIgenJaNej</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1affbe777e30287bee2e7ca101207a9428" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>SingularRunde</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6a98f7454cfb72b35b0f7639d317b811" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>Spilstyring</name></member>
+      <member refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring_1a6f789210a33385a19e4ce371efd2f211" prot="public" virt="non-virtual"><scope>Mastermind::Konsol::UI::Spilstyring</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

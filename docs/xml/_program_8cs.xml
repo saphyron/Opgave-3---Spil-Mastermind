@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_program_8cs_1a0717e747985fb4e7eb9a3cdc4f1426bf" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <initializer>= new Options(længde: 3, maxForsøg: 9, showEmojis: true, sprog: Sprog.En)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="14" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1ae6104c261e98e4a7aa0970087ea10a47" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var secretGenerator</definition>
+        <argsstring></argsstring>
+        <name>secretGenerator</name>
+        <initializer>= new <ref refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kindref="compound">SecretGenerator</ref>(options)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="16" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a07a2aabd64594dc36dd810cad2669deb" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <initializer>= new <ref refid="class_mastermind_1_1_core_1_1_services_1_1_input" kindref="compound">Input</ref>(options)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="17" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a19d08fc350d73d9ccc577a7a8ef61f8a" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var evaluering</definition>
+        <argsstring></argsstring>
+        <name>evaluering</name>
+        <initializer>= new <ref refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kindref="compound">Evaluering</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="18" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1afa81b7016777a6376393d90a01558971" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var menu</definition>
+        <argsstring></argsstring>
+        <name>menu</name>
+        <initializer>= new <ref refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu" kindref="compound">KonsolMenu</ref>(options)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="19" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a3027e96d8827825eb67fe97f86ab52f1" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <initializer>= new <ref refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik" kindref="compound">Statistik</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="20" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1aed50c5329cfcad5f5022e0269e2a3dbc" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var statistikStore</definition>
+        <argsstring></argsstring>
+        <name>statistikStore</name>
+        <initializer>= new <ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store" kindref="compound">JsonStatistikStore</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="21" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a87f6efe1da45924e5c654916568fbe41" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var spilstyring</definition>
+        <argsstring></argsstring>
+        <name>spilstyring</name>
+        <initializer>= new <ref refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring" kindref="compound">Spilstyring</ref>(options, secretGenerator, input, evaluering, menu, stats, statistikStore)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="23" column="5" bodyfile="src/Mastermind.Console/Program.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_program_8cs_1aafd70b0421237abe29a854372507d82f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>spilstyring.</type>
+        <definition>spilstyring. Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Console/Program.cs" line="24" column="12" declfile="src/Mastermind.Console/Program.cs" declline="24" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mastermind_1_1_core_1_1_domain" kindref="compound">Mastermind.Core.Domain</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mastermind_1_1_core_1_1_services" kindref="compound">Mastermind.Core.Services</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mastermind_1_1_konsol_1_1_u_i" kindref="compound">Mastermind.Konsol.UI</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mastermind_1_1_konsol_1_1_utils" kindref="compound">Mastermind.Konsol.Utils</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mastermind_1_1_core_1_1_utils" kindref="compound">Mastermind.Core.Utils</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mastermind_1_1_core_1_1_persistence" kindref="compound">Mastermind.Core.Persistence</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//var<sp/>options<sp/>=<sp/>new<sp/>Options();<sp/>//<sp/>Default<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Du<sp/>kan<sp/>også<sp/>ændre<sp/>options<sp/>her,<sp/>hvis<sp/>du<sp/>vil<sp/>teste<sp/>forskellige<sp/>indstillinger</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">options.maxForsøg<sp/>=<sp/>9;</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">options.længde<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">options.showEmojis<sp/>=<sp/>true;</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">options.sprog<sp/>=<sp/>Sprog.En;</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">var<sp/>options<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="namespace_mastermind_1_1_core_1_1_domain_1a59b2264dfdc72e75ddceaf8f675dbcf2" kindref="member">Options</ref>(længde:<sp/>3,<sp/>maxForsøg:<sp/>9,<sp/>showEmojis:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>sprog:<sp/>Sprog.En);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">var<sp/>secretGenerator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_core_1_1_services_1_1_secret_generator" kindref="compound">SecretGenerator</ref>(options);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">var<sp/>input<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Input(options);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">var<sp/>evaluering<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_core_1_1_services_1_1_evaluering" kindref="compound">Evaluering</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">var<sp/>menu<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_konsol_menu" kindref="compound">KonsolMenu</ref>(options);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">var<sp/>stats<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_konsol_1_1_utils_1_1_statistik" kindref="compound">Statistik</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">var<sp/>statistikStore<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_core_1_1_persistence_1_1_json_statistik_store" kindref="compound">JsonStatistikStore</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Opret<sp/>spilstyring<sp/>med<sp/>alle<sp/>afhængigheder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">var<sp/>spilstyring<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mastermind_1_1_konsol_1_1_u_i_1_1_spilstyring" kindref="compound">Spilstyring</ref>(options,<sp/>secretGenerator,<sp/>input,<sp/>evaluering,<sp/>menu,<sp/>stats,<sp/>statistikStore);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">spilstyring.Start();</highlight></codeline>
+    </programlisting>
+    <location file="src/Mastermind.Console/Program.cs"/>
+  </compounddef>
+</doxygen>

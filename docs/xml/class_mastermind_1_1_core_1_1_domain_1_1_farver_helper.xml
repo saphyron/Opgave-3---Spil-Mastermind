@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper" kind="class" language="C#" prot="public">
+    <compoundname>Mastermind::Core::Domain::FarverHelper</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a588020b5f610f339c23fdc08cc67e382" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; string, <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref> &gt;</type>
+        <definition>readonly Dictionary&lt;string, Farve&gt; Mastermind.Core.Domain.FarverHelper.FarveMap</definition>
+        <argsstring></argsstring>
+        <name>FarveMap</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper.FarveMap</qualifiedname>
+        <initializer>= new Dictionary&lt;string, <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>&gt;(StringComparer.OrdinalIgnoreCase)
+        {
+            
+            { &quot;RØD&quot;, Farve.Rød },
+            { &quot;BLÅ&quot;, Farve.Blå },
+            { &quot;GRØN&quot;, Farve.Grøn },
+            { &quot;GUL&quot;, Farve.Gul },
+            { &quot;SORT&quot;, Farve.Sort },
+            { &quot;HVID&quot;, Farve.Hvid },
+            {&quot;lilla&quot;, Farve.Lilla },
+            {&quot;orange&quot;, Farve.Orange },
+            
+            { &quot;RED&quot;, Farve.Rød },
+            { &quot;BLUE&quot;, Farve.Blå },
+            { &quot;GREEN&quot;, Farve.Grøn },
+            { &quot;YELLOW&quot;, Farve.Gul },
+            { &quot;BLACK&quot;, Farve.Sort },
+            { &quot;WHITE&quot;, Farve.Hvid },
+            {&quot;purple&quot;, Farve.Lilla },
+        }</initializer>
+        <briefdescription>
+<para>Mapning af strenge til Farve-enumværdier (både danske og engelske navne). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Denne mappe bruges til at konvertere brugerinput til de korrekte Farve-enumværdier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="17" column="44" bodyfile="src/Mastermind.Core/Domain/FarverHelper.cs" bodystart="17" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1acad5d4eca97116e57a66e238c3efad2c" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>, string &gt;</type>
+        <definition>readonly Dictionary&lt;Farve, string&gt; Mastermind.Core.Domain.FarverHelper._da</definition>
+        <argsstring></argsstring>
+        <name>_da</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper._da</qualifiedname>
+        <initializer>= new()
+        {
+            [Farve.Rød] = &quot;rød&quot;,
+            [Farve.Blå] = &quot;blå&quot;,
+            [Farve.Grøn] = &quot;grøn&quot;,
+            [Farve.Gul] = &quot;gul&quot;,
+            [Farve.Sort] = &quot;sort&quot;,
+            [Farve.Hvid] = &quot;hvid&quot;,
+            [Farve.Lilla] = &quot;lilla&quot;,
+            [Farve.Orange] = &quot;orange&quot;,
+        }</initializer>
+        <briefdescription>
+<para>Mapning af Farve-enumværdier til deres kanoniske navne på dansk og engelsk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Disse 2 funktioner bruges til at konvertere Farve-enumværdier til visningsvenlige navne baseret på det valgte sprog. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="44" column="44" bodyfile="src/Mastermind.Core/Domain/FarverHelper.cs" bodystart="44" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a7ffca3d06f2726d320381c107e0ad820" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>, string &gt;</type>
+        <definition>readonly Dictionary&lt;Farve, string&gt; Mastermind.Core.Domain.FarverHelper._en</definition>
+        <argsstring></argsstring>
+        <name>_en</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper._en</qualifiedname>
+        <initializer>= new()
+        {
+            [Farve.Rød] = &quot;red&quot;,
+            [Farve.Blå] = &quot;blue&quot;,
+            [Farve.Grøn] = &quot;green&quot;,
+            [Farve.Gul] = &quot;yellow&quot;,
+            [Farve.Sort] = &quot;black&quot;,
+            [Farve.Hvid] = &quot;white&quot;,
+            [Farve.Lilla] = &quot;purple&quot;,
+            [Farve.Orange] = &quot;orange&quot;,
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="55" column="44" bodyfile="src/Mastermind.Core/Domain/FarverHelper.cs" bodystart="55" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a63152a3f0a2fd39a3429cd9d146cbf79" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>[]</type>
+        <definition>readonly Farve [] Mastermind.Core.Domain.FarverHelper._palette</definition>
+        <argsstring></argsstring>
+        <name>_palette</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper._palette</qualifiedname>
+        <initializer>= (<ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>[])Enum.GetValues(typeof(<ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref>))</initializer>
+        <briefdescription>
+<para>Hele farvepaletten i enum-rækkefølge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Denne liste indeholder alle Farve-enumværdier i den rækkefølge, de er defineret i enumen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="72" column="39" bodyfile="src/Mastermind.Core/Domain/FarverHelper.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a83f8a8d2dd206eb5f4b56ad16ed1ce3d" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IReadOnlyList&lt; <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref> &gt;</type>
+        <definition>IReadOnlyList&lt;Farve&gt; Mastermind.Core.Domain.FarverHelper.Palette</definition>
+        <argsstring></argsstring>
+        <name>Palette</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper.Palette</qualifiedname>
+        <briefdescription>
+<para>Henter hele farvepaletten i enum-rækkefølge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Denne egenskab returnerer en liste over alle Farve-enumværdier i den rækkefølge, de er defineret i enumen. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="121" column="37" bodyfile="src/Mastermind.Core/Domain/FarverHelper.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a907256bd2d62194d1d225b0e4ed93f85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mastermind.Core.Domain.FarverHelper.TryParse</definition>
+        <argsstring>(string input, out Farve farve)</argsstring>
+        <name>TryParse</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper.TryParse</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>out <ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref></type>
+          <declname>farve</declname>
+        </param>
+        <briefdescription>
+<para>Prøver at parse en streng til en Farve-enumværdi. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>farve</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True hvis parsing lykkedes, ellers false.</para>
+</simplesect>
+</para>
+<para>Denne metode forsøger at konvertere en given streng til en Farve-enumværdi. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="82" column="28" bodyfile="src/Mastermind.Core/Domain/FarverHelper.cs" bodystart="82" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a37d9e52bbba4449982074ad71d219fc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mastermind.Core.Domain.FarverHelper.ToName</definition>
+        <argsstring>(Farve farve, Sprog language)</argsstring>
+        <name>ToName</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper.ToName</qualifiedname>
+        <param>
+          <type><ref refid="namespace_mastermind_1_1_core_1_1_domain_1ae918be05ac87bee4adb4d7fac4535fc9" kindref="member">Farve</ref></type>
+          <declname>farve</declname>
+        </param>
+        <param>
+          <type>Sprog</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Konverterer en Farve-enumværdi til dens kanoniske navn baseret på det valgte sprog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>farve</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Den kanoniske strengrepræsentation af farven.</para>
+</simplesect>
+</para>
+<para>Denne metode returnerer det kanoniske navn for en given farve baseret på det valgte sprog. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="100" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1ac6502fa6af13e29b7b39cd728c80043c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IReadOnlyList&lt; string &gt;</type>
+        <definition>static IReadOnlyList&lt; string &gt; Mastermind.Core.Domain.FarverHelper.AllCanonicalNames</definition>
+        <argsstring>(Sprog language)</argsstring>
+        <name>AllCanonicalNames</name>
+        <qualifiedname>Mastermind.Core.Domain.FarverHelper.AllCanonicalNames</qualifiedname>
+        <param>
+          <type>Sprog</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Henter alle kanoniske navne for farverne i paletten baseret på det valgte sprog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>En liste af strenge, der repræsenterer de kanoniske navne for farverne.</para>
+</simplesect>
+</para>
+<para>Denne metode returnerer en liste over alle kanoniske navne for farverne i paletten baseret på det valgte sprog. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="112" column="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hjælpeklasse til håndtering af farver i Mastermind-spillet. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Denne klasse indeholder metoder til at parse farver fra strenge, konvertere farver til visningsnavne og hente hele farvepaletten. </para>
+    </detaileddescription>
+    <location file="src/Mastermind.Core/Domain/FarverHelper.cs" line="9" column="19" bodyfile="src/Mastermind.Core/Domain/FarverHelper.cs" bodystart="10" bodyend="122"/>
+    <listofallmembers>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1acad5d4eca97116e57a66e238c3efad2c" prot="private" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>_da</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a7ffca3d06f2726d320381c107e0ad820" prot="private" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>_en</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a63152a3f0a2fd39a3429cd9d146cbf79" prot="private" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>_palette</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1ac6502fa6af13e29b7b39cd728c80043c" prot="public" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>AllCanonicalNames</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a588020b5f610f339c23fdc08cc67e382" prot="private" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>FarveMap</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a83f8a8d2dd206eb5f4b56ad16ed1ce3d" prot="public" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>Palette</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a37d9e52bbba4449982074ad71d219fc4" prot="public" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>ToName</name></member>
+      <member refid="class_mastermind_1_1_core_1_1_domain_1_1_farver_helper_1a907256bd2d62194d1d225b0e4ed93f85" prot="public" virt="non-virtual"><scope>Mastermind::Core::Domain::FarverHelper</scope><name>TryParse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
