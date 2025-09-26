@@ -1,6 +1,6 @@
 # Build-artefakter (alle projekter)
-[Bb]in/
-[Oo]bj/
+src/**/[Bb]in/
+src/**/[Oo]bj/
 
 # IDE-specifikt
 .vs/
