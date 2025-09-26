@@ -24,6 +24,7 @@ namespace Mastermind.Konsol.UI
         /// <param name="evaluering"></param>
         /// <param name="menu"></param>
         /// <param name="statistik"></param>
+        /// <param name="statistikStore"></param>
         /// <exception cref="ArgumentNullException"></exception>
         /// <remarks>
         /// Denne klasse håndterer spillets logik og interaktion mellem de forskellige komponenter.

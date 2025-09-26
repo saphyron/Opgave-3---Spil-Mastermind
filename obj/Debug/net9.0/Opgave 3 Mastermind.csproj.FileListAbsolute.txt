@@ -1,7 +1,0 @@
-C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\obj\Debug\net9.0\Opgave 3 Mastermind.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\obj\Debug\net9.0\Opgave 3 Mastermind.AssemblyInfoInputs.cache
-C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\obj\Debug\net9.0\Opgave 3 Mastermind.AssemblyInfo.cs
-C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\obj\Debug\net9.0\Opgave 3 Mastermind.csproj.CoreCompileInputs.cache
-C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\obj\Debug\net9.0\Opgave 3 Mastermind.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\JohnGrandtMarkvardHø\Desktop\Opgaver\Uge 2\Opgave 3 - Spil Mastermind\Opgave 3 Mastermind\obj\Debug\net9.0\Opgave 3 Mastermind.sourcelink.json

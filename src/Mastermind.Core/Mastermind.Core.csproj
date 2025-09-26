@@ -4,6 +4,9 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <!-- Valgfrit, hvis du vil slippe for advarsel om manglende XML-kommentarer -->
+  <NoWarn>1591</NoWarn>
   </PropertyGroup>
 
 </Project>

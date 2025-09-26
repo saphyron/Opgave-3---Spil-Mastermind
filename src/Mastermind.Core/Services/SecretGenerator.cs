@@ -4,9 +4,6 @@ namespace Mastermind.Core.Services
     /// <summary>
     /// Genererer en tilfældig hemmelig kode bestående af farver.
     /// </summary>
-    /// <param name="options">Indstillinger for spillet, herunder længde på koden.</param>
-    /// <param name="random">En tilfældighedsgenerator til at vælge farver.</param>
-    /// <param name="farver">En liste over mulige farver at vælge imellem.</param>
     /// <remarks>
     /// Denne klasse genererer en hemmelig kode ved hjælp af de angivne indstillinger og farver.
     /// </remarks>

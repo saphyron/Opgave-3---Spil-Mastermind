@@ -44,6 +44,8 @@ namespace Mastermind.Wpf.Views
 
         private int _attempts;
         private bool _roundOver;
+        private const char BlackPeg = '⚫';
+        private const char WhitePeg = '⚪';
         /// <summary>
         /// Initialiserer en ny spilvisning og starter første runde.
         /// </summary>
@@ -70,6 +72,38 @@ namespace Mastermind.Wpf.Views
 
             StartNewRound();
         }
+        /// <summary>
+        /// Formatterer en feedback-linje med emojis eller tekst baseret på indstillinger.
+        /// </summary>
+        /// <param name="attemptNumber"></param>
+        /// <param name="fb"></param>
+        /// <returns>Formatteret feedback-linje.</returns>
+        /// <remarks>
+        /// Bruger emojis (⚫ og ⚪) hvis <see cref="Options.showEmojis"/> er sand;
+        /// ellers tekstbaseret feedback.
+        /// </remarks>
+        private string FormatFeedbackLine(int attemptNumber, Feedback fb)
+{
+    if (_opt.showEmojis)
+    {
+        // Emoji-first, plus tal i parentes for tydelighed
+        var blacks = fb.Black > 0 ? new string(BlackPeg, fb.Black) : "–";
+        var whites = fb.White > 0 ? new string(WhitePeg, fb.White) : "–";
+
+        //  DA: "1: ⚫⚫ (2)  |  ⚪ (1)"
+        //  EN: "1: ⚫⚫ (2)  |  ⚪ (1)"
+        var sep = "  |  ";
+        return $"{attemptNumber}: {blacks} ({fb.Black}){sep}{whites} ({fb.White})";
+    }
+    else
+    {
+        // Tekst fallback (som du havde)
+        return _opt.sprog == Sprog.Da
+            ? $"{attemptNumber}: Sort: {fb.Black} | Hvid: {fb.White}"
+            : $"{attemptNumber}: Black: {fb.Black} | White: {fb.White}";
+    }
+}
+
         /// <summary>
         /// Starter en ny runde og nulstiller hemmelig kode, historik og forsøgstæller.
         /// </summary>
@@ -101,9 +135,21 @@ namespace Mastermind.Wpf.Views
             _attempts++;
 
             var fb = _eval.Evaluer(guess, _secret);
-            History.Add(_opt.sprog == Sprog.Da
+            
+            var text = _opt.sprog == Sprog.Da
                 ? $"{_attempts}: Sort: {fb.Black} | Hvid: {fb.White}"
-                : $"{_attempts}: Black: {fb.Black} | White: {fb.White}");
+                : $"{_attempts}: Black: {fb.Black} | White: {fb.White}";
+
+            if (_opt.showEmojis)
+            {
+                var blacks = fb.Black > 0 ? new string('⚫', fb.Black) : "–";
+                var whites = fb.White > 0 ? new string('⚪', fb.White) : "–";
+                History.Add($"{text}  —>  {blacks} {whites}");
+            }
+            else
+            {
+                History.Add(text);
+            }
 
             // vundet?
             if (fb.Black == _opt.længde)
@@ -136,7 +182,7 @@ namespace Mastermind.Wpf.Views
         /// Bygger en opsummering til fodnoten med resultat og statistik.
         /// </summary>
         /// <param name="won">Om spilleren har vundet.</param>
-        /// <param name="showSecret">Om den hemmelige kode skal vises.</param
+        /// <param name="showSecret">Om den hemmelige kode skal vises.</param>
         /// <returns>Opsummeringstekst.</returns>
         /// <remarks>
         /// Inkluderer resultatlinje, hemmelig kode (hvis relevant), samlet statistik og

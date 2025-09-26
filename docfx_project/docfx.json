@@ -1,0 +1,29 @@
+{
+  "disableGitFeatures": true,
+  "metadata": [
+    {
+      "dest": "a",
+      "src": [
+        { "src": "..",
+          "files": [
+            "src/Mastermind.Core/**.cs",
+            "src/Mastermind.Wpf/**.cs",
+            "src/Mastermind.Console/**.cs"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ]
+        }
+      ]
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": [ "a/**.yml", "a/toc.yml" ] },
+      { "files": [ "articles/**.md", "articles/toc.yml" ] },
+      { "files": [ "index.md", "toc.yml" ] }
+    ],
+    "resource": [ { "files": [ "images/**" ] } ],
+    "globalMetadata": { "_enableSearch": true },
+    "template": [ "statictoc", "default" ],
+    "markdownEngineName": "markdig"
+  }
+}

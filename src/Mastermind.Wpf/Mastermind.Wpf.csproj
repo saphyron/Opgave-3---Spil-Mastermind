@@ -5,6 +5,9 @@
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <!-- Valgfrit, hvis du vil slippe for advarsel om manglende XML-kommentarer -->
+  <NoWarn>1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

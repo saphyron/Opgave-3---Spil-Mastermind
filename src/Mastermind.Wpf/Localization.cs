@@ -11,7 +11,6 @@ namespace Mastermind.Wpf;
 /// </summary>
 /// <remarks>
 /// Indsætter en <see cref="ResourceDictionary"/> (Strings.da/en.xaml) i
-/// <see cref="Application.Resources.MergedDictionaries"/> og fjerner tidligere sprog-ordbog.
 /// Opdaterer også <see cref="Thread.CurrentThread"/>.<see cref="Thread.CurrentUICulture"/>
 /// til henholdsvis <c>da-DK</c> eller <c>en-US</c>. Opslagsmetoden bruger
 /// <see cref="Application.TryFindResource(object)"/> og <see cref="string.Format(string, object[])"/>.
@@ -25,7 +24,6 @@ public static class Localization
     /// <param name="sprog">Ønsket sprog (dansk/engelsk).</param>
     /// <remarks>
     /// Indsætter en <see cref="ResourceDictionary"/> (Strings.da/en.xaml) i
-    /// <see cref="Application.Resources.MergedDictionaries"/> og fjerner tidligere sprog-ordbog.
     /// Opdaterer også <see cref="Thread.CurrentThread"/>.<see cref="Thread.CurrentUICulture"/>
     /// til henholdsvis <c>da-DK</c> eller <c>en-US</c>.
     /// </remarks>

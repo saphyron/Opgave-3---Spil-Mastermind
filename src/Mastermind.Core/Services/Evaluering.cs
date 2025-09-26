@@ -1,18 +1,19 @@
 using Mastermind.Core.Domain;
 namespace Mastermind.Core.Services
 {
-    /// <summary>
-    /// Evaluerer et gæt mod den hemmelige kode og returnerer feedback i form af sorte og hvide pegge.
-    /// </summary>
-    /// <param name="gæt">Et array af Farve, der repræsenterer spillerens gæt.</param>
-    /// <param name="secret">Et array af Farve, der repræsenterer den hemmelige kode.</param>
-    /// <returns>En Feedback-instans, der indeholder antallet af sorte og hvide pegge.</returns>
-    /// <remarks>
-    /// Denne metode evaluerer et gæt ved at sammenligne det med den hemmelige kode
-    /// og returnerer feedback i form af sorte og hvide pegge.
-    /// </remarks>
     public class Evaluering
     {
+        /// <summary>
+    /// Evaluerer et gæt mod den hemmelige kode og returnerer antallet af sorte og hvide pegge.
+    /// </summary>
+    /// <param name="gæt">Array af farver, som repræsenterer spillerens gæt.</param>
+    /// <param name="secret">Array af farver, som repræsenterer den hemmelige kode.</param>
+    /// <returns>Et <see cref="Feedback"/>-objekt med antal sorte og hvide pegge.</returns>
+    /// <remarks>
+    /// Metoden sammenligner først hvert element i <paramref name="gæt"/> med det tilsvarende element i <paramref name="secret"/> for at finde sorte pegge (korrekt farve og position).
+    /// Derefter gennemgås de resterende elementer for at finde hvide pegge (korrekt farve, forkert position), hvor der tages højde for allerede matchede positioner.
+    /// Hvis længden af <paramref name="gæt"/> og <paramref name="secret"/> ikke er ens, kastes en <see cref="ArgumentException"/>.
+    /// </remarks>
         public Feedback Evaluer(Farve[] gæt, Farve[] secret)
         {
             if (gæt.Length != secret.Length)
