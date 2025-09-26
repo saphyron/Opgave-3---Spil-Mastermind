@@ -1,22 +1,8 @@
 # Build-artefakter (alle projekter)
-[Bb]in/
-[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
 
 # IDE-specifikt
 .vs/
 .idea/
-# Valgfrit: behold hvis I vil dele tasks/settings
 .vscode/
-
-# Bruger-specifikke filer
-*.user
-*.suo
-*.userosscache
-*.ncrunch*
-*.DotSettings.user
-
-# OS-”støj”
-.DS_Store
-Thumbs.db
-
-
